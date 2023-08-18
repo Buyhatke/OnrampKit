@@ -1,0 +1,6 @@
+framework module OnrampKit {
+  umbrella header "OnrampKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

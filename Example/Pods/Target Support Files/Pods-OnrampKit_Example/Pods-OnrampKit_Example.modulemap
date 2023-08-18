@@ -1,0 +1,6 @@
+framework module Pods_OnrampKit_Example {
+  umbrella header "Pods-OnrampKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

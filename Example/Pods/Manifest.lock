@@ -1,0 +1,16 @@
+PODS:
+  - OnrampKit (0.1.0)
+
+DEPENDENCIES:
+  - OnrampKit (from `../`)
+
+EXTERNAL SOURCES:
+  OnrampKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OnrampKit: d1e05e49adfcf25ebf8413ea3e2629113d0258dc
+
+PODFILE CHECKSUM: 65e73c326d9a4ebb875b6e822521736078cea69f
+
+COCOAPODS: 1.11.3

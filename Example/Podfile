@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '15.0'
+
+target 'OnrampKit_Example' do
+  pod 'OnrampKit', :path => '../'
+
+  target 'OnrampKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

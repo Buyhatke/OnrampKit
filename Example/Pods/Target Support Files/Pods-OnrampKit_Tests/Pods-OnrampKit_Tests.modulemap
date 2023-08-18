@@ -1,0 +1,6 @@
+framework module Pods_OnrampKit_Tests {
+  umbrella header "Pods-OnrampKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
