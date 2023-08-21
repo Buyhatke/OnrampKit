@@ -2,15 +2,15 @@ PODS:
   - OnrampKit (0.1.0)
 
 DEPENDENCIES:
-  - OnrampKit (from `../`)
+  - OnrampKit
 
-EXTERNAL SOURCES:
-  OnrampKit:
-    :path: "../"
+SPEC REPOS:
+  https://github.com/Buyhatke/onramp-ios-podspec:
+    - OnrampKit
 
 SPEC CHECKSUMS:
-  OnrampKit: d1e05e49adfcf25ebf8413ea3e2629113d0258dc
+  OnrampKit: 7fc5d60edf0dd7934212a8acd60fddc8dfbb8e31
 
-PODFILE CHECKSUM: 65e73c326d9a4ebb875b6e822521736078cea69f
+PODFILE CHECKSUM: 25bf73c3d840191ca03abeecd2a90a65d01a8e2f
 
 COCOAPODS: 1.11.3

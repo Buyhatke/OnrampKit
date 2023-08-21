@@ -2,8 +2,10 @@ use_frameworks!
 
 platform :ios, '15.0'
 
+source 'https://github.com/Buyhatke/onramp-ios-podspec.git'
+
 target 'OnrampKit_Example' do
-  pod 'OnrampKit', :path => '../'
+  pod 'OnrampKit'
 
   target 'OnrampKit_Tests' do
     inherit! :search_paths
