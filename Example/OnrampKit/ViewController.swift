@@ -39,7 +39,11 @@ class ViewController: UIViewController, OnrampKitDelegate {
             }
         
             @objc func buttonTapped() {
-                Onramp.startOnrampSDK(self, self, appId: 1, flowType: 1)
+                if #available(iOS 13.0, *) {
+                    Onramp.startOnrampSDK(self, self, appId: 1, flowType: 1)
+                } else {
+                    // Fallback on earlier versions
+                }
             }
         
             // retrieve to the latest onramp transaction state

@@ -12,6 +12,7 @@ public protocol OnrampKitDelegate: AnyObject {
     func onDataChanged(_ data: OnrampEventResponse)
 }
 
+@available(iOS 13.0, *)
 public class OnrampUIViewController: UIViewController {
     
     public var webView: WKWebView!
@@ -25,6 +26,7 @@ public class OnrampUIViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
+
     public override func viewDidLoad() {
         super.viewDidLoad()
 

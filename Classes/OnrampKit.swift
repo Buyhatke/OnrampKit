@@ -8,6 +8,7 @@
 import UIKit
 import WebKit
 
+
 public class Onramp {
     weak public static var navigationController: UINavigationController?
     weak public var webView: WKWebView!
@@ -16,6 +17,7 @@ public class Onramp {
         viewController.dismiss(animated: true)
     }
     
+    @available(iOS 13.0, *)
     public static func startOnrampSDK(
                         _ viewController:UIViewController,
                         _ target: OnrampKitDelegate,

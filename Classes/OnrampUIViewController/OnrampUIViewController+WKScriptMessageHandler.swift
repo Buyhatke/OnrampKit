@@ -7,6 +7,7 @@
 
 import WebKit
 
+@available(iOS 13.0, *)
 extension OnrampUIViewController: WKScriptMessageHandler {
     
     func showCancelTransactionAlert() {
