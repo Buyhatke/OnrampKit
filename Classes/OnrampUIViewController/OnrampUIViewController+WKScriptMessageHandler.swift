@@ -11,7 +11,7 @@ import WebKit
 extension OnrampUIViewController: WKScriptMessageHandler {
     
     func showCancelTransactionAlert() {
-        let alertController = UIAlertController(title: "Cancel Transaction? ", message: "Are you sure you want to cancel & exit the transaction?", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Cancel Transaction?", message: "Are you sure you want to cancel & exit the transaction?", preferredStyle: .alert)
         
         let cancelAction = UIAlertAction(title: "Dismiss", style: .cancel) { _ in
             alertController.dismiss(animated: true, completion: nil)

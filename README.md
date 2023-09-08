@@ -10,19 +10,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 The minimum requirements for the SDK are:
 
-* iOS 15.0 and higher
+* iOS 12.0 and higher
 
 ## Installation
 
 ### Via CocoaPods
 OnrampKit is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
-
-Add sdk source to cocoapods
-
-```ruby
-source 'https://github.com/Buyhatke/onramp-ios-podspec.git'
-```
 
 ```ruby
  pod 'OnrampKit'
@@ -48,6 +42,14 @@ Onramp.startOnrampSDK(
   paymentMethod: 1 // 1 -> Instant transafer(UPI) || 2 -> Bank transfer(IMPS/FAST)
   // ... pass other configs here
 )
+```
+
+* Add the following line to check for ios availability check at the top of your View Controller class or where you will call the ```startOnrampSDK``` function
+```
+@available(iOS 13.0, *) // add this line
+class ViewController: UIViewController {
+...
+}
 ```
 
 ## Listening to Custom Events

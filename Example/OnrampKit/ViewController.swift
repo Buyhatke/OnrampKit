@@ -9,6 +9,7 @@
 import UIKit
 import OnrampKit
 
+@available(iOS 13.0, *)
 class ViewController: UIViewController, OnrampKitDelegate {
     
     override func viewDidLoad() {
@@ -39,12 +40,8 @@ class ViewController: UIViewController, OnrampKitDelegate {
             }
         
             @objc func buttonTapped() {
-                if #available(iOS 13.0, *) {
-                    Onramp.startOnrampSDK(self, self, appId: 1, flowType: 1)
-                } else {
-                    // Fallback on earlier versions
-                }
-            }
+                        Onramp.startOnrampSDK(self, self, appId: 1, flowType: 1)
+                    }
         
             // retrieve to the latest onramp transaction state
              func onDataChanged(_ data: OnrampEventResponse) {
