@@ -39,6 +39,11 @@ extension OnrampUIViewController: WKScriptMessageHandler {
                     if(decodedResponse.type == "ONRAMP_WIDGET_CLOSE_REQUEST" ){
                         showCancelTransactionAlert()
                     }
+                    if(decodedResponse.type == "ONRAMP_WIDGET_TX_COMPLETED" || decodedResponse.type == "ONRAMP_WIDGET_TX_SENDING_FAILED" || decodedResponse.type == "ONRAMP_WIDGET_TX_PURCHASING_FAILED" || decodedResponse.type == "ONRAMP_WIDGET_TX_FINDING_FAILED" ||
+                       decodedResponse.type == "ONRAMP_WIDGET_FAILED" || decodedResponse.type == "ONRAMP_WIDGET_TX_FAILED"
+                    ) {
+                        Onramp.stopOnrampSDK(self)
+                    }
                     delegate?.onDataChanged(decodedResponse)
                 } catch {
                     print("Error decoding JSON:", error)
