@@ -28,6 +28,21 @@ Then, run the following command:
  pod install
 ```
 
+## Add LSApplicationQueriesSchemes 
+
+To allow your application to support UPI intent, add the following code to enable UPI intents to the LSApplicationQueriesSchemes in the info.plist file of your project.
+
+```ruby
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>paytmmp</string>
+        <string>gpay</string>
+        <string>bhim</string>
+        <string>upi</string>
+        <string>phonepe</string>
+    </array>
+```
+
 ## Initialize the SDK
 
 * Initialize the SDK by calling the ```startOnrampSDK``` function and pass the basic config parametes to start the sdk.
@@ -96,7 +111,6 @@ Here is the list of all events:
 
 * ONRAMP_WIDGET_READY -> sent when widget is ready for user interaction
 * ONRAMP_WIDGET_FAILED -> sent when widget render failed due to multiple reasons like wrong params combination or missing params etc.
-* ONRAMP_WIDGET_CLOSE_REQUEST_CONFIRMED -> sent when widget is closed
 * ONRAMP_WIDGET_CONTENT_COPIED -> sent when copy to clipboard event is performed in widget, sends along the content copied.
 
 * ONRAMP_WIDGET_APP_CLOSED -> sent when user request closes the widget and cancels the transaction.
