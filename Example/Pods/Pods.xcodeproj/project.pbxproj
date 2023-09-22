@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F08E8F81A9689DF9E633ED54837B0A9 /* OnrampKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FF4160EAB0D732E2B062AD682E776C /* OnrampKit-dummy.m */; };
 		25C82ED84CA40A82DB2F84BCB27A2AFC /* Pods-OnrampKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B12443D7AC95F144B062BCE8B831EF29 /* Pods-OnrampKit_Example-dummy.m */; };
-		263BDFEADDB712553826C6869FA9B545 /* OnrampKit-OnrampKit in Resources */ = {isa = PBXBuildFile; fileRef = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */; };
+		263BDFEADDB712553826C6869FA9B545 /* OnrampKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */; };
 		3025632CCD36072F04D254545176840D /* OnrampUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C120C82AB8E1C2E4F4ED4B2831305A /* OnrampUIViewController.swift */; };
 		3B0D586AEEEE899D29A8E393EFFE8C7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3D851E67B3FAFBBC1E7DE70162F6D78E /* OnrampUIViewController+WKScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1AA8AAFC1D1CE2B87F735F0B35B7E /* OnrampUIViewController+WKScriptMessageHandler.swift */; };
@@ -86,7 +86,7 @@
 		A945B422FBD86713A1447621330F40A5 /* OnrampEventResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnrampEventResponse.swift; sourceTree = "<group>"; };
 		AE5A0C1D58AB636C1B7D7023B8B9E062 /* OnrampKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampKit.release.xcconfig; sourceTree = "<group>"; };
 		B12443D7AC95F144B062BCE8B831EF29 /* Pods-OnrampKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OnrampKit_Example-dummy.m"; sourceTree = "<group>"; };
-		B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "OnrampKit-OnrampKit"; path = OnrampKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnrampKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5973876B1D3952DF3118830EB4106F9 /* Pods-OnrampKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OnrampKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnrampKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnrampKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				96A6289F4CB402494284E1448066A9DB /* OnrampKit.framework */,
-				B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */,
+				B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */,
 				E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */,
 				E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */,
 			);
@@ -350,7 +350,7 @@
 			);
 			name = "OnrampKit-OnrampKit";
 			productName = OnrampKit;
-			productReference = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */;
+			productReference = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		69028F77E9532E751674D788087B2AC9 /* Pods-OnrampKit_Example */ = {
@@ -400,6 +400,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					5F1E6C86B247E0B240AF8A1AA766143A = {
+						DevelopmentTeam = AW2WMZCXT6;
+					};
 					E9817503F0959C58681BFD4FD47CC66D = {
 						LastSwiftMigration = "";
 					};
@@ -438,7 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				263BDFEADDB712553826C6869FA9B545 /* OnrampKit-OnrampKit in Resources */,
+				263BDFEADDB712553826C6869FA9B545 /* OnrampKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +664,7 @@
 			baseConfigurationReference = 812ADE06501B0C64C9F655FF5ECB196F /* OnrampKit.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OnrampKit";
+				DEVELOPMENT_TEAM = AW2WMZCXT6;
 				IBSC_MODULE = OnrampKit;
 				INFOPLIST_FILE = "Target Support Files/OnrampKit/ResourceBundle-OnrampKit-OnrampKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
