@@ -51,8 +51,8 @@ Onramp.startOnrampSDK(
   _ viewController:UIViewController, // reference to a UIViewController where the onrampKit's user interface will be presented.
   _ target: OnrampKitDelegate, //  An object conforming to the OnrampKitDelegate protocol. The delegate will receive callback and notifications.
   appId: 1, // replace this with the appID you got during onboarding process
-  walletAddress: '0x495f519017eF0368e82Af52b4B64461542a5430B', // replace with user's wallet address
-  flowtype: 1 // 1 -> onramp || 2 -> offramp || 3 -> Merchant checkout
+  walletAddress: '0x49...430B', // replace with user's wallet address
+  flowType: 1 // 1 -> onramp || 2 -> offramp || 3 -> Merchant checkout
   fiatType: 1 // 1 -> INR || 2 -> TRY
   paymentMethod: 1 // 1 -> Instant transafer(UPI) || 2 -> Bank transfer(IMPS/FAST)
   // ... pass other configs here
@@ -84,12 +84,12 @@ class ViewController: UIViewController, OnrampKitDelegate // add this to appropr
 
             //Example events usage:
         switch data.type {
-             case "ONRAMP_WIDGET_TX_COMPLETED":
-                 Onramp.stopOnrampSDK(self)
+            case "ONRAMP_WIDGET_TX_COMPLETED":
                 // handle success code here
+            case "ONRAMP_WIDGET_TX_FAILED":
+                // handle failure code here 
             case "ONRAMP_WIDGET_APP_CLOSED":
-                 Onramp.stopOnrampSDK(self)
-                // handle failure code here  
+                // handle failure code here when user cancels the transaction  
              default:
                  return 
          }

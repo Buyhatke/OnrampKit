@@ -24,6 +24,7 @@
 		AE5C02BA60BFF42122955A7B35F289F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		BA1A81A43AD951BC995F94AD83AE3864 /* OnrampKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEC2EB9F894B8AFC5EF4E7B31139ACB /* OnrampKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0973D59C90DF24D083E87BCC00C3610 /* Pods-OnrampKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 192BAAAF2BDCF4FC9686DA957CA3D4E3 /* Pods-OnrampKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4B17E9B2AC430EA00FDAAE1 /* UIColor + HexConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B17E9A2AC430EA00FDAAE1 /* UIColor + HexConversion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnrampKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5973876B1D3952DF3118830EB4106F9 /* Pods-OnrampKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OnrampKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnrampKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B17E9A2AC430EA00FDAAE1 /* UIColor + HexConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + HexConversion.swift"; sourceTree = "<group>"; };
 		E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnrampKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F007C3BB907C5AD942C95B3F54FE805B /* Pods-OnrampKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FE9775276C3A0A60E6282658D462ABB1 /* Pods-OnrampKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OnrampKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				83912EFB43086AF56A2C97226DCD52AC /* Constants.swift */,
+				E4B17E9A2AC430EA00FDAAE1 /* UIColor + HexConversion.swift */,
 			);
 			name = utils;
 			path = Classes/utils;
@@ -470,6 +473,7 @@
 				9A94F2B3EFA813D10CB01983C458645E /* Constants.swift in Sources */,
 				7B48B8120B9950A00B0C72146D5D3C25 /* OnrampEventResponse.swift in Sources */,
 				412B665D04ECB71421393E24C0CE6775 /* OnrampKit.swift in Sources */,
+				E4B17E9B2AC430EA00FDAAE1 /* UIColor + HexConversion.swift in Sources */,
 				1F08E8F81A9689DF9E633ED54837B0A9 /* OnrampKit-dummy.m in Sources */,
 				3025632CCD36072F04D254545176840D /* OnrampUIViewController.swift in Sources */,
 				74D8FF1B0E4EBDA3CCB388B220DC62DA /* OnrampUIViewController+WKNavigationDelegate.swift in Sources */,

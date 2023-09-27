@@ -42,7 +42,8 @@ public class OnrampUIViewController: UIViewController {
         webView = WKWebView(frame: .zero, configuration: config)
         webView.navigationDelegate = self
         
-        loadingSpinner = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorView.Style.medium)
+        loadingSpinner = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorView.Style.large)
+        loadingSpinner.color = UIColor(hex: "#2c5bffff")
 
         view.addSubview(webView)
         

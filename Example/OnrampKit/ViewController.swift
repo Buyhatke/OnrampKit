@@ -17,7 +17,7 @@ class ViewController: UIViewController, OnrampKitDelegate {
         
                 let myButton: UIButton = {
                     let button = UIButton(type: .system)
-                    button.setTitle("Buy Crypto", for: .normal)
+                    button.setTitle("Start OnrampKit", for: .normal)
                     button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
                     button.setTitleColor(.white, for: .normal)
                     button.layer.cornerRadius = 8
