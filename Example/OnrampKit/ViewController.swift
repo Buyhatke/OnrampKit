@@ -40,7 +40,7 @@ class ViewController: UIViewController, OnrampKitDelegate {
             }
         
             @objc func buttonTapped() {
-                        Onramp.startOnrampSDK(self, self, appId: 1, flowType: 1)
+                        Onramp.startOnrampSDK(self, self, appId: 1, flowType: 2)
                     }
         
             // retrieve to the latest onramp transaction state
