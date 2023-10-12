@@ -30,7 +30,7 @@ Then, run the following command:
 
 ## Add LSApplicationQueriesSchemes 
 
-To allow your application to support UPI intent, add the following code to enable UPI intents to the LSApplicationQueriesSchemes in the info.plist file of your project.
+* To allow your application to support UPI intent for Onramp, add the following code to enable UPI intents to the LSApplicationQueriesSchemes in the info.plist file of your project.
 
 ```ruby
     <key>LSApplicationQueriesSchemes</key>
@@ -40,8 +40,28 @@ To allow your application to support UPI intent, add the following code to enabl
         <string>bhim</string>
         <string>upi</string>
         <string>phonepe</string>
+        ...
     </array>
 ```
+
+* To allow your application to support Wallet Connect intent for Offramp, add the following code to enable WC intents to the LSApplicationQueriesSchemes in the info.plist file of your project.
+
+```ruby
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        ...
+        <string>wc</string>
+        <string>metamask</string>
+        <string>trust</string>
+        <string>safe</string>
+        <string>rainbow</string>
+        <string>uniswap</string>
+        <string>zerion</string>
+        <string>imtokenv2</string>
+    </array>
+```
+
+
 
 ## Initialize the SDK
 
