@@ -20,19 +20,25 @@ extension OnrampUIViewController: WKNavigationDelegate {
     
     public func webView(_ webView: WKWebView,
                      decidePolicyFor navigationAction: WKNavigationAction,
-                     decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+                        decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        
+        if let url = navigationAction.request.url,
+           !url.absoluteString.hasPrefix("http://"),
+            UIApplication.shared.canOpenURL(url) {
+            
+            if(!url.absoluteString.hasPrefix("https://") || url.absoluteString.hasPrefix("https://") && url.absoluteString.contains(Constants.VIDEO_KYC_PATH)){
+                
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                decisionHandler(.cancel)
+                
+            } else {
+                decisionHandler(.allow)
+            }
 
-            if let url = navigationAction.request.url,
-                  !url.absoluteString.hasPrefix("http://"),
-                  !url.absoluteString.hasPrefix("https://"),
-                  UIApplication.shared.canOpenURL(url) {
-                  UIApplication.shared.open(url, options: [:], completionHandler: nil)
-
-                  decisionHandler(.cancel)
-              }
-              else {
-                  decisionHandler(.allow)
-
-              }
         }
+        else {
+            decisionHandler(.allow)
+            
+        }
+    }
 }

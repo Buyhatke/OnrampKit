@@ -12,4 +12,5 @@ public struct Constants {
     static let BUNDLE_IDENTIFIER = "com.onramp.money.OnrampSDK"
     static let PATH = "/main"
     static let MERCHANT_ORIGIN_ID = "OnrampSdkIos"
+    static let VIDEO_KYC_PATH = "get-verified"
 }
