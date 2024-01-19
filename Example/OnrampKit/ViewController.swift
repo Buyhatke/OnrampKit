@@ -40,7 +40,7 @@ class ViewController: UIViewController, OnrampKitDelegate {
             }
         
             @objc func buttonTapped() {
-                Onramp.startOnrampSDK(self, self, appId: 1)
+                Onramp.startOnrampSDK(self, self, appId: 1, walletAddress: "0x0F74c38b045C83cb6d37C7D08dC27DD5B464ef11")
                     }
         
             // retrieve to the latest onramp transaction state

@@ -23,7 +23,7 @@ public class Onramp {
                         _ target: OnrampKitDelegate,
                         appId: Int = 0,
                         walletAddress: String? = nil,
-                        flowType: Int? = nil,
+                        flowType: Int? = 1,
                         coinCode: String? = nil,
                         network: String? = nil,
                         coinAmount: Double? = nil,
