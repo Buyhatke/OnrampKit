@@ -11,15 +11,16 @@ import WebKit
 extension OnrampUIViewController: WKScriptMessageHandler {
     
     func showCancelTransactionAlert() {
-        let alertController = UIAlertController(title: "Cancel Transaction?", message: "Are you sure you want to cancel & exit the transaction?", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Close Widget?", message: "Are you sure you want to leave & close the widget?", preferredStyle: .alert)
         
         let cancelAction = UIAlertAction(title: "Dismiss", style: .cancel) { _ in
             alertController.dismiss(animated: true, completion: nil)
+            self.delegate?.onDataChanged(OnrampEventResponse(type: "ONRAMP_WIDGET_CLOSE_REQUEST_CANCELLED", data: EventData(msg: "Close widget request cancelled by the user.", fiatAmount: nil, cryptoAmount: nil, coinRate: nil, paymentMethod: nil), isOnramp: true))
         }
         
-        let okAction = UIAlertAction(title: "Yes, Cancel", style: .destructive) { _ in
+        let okAction = UIAlertAction(title: "Yes, Close", style: .destructive) { _ in
             self.dismiss(animated: true)
-            self.delegate?.onDataChanged(OnrampEventResponse(type: "ONRAMP_WIDGET_APP_CLOSED", data: EventData(msg: "Transaction Cancelled!", fiatAmount: nil, cryptoAmount: nil, coinRate: nil, paymentMethod: nil), isOnramp: true))
+            self.delegate?.onDataChanged(OnrampEventResponse(type: "ONRAMP_WIDGET_CLOSE_REQUEST_CONFIRMED", data: EventData(msg: "Widget closed", fiatAmount: nil, cryptoAmount: nil, coinRate: nil, paymentMethod: nil), isOnramp: true))
         }
         
         alertController.addAction(cancelAction)

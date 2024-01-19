@@ -108,7 +108,7 @@ class ViewController: UIViewController, OnrampKitDelegate // add this to appropr
                 // handle success code here
             case "ONRAMP_WIDGET_TX_FAILED":
                 // handle failure code here 
-            case "ONRAMP_WIDGET_APP_CLOSED":
+            case "ONRAMP_WIDGET_CLOSE_REQUEST_CONFIRMED":
                 // handle failure code here when user cancels the transaction  
              default:
                  return 
@@ -132,8 +132,8 @@ Here is the list of all events:
 * ONRAMP_WIDGET_READY -> sent when widget is ready for user interaction
 * ONRAMP_WIDGET_FAILED -> sent when widget render failed due to multiple reasons like wrong params combination or missing params etc.
 * ONRAMP_WIDGET_CONTENT_COPIED -> sent when copy to clipboard event is performed in widget, sends along the content copied.
-
-* ONRAMP_WIDGET_APP_CLOSED -> sent when user request closes the widget and cancels the transaction.
+* ONRAMP_WIDGET_CLOSE_REQUEST_CONFIRMED -> sent when widget is closed
+* ONRAMP_WIDGET_CLOSE_REQUEST_CANCELLED -> sent when user dismisses close widget request modal.
 
 * ONRAMP_WIDGET_TX_INIT -> when user sees the payment details on screen
 * ONRAMP_WIDGET_TX_FINDING -> when user submits the reference number for INR deposit

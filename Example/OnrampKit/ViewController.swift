@@ -40,7 +40,7 @@ class ViewController: UIViewController, OnrampKitDelegate {
             }
         
             @objc func buttonTapped() {
-                        Onramp.startOnrampSDK(self, self, appId: 1, flowType: 2)
+                Onramp.startOnrampSDK(self, self, appId: 1)
                     }
         
             // retrieve to the latest onramp transaction state
@@ -66,7 +66,7 @@ class ViewController: UIViewController, OnrampKitDelegate {
                     userDescription = userDescription + " " + String(data.fiatAmount!)
                 }
                 if(data.paymentMethod != nil ){
-                    userDescription = userDescription + " " + data.paymentMethod!
+                    userDescription = userDescription + " " + String(data.paymentMethod!)
                 }
 
                 let alertController = UIAlertController(title: "OnrampEvent", message: userDescription, preferredStyle: .alert)

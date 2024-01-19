@@ -33,7 +33,8 @@ public class Onramp {
                         authToken: String? = nil,
                         assetDescription: String? = nil,
                         assetImage: String? = nil,
-                        paymentAddress: String? = nil) {
+                        paymentAddress: String? = nil,
+                        fiatType: Int?=nil) {
                             
 
         let podBundle = Bundle(for: OnrampUIViewController.self)
@@ -54,7 +55,8 @@ public class Onramp {
             authToken: authToken,
             assetDescription: assetDescription,
             assetImage: assetImage,
-            paymentAddress: paymentAddress
+            paymentAddress: paymentAddress,
+            fiatType: fiatType
         )
         webVC.delegate = target
                             
@@ -70,11 +72,12 @@ public class Onramp {
         fiatAmount: Double? = nil,
         merchantRecognitionId: String? = nil,
         paymentMethod: Int? = nil,
-        flowType: Int? = nil,
+        flowType: Int? = 1,
         authToken: String? = nil,
         assetDescription: String? = nil,
         assetImage: String? = nil,
-        paymentAddress: String? = nil
+        paymentAddress: String? = nil,
+        fiatType: Int?=nil
     ) -> String {
         var url = "\(Constants.APP_DOMAIN)\(Constants.PATH)"
         
@@ -105,6 +108,9 @@ public class Onramp {
             }
             if (paymentMethod != nil) {
                 url += "&paymentMethod=\(paymentMethod ?? 0)"
+            }
+            if (fiatType != nil) {
+                url += "&fiatType=\(fiatType ?? 0)"
             }
         }
         
