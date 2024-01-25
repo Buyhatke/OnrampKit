@@ -34,7 +34,8 @@ public class Onramp {
                         assetDescription: String? = nil,
                         assetImage: String? = nil,
                         paymentAddress: String? = nil,
-                        fiatType: Int?=nil) {
+                        fiatType: Int?=nil,
+                        phoneNumber: String? = nil) {
                             
 
         let podBundle = Bundle(for: OnrampUIViewController.self)
@@ -56,7 +57,8 @@ public class Onramp {
             assetDescription: assetDescription,
             assetImage: assetImage,
             paymentAddress: paymentAddress,
-            fiatType: fiatType
+            fiatType: fiatType,
+            phoneNumber: phoneNumber
         )
         webVC.delegate = target
                             
@@ -77,7 +79,8 @@ public class Onramp {
         assetDescription: String? = nil,
         assetImage: String? = nil,
         paymentAddress: String? = nil,
-        fiatType: Int?=nil
+        fiatType: Int?=nil,
+        phoneNumber: String? = nil
     ) -> String {
         var url = "\(Constants.APP_DOMAIN)\(Constants.PATH)"
         
@@ -153,6 +156,9 @@ public class Onramp {
         }
         if let merchantRecognitionId = merchantRecognitionId {
             url += "&merchantRecognitionId=\(merchantRecognitionId)"
+        }
+        if let phoneNumber = phoneNumber {
+            url += "&phoneNumber=\(phoneNumber)"
         }
         
         return url
