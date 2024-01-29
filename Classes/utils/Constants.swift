@@ -13,4 +13,6 @@ public struct Constants {
     static let PATH = "/main"
     static let MERCHANT_ORIGIN_ID = "OnrampSdkIos"
     static let VIDEO_KYC_PATH = "get-verified"
+    static let FRESHDESK_PATH = "freshdesk.com"
+    static let DOCUMENTATION_PATH = "user-guides"
 }

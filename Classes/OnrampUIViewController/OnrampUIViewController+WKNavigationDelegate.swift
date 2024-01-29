@@ -26,7 +26,8 @@ extension OnrampUIViewController: WKNavigationDelegate {
            !url.absoluteString.hasPrefix("http://"),
             UIApplication.shared.canOpenURL(url) {
             
-            if(!url.absoluteString.hasPrefix("https://") || url.absoluteString.hasPrefix("https://") && url.absoluteString.contains(Constants.VIDEO_KYC_PATH)){
+            if(!url.absoluteString.hasPrefix("https://") || url.absoluteString.hasPrefix("https://") && (url.absoluteString.contains(Constants.VIDEO_KYC_PATH) || url.absoluteString.contains(Constants.FRESHDESK_PATH)) ||  url.absoluteString.contains(Constants.DOCUMENTATION_PATH)
+            ){
                 
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
                 decisionHandler(.cancel)
