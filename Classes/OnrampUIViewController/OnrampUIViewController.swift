@@ -32,15 +32,19 @@ public class OnrampUIViewController: UIViewController {
 
         let config = WKWebViewConfiguration()
         let userContentController = WKUserContentController()
+        let wkPreferences = WKPreferences()
+        wkPreferences.javaScriptCanOpenWindowsAutomatically = true
         
         navigationItem.hidesBackButton = true
 
         userContentController.add(self, name: "iosNativeEvent")
         
         config.userContentController = userContentController
+        config.preferences = wkPreferences
 
         webView = WKWebView(frame: .zero, configuration: config)
         webView.navigationDelegate = self
+        webView.uiDelegate = self
         
         loadingSpinner = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorView.Style.large)
         loadingSpinner.color = UIColor(hex: "#2c5bffff")
