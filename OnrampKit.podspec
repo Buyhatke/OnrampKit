@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OnrampKit'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'Pod for integration of Onramp widget in native ios applications.'
 
 # This description is used to generate tags and improve search results.
