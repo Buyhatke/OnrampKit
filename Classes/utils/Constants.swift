@@ -15,4 +15,5 @@ public struct Constants {
     static let VIDEO_KYC_PATH = "get-verified"
     static let FRESHDESK_PATH = "freshdesk.com"
     static let DOCUMENTATION_PATH = "user-guides"
+    static let INITIATE_KYC_PATH = "/initiate-kyc/"
 }

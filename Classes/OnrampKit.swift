@@ -18,6 +18,16 @@ public class Onramp {
     }
     
     @available(iOS 13.0, *)
+    public static func setUpOnrampUIViewController() -> OnrampUIViewController {
+        let podBundle = Bundle(for: OnrampUIViewController.self)
+        let frameworkBundle = podBundle.url(forResource: "OnrampKit", withExtension: "bundle")
+        let storyboard = UIStoryboard(name: "OnrampStoryboard", bundle: Bundle(url: frameworkBundle!))
+        let webVC = storyboard.instantiateViewController(identifier: "OnrampUIViewController") as OnrampUIViewController
+        
+        return webVC
+    }
+    
+    @available(iOS 13.0, *)
     public static func startOnrampSDK(
                         _ viewController:UIViewController,
                         _ target: OnrampKitDelegate,
@@ -39,11 +49,7 @@ public class Onramp {
                         lang: String? = nil) {
                             
 
-        let podBundle = Bundle(for: OnrampUIViewController.self)
-        let frameworkBundle = podBundle.url(forResource: "OnrampKit", withExtension: "bundle")
-        let storyboard = UIStoryboard(name: "OnrampStoryboard", bundle: Bundle(url: frameworkBundle!))
-        let webVC = storyboard.instantiateViewController(identifier: "OnrampUIViewController") as OnrampUIViewController
-                            
+        let webVC = setUpOnrampUIViewController()
         webVC.url = getCustomUrlForSdkToShow(
             appId: appId,
             walletAddress: walletAddress,
@@ -64,6 +70,45 @@ public class Onramp {
         )
         webVC.delegate = target
                             
+        viewController.present(webVC, animated: true, completion: nil)
+    }
+    
+//    @available(iOS 13.0, *)
+//    public static func startOnrampLogin(
+//                        _ viewController:UIViewController,
+//                        _ target: OnrampKitDelegate,
+//                        appId: Int,
+//                        closeAfterLogin: Bool
+//                        
+//    ) {
+//        let webVC = setUpOnrampUIViewController()
+//        
+//        webVC.url = getCustomLoginUrlForSdkToShow(
+//            appId: appId,
+//            closeAfterLogin: closeAfterLogin
+//        )
+//        webVC.delegate = target
+//                            
+//        viewController.present(webVC, animated: true, completion: nil)
+//    }
+    
+    @available(iOS 13.0, *)
+    public static func initiateOnrampKyc(
+                        _ viewController:UIViewController,
+                        _ target: OnrampKitDelegate,
+                        payload: String,
+                        signature: String,
+                        customerId: String,
+                        apiKey: String
+                        
+    ) {
+        let webVC = setUpOnrampUIViewController()
+        let url = getCustomKycUrlForSdkToShow(
+            payload: payload, signature: signature, customerId: customerId, apiKey: apiKey
+        )
+        webVC.url = url
+        print("initiateOnrampKyc", url)
+        webVC.delegate = target
         viewController.present(webVC, animated: true, completion: nil)
     }
     
@@ -169,5 +214,17 @@ public class Onramp {
         
         return url
     }
+    
+    public static func getCustomLoginUrlForSdkToShow(
+        appId: Int,
+        closeAfterLogin: Bool
+    ) -> String {
+        return "\(Constants.APP_DOMAIN)\(Constants.PATH)/login/?appId=\(appId)&closeAfterLogin=\(closeAfterLogin)"
+    }
+    
+    public static func getCustomKycUrlForSdkToShow(payload: String, signature: String, customerId: String, apiKey: String) -> String {
+        return "\(Constants.APP_DOMAIN)\(Constants.INITIATE_KYC_PATH)?payload=\(payload)&signature=\(signature)&customerId=\(customerId)&apiKey=\(apiKey)&mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)"
+    }
+
 }
 
