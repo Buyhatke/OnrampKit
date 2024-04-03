@@ -125,6 +125,20 @@ Onramp.stopOnrampSDK(
 )
 ```
 
+## Initiate KYC SDK
+To use the kyc widget in OnrampKit, initialize the ```initiateOnrampKyc``` function and pass the kyc config parametes (mandatory) to start the sdk.
+
+```
+Onramp.initiateOnrampKyc(
+  _ viewController:UIViewController, // reference to a UIViewController where the onrampKit's user interface will be presented.
+  _ target: OnrampKitDelegate, //  An object conforming to the OnrampKitDelegate protocol. The delegate will receive callback and notifications.
+    payload:"enter payload string here",
+    signature:"enter signature string here",
+    customerId:"enter customerId here",
+    apiKey:"enter apiKey here",
+  
+```
+
 ## Events Docs
 
 Here is the list of all events:
@@ -147,3 +161,4 @@ Here is the list of all events:
 ## License
 
 OnrampKit is available under the MIT license. See the LICENSE file for more info.
+
