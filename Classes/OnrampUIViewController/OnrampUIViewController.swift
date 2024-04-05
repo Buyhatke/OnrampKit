@@ -19,6 +19,7 @@ public class OnrampUIViewController: UIViewController {
     public var loadingSpinner: UIActivityIndicatorView!
     public weak var delegate: OnrampKitDelegate?
     public var url: String?
+    public var from: String?
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

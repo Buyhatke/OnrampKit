@@ -68,6 +68,7 @@ public class Onramp {
             phoneNumber: phoneNumber,
             lang: lang
         )
+        webVC.from = "startSdk"
         webVC.delegate = target
                             
         viewController.present(webVC, animated: true, completion: nil)
@@ -107,6 +108,7 @@ public class Onramp {
             payload: payload, signature: signature, customerId: customerId, apiKey: apiKey
         )
         webVC.url = url
+        webVC.from = "initiateKyc"
         print("initiateOnrampKyc", url)
         webVC.delegate = target
         viewController.present(webVC, animated: true, completion: nil)

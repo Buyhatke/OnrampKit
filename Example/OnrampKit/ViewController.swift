@@ -41,6 +41,9 @@ class ViewController: UIViewController, OnrampKitDelegate {
         
             @objc func buttonTapped() {
                 Onramp.startOnrampSDK(self, self, appId: 1, walletAddress: "0x0F74c38b045C83cb6d37C7D08dC27DD5B464ef11")
+//                Onramp.initiateOnrampKyc(self, self, payload: "eyJ0aW1lc3RhbXAiOjE3MTIzMTE5MzQ4NDcsImJvZHkiOnsiY3VzdG9tZXJJZCI6Ikc4dFdhSHl2ZGdfMiJ9fQ==", signature: "fd6528e1f2692ef57de56e7806d626bbd27783339f514c4517f5f631e979d36a2f546238a103e0f3a8132822f128c36eed0942be091810eb3d5bcc1ffecdd388",
+//                                         customerId: "G8tWaHyvdg_2",
+//                                         apiKey: "b5FRrdz4Vh9rielXtd6uTOPxOGrLvE")
                     }
         
             // retrieve to the latest onramp transaction state

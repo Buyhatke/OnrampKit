@@ -22,11 +22,17 @@ extension OnrampUIViewController: WKNavigationDelegate {
                      decidePolicyFor navigationAction: WKNavigationAction,
                         decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         
+            if from == "initiateKyc", navigationAction.navigationType == WKNavigationType.linkActivated {
+                    webView.load(navigationAction.request)
+                    decisionHandler(.cancel)
+                    return
+            }
+        
         if let url = navigationAction.request.url,
            !url.absoluteString.hasPrefix("http://"),
             UIApplication.shared.canOpenURL(url) {
             
-            if(!url.absoluteString.hasPrefix("https://") || url.absoluteString.hasPrefix("https://") && (url.absoluteString.contains(Constants.VIDEO_KYC_PATH) || url.absoluteString.contains(Constants.FRESHDESK_PATH)) ||  url.absoluteString.contains(Constants.DOCUMENTATION_PATH)
+            if(!url.absoluteString.hasPrefix("https://") || url.absoluteString.hasPrefix("https://") && (( from == "startSdk" && url.absoluteString.contains(Constants.VIDEO_KYC_PATH)) || url.absoluteString.contains(Constants.FRESHDESK_PATH)) ||  url.absoluteString.contains(Constants.DOCUMENTATION_PATH)
             ){
                 
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
