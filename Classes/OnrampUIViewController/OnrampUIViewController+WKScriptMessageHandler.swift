@@ -42,7 +42,7 @@ extension OnrampUIViewController: WKScriptMessageHandler {
                     }
                     // in case any of these events occur, close the widget automatically
                     if(decodedResponse.type == "ONRAMP_WIDGET_TX_COMPLETED" || decodedResponse.type == "ONRAMP_WIDGET_TX_SENDING_FAILED" || decodedResponse.type == "ONRAMP_WIDGET_TX_PURCHASING_FAILED" || decodedResponse.type == "ONRAMP_WIDGET_TX_FINDING_FAILED" ||
-                       decodedResponse.type == "ONRAMP_WIDGET_FAILED" || decodedResponse.type == "ONRAMP_WIDGET_TX_FAILED"
+                       decodedResponse.type == "ONRAMP_WIDGET_FAILED" || decodedResponse.type == "ONRAMP_WIDGET_TX_FAILED" || decodedResponse.type == "ONRAMP_WIDGET_CLOSE_REQUEST_CONFIRMED"
                     ) {
                         Onramp.stopOnrampSDK(self)
                     }
