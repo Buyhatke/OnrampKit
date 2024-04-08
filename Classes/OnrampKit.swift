@@ -74,24 +74,22 @@ public class Onramp {
         viewController.present(webVC, animated: true, completion: nil)
     }
     
-//    @available(iOS 13.0, *)
-//    public static func startOnrampLogin(
-//                        _ viewController:UIViewController,
-//                        _ target: OnrampKitDelegate,
-//                        appId: Int,
-//                        closeAfterLogin: Bool
-//                        
-//    ) {
-//        let webVC = setUpOnrampUIViewController()
-//        
-//        webVC.url = getCustomLoginUrlForSdkToShow(
-//            appId: appId,
-//            closeAfterLogin: closeAfterLogin
-//        )
-//        webVC.delegate = target
-//                            
-//        viewController.present(webVC, animated: true, completion: nil)
-//    }
+    @available(iOS 13.0, *)
+    public static func startOnrampLogin(
+                        _ viewController:UIViewController,
+                        _ target: OnrampKitDelegate,
+                        appId: Int,
+                        closeAfterLogin: Bool
+    ) {
+        let webVC = setUpOnrampUIViewController()
+        webVC.url = getCustomLoginUrlForSdkToShow(
+            appId: appId,
+            closeAfterLogin: closeAfterLogin
+        )
+        webVC.from = "loginSdk"
+        webVC.delegate = target
+        viewController.present(webVC, animated: true, completion: nil)
+    }
     
     @available(iOS 13.0, *)
     public static func initiateOnrampKyc(
@@ -221,11 +219,11 @@ public class Onramp {
         appId: Int,
         closeAfterLogin: Bool
     ) -> String {
-        return "\(Constants.APP_DOMAIN)\(Constants.PATH)/login/?appId=\(appId)&closeAfterLogin=\(closeAfterLogin)"
+        return "\(Constants.APP_DOMAIN)\(Constants.PATH)/login/?mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)&appId=\(appId)&closeAfterLogin=\(closeAfterLogin)"
     }
     
     public static func getCustomKycUrlForSdkToShow(payload: String, signature: String, customerId: String, apiKey: String) -> String {
-        return "\(Constants.APP_DOMAIN)\(Constants.INITIATE_KYC_PATH)?payload=\(payload)&signature=\(signature)&customerId=\(customerId)&apiKey=\(apiKey)&mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)"
+        return "\(Constants.APP_DOMAIN)\(Constants.INITIATE_KYC_PATH)?mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)&payload=\(payload)&signature=\(signature)&customerId=\(customerId)&apiKey=\(apiKey)"
     }
 
 }

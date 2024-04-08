@@ -22,7 +22,7 @@ extension OnrampUIViewController: WKNavigationDelegate {
                      decidePolicyFor navigationAction: WKNavigationAction,
                         decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         
-            if from == "initiateKyc", navigationAction.navigationType == WKNavigationType.linkActivated {
+            if from == "initiateKyc" || from == "loginSdk", navigationAction.navigationType == WKNavigationType.linkActivated {
                     webView.load(navigationAction.request)
                     decisionHandler(.cancel)
                     return
