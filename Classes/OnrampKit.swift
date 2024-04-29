@@ -79,12 +79,16 @@ public class Onramp {
                         _ viewController:UIViewController,
                         _ target: OnrampKitDelegate,
                         appId: Int,
-                        closeAfterLogin: Bool
+                        closeAfterLogin: Bool,
+                        signature: String? = nil,
+                        phoneNumber: String? = nil
     ) {
         let webVC = setUpOnrampUIViewController()
         webVC.url = getCustomLoginUrlForSdkToShow(
             appId: appId,
-            closeAfterLogin: closeAfterLogin
+            closeAfterLogin: closeAfterLogin,
+            signature: signature,
+            phoneNumber: phoneNumber
         )
         webVC.from = "loginSdk"
         webVC.delegate = target
@@ -217,9 +221,22 @@ public class Onramp {
     
     public static func getCustomLoginUrlForSdkToShow(
         appId: Int,
-        closeAfterLogin: Bool
+        closeAfterLogin: Bool,
+        signature: String? = nil,
+        phoneNumber: String? = nil
     ) -> String {
-        return "\(Constants.APP_DOMAIN)\(Constants.PATH)/login/?mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)&appId=\(appId)&closeAfterLogin=\(closeAfterLogin)"
+        var url = "\(Constants.APP_DOMAIN)\(Constants.PATH)/login/?mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)&appId=\(appId)&closeAfterLogin=\(closeAfterLogin)"
+        
+        // handle optional parameters
+        if let signature = signature {
+            url += "&kybData=\(signature)"
+        }
+        if let phoneNumber = phoneNumber {
+            url += "&phoneNumber=\(phoneNumber)"
+        }
+        
+        print("onramp_login_url", url)
+        return url
     }
     
     public static func getCustomKycUrlForSdkToShow(payload: String, signature: String, customerId: String, apiKey: String) -> String {
