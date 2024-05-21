@@ -136,7 +136,21 @@ Onramp.initiateOnrampKyc(
     signature:"enter signature string here",
     customerId:"enter customerId here",
     apiKey:"enter apiKey here",
+    lang:"en" // optional parameter, replace with desired language code
   
+```
+
+## Initiate Login SDK
+* To use the login widget in OnrampKit, initialize the ```startOnrampLogin``` function and pass the config parametes to start the sdk.
+
+```
+Onramp.startOnrampLogin(
+    _ viewController:UIViewController, // reference to a UIViewController where the onrampKit's user interface will be presented.
+    _ target: OnrampKitDelegate, //  An object conforming to the OnrampKitDelegate protocol. The delegate will receive callback and notifications.
+    appId: 1, // replace this with the appID you got during onboarding process
+    closeAfterLogin: true/false, // toggle this value based on if you want to close widget after login or not
+    lang:"en" // optional parameter, replace with desired language code
+)
 ```
 
 ## Events Docs

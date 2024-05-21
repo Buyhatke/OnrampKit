@@ -81,14 +81,16 @@ public class Onramp {
                         appId: Int,
                         closeAfterLogin: Bool,
                         signature: String? = nil,
-                        phoneNumber: String? = nil
+                        phoneNumber: String? = nil,
+                        lang: String? = nil
     ) {
         let webVC = setUpOnrampUIViewController()
         webVC.url = getCustomLoginUrlForSdkToShow(
             appId: appId,
             closeAfterLogin: closeAfterLogin,
             signature: signature,
-            phoneNumber: phoneNumber
+            phoneNumber: phoneNumber,
+            lang: lang
         )
         webVC.from = "loginSdk"
         webVC.delegate = target
@@ -102,12 +104,13 @@ public class Onramp {
                         payload: String,
                         signature: String,
                         customerId: String,
-                        apiKey: String
+                        apiKey: String,
+                        lang: String? = nil
                         
     ) {
         let webVC = setUpOnrampUIViewController()
         let url = getCustomKycUrlForSdkToShow(
-            payload: payload, signature: signature, customerId: customerId, apiKey: apiKey
+            payload: payload, signature: signature, customerId: customerId, apiKey: apiKey, lang: lang
         )
         webVC.url = url
         webVC.from = "initiateKyc"
@@ -223,7 +226,8 @@ public class Onramp {
         appId: Int,
         closeAfterLogin: Bool,
         signature: String? = nil,
-        phoneNumber: String? = nil
+        phoneNumber: String? = nil,
+        lang: String? = nil
     ) -> String {
         var url = "\(Constants.APP_DOMAIN)\(Constants.PATH)/login/?mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)&appId=\(appId)&closeAfterLogin=\(closeAfterLogin)"
         
@@ -234,13 +238,23 @@ public class Onramp {
         if let phoneNumber = phoneNumber {
             url += "&phoneNumber=\(phoneNumber)"
         }
+        if let lang = lang {
+            url += "&lang=\(lang)"
+        }
         
         print("onramp_login_url", url)
         return url
     }
     
-    public static func getCustomKycUrlForSdkToShow(payload: String, signature: String, customerId: String, apiKey: String) -> String {
-        return "\(Constants.APP_DOMAIN)\(Constants.INITIATE_KYC_PATH)?mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)&payload=\(payload)&signature=\(signature)&customerId=\(customerId)&apiKey=\(apiKey)"
+    public static func getCustomKycUrlForSdkToShow(payload: String, signature: String, customerId: String, apiKey: String, lang: String? = nil) -> String {
+        var url =  "\(Constants.APP_DOMAIN)\(Constants.INITIATE_KYC_PATH)?mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)&payload=\(payload)&signature=\(signature)&customerId=\(customerId)&apiKey=\(apiKey)"
+       
+        // handle optional parameters
+        if let lang = lang {
+            url += "&lang=\(lang)"
+        }
+        
+        return url
     }
 
 }
