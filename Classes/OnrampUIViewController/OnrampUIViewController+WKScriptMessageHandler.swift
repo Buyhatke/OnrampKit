@@ -38,7 +38,12 @@ extension OnrampUIViewController: WKScriptMessageHandler {
                     let decoder = JSONDecoder()
                     let decodedResponse = try decoder.decode(OnrampEventResponse.self, from: jsonData)
                     if(decodedResponse.type == "ONRAMP_WIDGET_CLOSE_REQUEST" ){
-                        showCancelTransactionAlert()
+                        if(Constants.hideCloseSDKModelAppIdList.contains(appId)){
+                            Onramp.stopOnrampSDK(self)
+                            self.delegate?.onDataChanged(OnrampEventResponse(type: "ONRAMP_WIDGET_CLOSE_REQUEST_CONFIRMED", data: EventData(msg: "Widget closed", fiatAmount: nil, cryptoAmount: nil, coinRate: nil, paymentMethod: nil), isOnramp: true))
+                        } else {
+                            showCancelTransactionAlert()
+                        }
                     }
                     // in case any of these events occur, close the widget automatically
                     if(decodedResponse.type == "ONRAMP_WIDGET_TX_COMPLETED" || decodedResponse.type == "ONRAMP_WIDGET_TX_SENDING_FAILED" || decodedResponse.type == "ONRAMP_WIDGET_TX_PURCHASING_FAILED" || decodedResponse.type == "ONRAMP_WIDGET_TX_FINDING_FAILED" ||

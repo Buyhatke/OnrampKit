@@ -16,4 +16,5 @@ public struct Constants {
     static let FRESHDESK_PATH = "freshdesk.com"
     static let DOCUMENTATION_PATH = "user-guides"
     static let INITIATE_KYC_PATH = "/initiate-kyc/"
+    static let hideCloseSDKModelAppIdList = [956556]
 }
