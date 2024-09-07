@@ -103,6 +103,7 @@ public class Onramp {
     public static func initiateOnrampKyc(
                         _ viewController:UIViewController,
                         _ target: OnrampKitDelegate,
+                        appId: Int,
                         payload: String,
                         signature: String,
                         customerId: String,
@@ -116,7 +117,7 @@ public class Onramp {
         )
         webVC.url = url
         webVC.from = "initiateKyc"
-        webVC.appId = 0
+        webVC.appId = appId
         print("initiateOnrampKyc", url)
         webVC.delegate = target
         viewController.present(webVC, animated: true, completion: nil)

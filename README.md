@@ -130,8 +130,9 @@ To use the kyc widget in OnrampKit, initialize the ```initiateOnrampKyc``` funct
 
 ```
 Onramp.initiateOnrampKyc(
-  _ viewController:UIViewController, // reference to a UIViewController where the onrampKit's user interface will be presented.
-  _ target: OnrampKitDelegate, //  An object conforming to the OnrampKitDelegate protocol. The delegate will receive callback and notifications.
+    _ viewController:UIViewController, // reference to a UIViewController where the onrampKit's user interface will be presented.
+    _ target: OnrampKitDelegate, //  An object conforming to the OnrampKitDelegate protocol. The delegate will receive callback and notifications.
+    appId: 1, // replace this with the appID you got during onboarding process
     payload:"enter payload string here",
     signature:"enter signature string here",
     customerId:"enter customerId here",
