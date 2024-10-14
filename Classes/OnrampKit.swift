@@ -46,7 +46,8 @@ public class Onramp {
                         paymentAddress: String? = nil,
                         fiatType: Int?=nil,
                         phoneNumber: String? = nil,
-                        lang: String? = nil) {
+                        lang: String? = nil,
+                        addressTag: String? = nil) {
                             
 
         let webVC = setUpOnrampUIViewController()
@@ -66,7 +67,8 @@ public class Onramp {
             paymentAddress: paymentAddress,
             fiatType: fiatType,
             phoneNumber: phoneNumber,
-            lang: lang
+            lang: lang,
+            addressTag: addressTag
         )
         webVC.from = "startSdk"
         webVC.appId = appId
@@ -139,7 +141,8 @@ public class Onramp {
         paymentAddress: String? = nil,
         fiatType: Int?=nil,
         phoneNumber: String? = nil,
-        lang: String? = nil
+        lang: String? = nil,
+        addressTag: String? = nil
     ) -> String {
         var url = "\(Constants.APP_DOMAIN)\(Constants.PATH)"
         
@@ -221,6 +224,9 @@ public class Onramp {
         }
         if let lang = lang {
             url += "&lang=\(lang)"
+        }
+        if let addressTag = addressTag {
+            url += "&addressTag=\(addressTag)"
         }
         
         return url
