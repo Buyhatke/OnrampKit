@@ -43,11 +43,19 @@ public class Onramp {
                         authToken: String? = nil,
                         assetDescription: String? = nil,
                         assetImage: String? = nil,
-                        paymentAddress: String? = nil,
                         fiatType: Int?=nil,
                         phoneNumber: String? = nil,
                         lang: String? = nil,
-                        addressTag: String? = nil) {
+                        addressTag: String? = nil,
+                        sellCoinCode: String? = nil,
+                        receiveCoinCode: String? = nil,
+                        sellAmount: Double? = nil,
+                        receiveAmount: Double? = nil,
+                        sellNetwork: String? = nil,
+                        receiveNetwork: String? = nil,
+                        redirectUrl: String? = nil,
+                        defaultCoinCode: String? = nil,
+                        defaultSellCoinCode: String? = nil) {
                             
 
         let webVC = setUpOnrampUIViewController()
@@ -64,11 +72,19 @@ public class Onramp {
             authToken: authToken,
             assetDescription: assetDescription,
             assetImage: assetImage,
-            paymentAddress: paymentAddress,
             fiatType: fiatType,
             phoneNumber: phoneNumber,
             lang: lang,
-            addressTag: addressTag
+            addressTag: addressTag,
+            sellCoinCode: sellCoinCode,
+            receiveCoinCode: receiveCoinCode,
+            sellAmount: sellAmount,
+            receiveAmount: receiveAmount,
+            sellNetwork: sellNetwork,
+            receiveNetwork: receiveNetwork,
+            redirectUrl: redirectUrl,
+            defaultCoinCode: defaultCoinCode,
+            defaultSellCoinCode: defaultSellCoinCode
         )
         webVC.from = "startSdk"
         webVC.appId = appId
@@ -138,11 +154,19 @@ public class Onramp {
         authToken: String? = nil,
         assetDescription: String? = nil,
         assetImage: String? = nil,
-        paymentAddress: String? = nil,
-        fiatType: Int?=nil,
+        fiatType: Int? = nil,
         phoneNumber: String? = nil,
         lang: String? = nil,
-        addressTag: String? = nil
+        addressTag: String? = nil,
+        sellCoinCode: String? = nil,
+        receiveCoinCode: String? = nil,
+        sellAmount: Double? = nil,
+        receiveAmount: Double? = nil,
+        sellNetwork: String? = nil,
+        receiveNetwork: String? = nil,
+        redirectUrl: String? = nil,
+        defaultCoinCode: String? = nil,
+        defaultSellCoinCode: String? = nil
     ) -> String {
         var url = "\(Constants.APP_DOMAIN)\(Constants.PATH)"
         
@@ -166,11 +190,8 @@ public class Onramp {
         
         url += "?appId=\(appId)&mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)"
         
-        // params only applicable for onramp / checkout flow (NFT flow)
+        // params for onramp / checkout flow (NFT flow)
         if ([1, 3].contains(flowType)) {
-            if (walletAddress != nil) {
-                url += "&walletAddress=\(walletAddress ?? "")"
-            }
             if (paymentMethod != nil) {
                 url += "&paymentMethod=\(paymentMethod ?? 0)"
             }
@@ -179,7 +200,13 @@ public class Onramp {
             }
         }
         
-        // params only applicable checkout flow (NFT flow)
+        if ([1, 3, 4].contains(flowType)) {
+            if (walletAddress != nil) {
+                url += "&walletAddress=\(walletAddress ?? "")"
+            }
+        }
+        
+        // params for checkout flow (NFT flow)
         if (flowType == 3) {
             if (assetDescription != nil) {
                 url += "&assetDescription=\(assetDescription ?? "")"
@@ -189,33 +216,58 @@ public class Onramp {
             }
         }
         
-        // params only applicable for offramp
+        // params for offramp
         if ([2, 4].contains(flowType)) {
             if (authToken != nil) {
                 url += "&authToken=\(authToken ?? "")"
             }
         }
         
-        // params only applicable for swap flow
+        // params for swap flow
         if (flowType == 4) {
-            if (paymentAddress != nil) {
-                url += "&paymentAddress=\(paymentAddress ?? "")"
+            if (defaultSellCoinCode != nil) {
+                url += "&defaultSellCoinCode=\(defaultSellCoinCode ?? "")"
+            }
+            if (sellCoinCode != nil) {
+                url += "&sellCoinCode=\(sellCoinCode ?? "")"
+            }
+            if (receiveCoinCode != nil) {
+                url += "&receiveCoinCode=\(receiveCoinCode ?? "")"
+            }
+            if (sellAmount != nil) {
+                url += "&sellAmount=\(sellAmount ?? 0)"
+            }
+            if (receiveAmount != nil) {
+                url += "&receiveAmount=\(receiveAmount ?? 0)"
+            }
+            if (sellNetwork != nil) {
+                url += "&sellNetwork=\(sellNetwork ?? "")"
+            }
+            if (receiveNetwork != nil) {
+                url += "&receiveNetwork=\(receiveNetwork ?? "")"
             }
         }
         
-        // common params (onramp - offramp)
-        if let coinCode = coinCode {
-            url += "&coinCode=\(coinCode)"
+        // common params for specific flows
+        if ([1, 2, 3].contains(flowType)) {
+            if (coinCode != nil) {
+                url += "&coinCode=\(coinCode ?? "")"
+            }
+            if (defaultCoinCode != nil) {
+                url += "&defaultCoinCode=\(defaultCoinCode ?? "")"
+            }
+            if (network != nil) {
+                url += "&network=\(network ?? "")"
+            }
+            if (coinAmount != nil) {
+                url += "&coinAmount=\(coinAmount ?? 0)"
+            }
+            if (fiatAmount != nil) {
+                url += "&fiatAmount=\(fiatAmount ?? 0)"
+            }
         }
-        if let network = network {
-            url += "&network=\(network)"
-        }
-        if let coinAmount = coinAmount {
-            url += "&coinAmount=\(coinAmount)"
-        }
-        if let fiatAmount = fiatAmount {
-            url += "&fiatAmount=\(fiatAmount)"
-        }
+        
+        // Common params
         if let merchantRecognitionId = merchantRecognitionId {
             url += "&merchantRecognitionId=\(merchantRecognitionId)"
         }
@@ -228,7 +280,15 @@ public class Onramp {
         if let addressTag = addressTag {
             url += "&addressTag=\(addressTag)"
         }
+        if let redirectUrl = redirectUrl {
+            url += "&redirectUrl=\(redirectUrl)"
+        }
         
+        let screenHeight = UIScreen.main.bounds.height
+        url += "&clientHeight=\(String(format: "%.0f", screenHeight))"
+        
+        print("onramp_sdk_url", url)
+                
         return url
     }
     

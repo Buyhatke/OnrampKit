@@ -40,7 +40,52 @@ class ViewController: UIViewController, OnrampKitDelegate {
             }
         
             @objc func buttonTapped() {
-                Onramp.startOnrampSDK(self, self, appId: 1, walletAddress: "0x0F74c38b045C83cb6d37C7D08dC27DD5B464ef11")
+                //buy
+                Onramp.startOnrampSDK(
+                    self,
+                    self,
+                    appId: 1,
+                    flowType: 1,
+                    coinCode: "sol",
+                    network: "spl",
+                    coinAmount: 6,
+                   )
+                    //sell
+//                Onramp.startOnrampSDK(
+//                    self,
+//                    self,
+//                    appId: 1,
+//                    flowType: 2, 
+//                    coinCode: "sol",
+//                    network: "spl",
+//                    coinAmount: 6,
+//                   )
+                //checkout
+//                Onramp.startOnrampSDK(
+//                    self,
+//                    self,
+//                    appId: 1,
+//                    walletAddress: "0x145904F040672dBE05383BF66545E114aA78424D",
+//                    flowType: 3,
+//                    coinCode:"usdt",
+//                    network:"bep20",
+//                    fiatAmount: 1000.0,
+//                    assetDescription: "CustomAsset",
+//                    assetImage: "https://www.bybit.com/common-static/fhs/bybit-home-new/logo-white.svg"
+//                )
+                //swap
+//                Onramp.startOnrampSDK(
+//                    self,
+//                    self,
+//                    appId: 1,
+//                    walletAddress: "0x145904F040672dBE05383BF66545E114aA78424D",
+//                    flowType: 4,
+//                    sellCoinCode: "sol",
+//                    receiveCoinCode: "USDT",
+//                    receiveAmount: 209,
+//                    sellNetwork: "spl",
+//                    receiveNetwork: "matic20",
+//                   )
             }
         
             // retrieve to the latest onramp transaction state
