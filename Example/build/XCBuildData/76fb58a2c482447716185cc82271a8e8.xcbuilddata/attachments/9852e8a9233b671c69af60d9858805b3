@@ -1,0 +1,65 @@
+{
+  "" : {
+    "const-values" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampKit-master.swiftconstvalues",
+    "dependencies" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampKit-master.d",
+    "diagnostics" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampKit-master.dia",
+    "emit-module-dependencies" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampKit-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampKit-master-emit-module.dia",
+    "swift-dependencies" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampKit-master.swiftdeps"
+  },
+  "/Users/prashantdixit/buyhatke/OnrampKit/Classes/OnrampKit.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampKit.o",
+    "llvm-bc" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampKit.bc",
+    "object" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampKit.o"
+  },
+  "/Users/prashantdixit/buyhatke/OnrampKit/Classes/OnrampUIViewController/OnrampUIViewController+PermissionHandler.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+PermissionHandler.o",
+    "llvm-bc" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+PermissionHandler.bc",
+    "object" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+PermissionHandler.o"
+  },
+  "/Users/prashantdixit/buyhatke/OnrampKit/Classes/OnrampUIViewController/OnrampUIViewController+WKNavigationDelegate.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+WKNavigationDelegate.o",
+    "llvm-bc" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+WKNavigationDelegate.bc",
+    "object" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+WKNavigationDelegate.o"
+  },
+  "/Users/prashantdixit/buyhatke/OnrampKit/Classes/OnrampUIViewController/OnrampUIViewController+WKScriptMessageHandler.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+WKScriptMessageHandler.o",
+    "llvm-bc" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+WKScriptMessageHandler.bc",
+    "object" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+WKScriptMessageHandler.o"
+  },
+  "/Users/prashantdixit/buyhatke/OnrampKit/Classes/OnrampUIViewController/OnrampUIViewController+WKUIDelegate.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+WKUIDelegate.o",
+    "llvm-bc" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+WKUIDelegate.bc",
+    "object" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController+WKUIDelegate.o"
+  },
+  "/Users/prashantdixit/buyhatke/OnrampKit/Classes/OnrampUIViewController/OnrampUIViewController.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController.o",
+    "llvm-bc" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController.bc",
+    "object" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampUIViewController.o"
+  },
+  "/Users/prashantdixit/buyhatke/OnrampKit/Classes/models/OnrampEventResponse.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampEventResponse.o",
+    "llvm-bc" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampEventResponse.bc",
+    "object" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/OnrampEventResponse.o"
+  },
+  "/Users/prashantdixit/buyhatke/OnrampKit/Classes/models/Passport.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/Passport.o",
+    "llvm-bc" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/Passport.bc",
+    "object" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/Passport.o"
+  },
+  "/Users/prashantdixit/buyhatke/OnrampKit/Classes/utils/Constants.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/Constants.o",
+    "llvm-bc" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/Constants.bc",
+    "object" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/Constants.o"
+  },
+  "/Users/prashantdixit/buyhatke/OnrampKit/Classes/utils/NFCUtils.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/NFCUtils.o",
+    "llvm-bc" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/NFCUtils.bc",
+    "object" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/NFCUtils.o"
+  },
+  "/Users/prashantdixit/buyhatke/OnrampKit/Classes/utils/UIColor + HexConversion.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/UIColor + HexConversion.o",
+    "llvm-bc" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/UIColor + HexConversion.bc",
+    "object" : "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/Objects-normal/arm64/UIColor + HexConversion.o"
+  }
+}

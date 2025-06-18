@@ -1,0 +1,3 @@
+#!/bin/sh
+"${PODS_ROOT}/Target Support Files/OnrampKit/OnrampKit-xcframeworks.sh"
+

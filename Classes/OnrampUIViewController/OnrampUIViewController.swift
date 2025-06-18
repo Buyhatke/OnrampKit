@@ -7,6 +7,8 @@
 
 import UIKit
 import WebKit
+import AVFoundation
+import CoreLocation
 
 public protocol OnrampKitDelegate: AnyObject {
     func onDataChanged(_ data: OnrampEventResponse)
@@ -40,9 +42,27 @@ public class OnrampUIViewController: UIViewController {
         navigationItem.hidesBackButton = true
 
         userContentController.add(self, name: "iosNativeEvent")
+        let injectedJS = """
+        window.initiateNfc = function(action, transactionId, documentNo, dob, expiryDate) {
+          window.webkit.messageHandlers.iosNativeEvent.postMessage(JSON.stringify({
+            action: action,
+            payload: {
+              transactionId: transactionId,
+              documentNo: documentNo,
+              dob: dob,
+              expiryDate: expiryDate
+            }
+          }));
+        };
+        true;
+        """
+        let userScript = WKUserScript(source: injectedJS, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
+        userContentController.addUserScript(userScript)
         
         config.userContentController = userContentController
         config.preferences = wkPreferences
+        config.allowsInlineMediaPlayback = true
+        config.mediaTypesRequiringUserActionForPlayback = []
 
         webView = WKWebView(frame: .zero, configuration: config)
         webView.navigationDelegate = self

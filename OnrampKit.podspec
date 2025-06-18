@@ -28,12 +28,18 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
   s.swift_version = '4.1'
-
+  
   s.source_files = 'Classes/**/*.swift'
   
    s.resource_bundles = {
      'OnrampKit' => ['Classes/**/*.storyboard']
    }
+  
+  s.vendored_frameworks = 'Frameworks/UdentifyCommons.xcframework', 'Frameworks/UdentifyNFC.xcframework'
+  
+  s.pod_target_xcconfig = {
+    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(SRCROOT)/Frameworks/"'
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -20,6 +20,23 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+    <key>NSCameraUsageDescription</key>
+    <string>This app needs camera access for video calls and photo capture</string>
+
+    <key>NSMicrophoneUsageDescription</key>
+    <string>This app needs microphone access for voice calls and audio recording</string>
+
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs location access to provide location-based services</string>
+
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>This app needs location access to provide location-based services</string>
+    <key>NFCReaderUsageDescription</key>
+    <string>This app uses NFC in order to scan documents</string>
+    <key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
+    <array>
+       <string>A0000002471001</string>
+    </array>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>paytmmp</string>

@@ -1,0 +1,5 @@
+ extern const unsigned char OnrampKitVersionString[];
+ extern const double OnrampKitVersionNumber;
+
+ const unsigned char OnrampKitVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:OnrampKit  PROJECT:Pods-1" "\n";
+ const double OnrampKitVersionNumber __attribute__ ((used)) = (double)1.;

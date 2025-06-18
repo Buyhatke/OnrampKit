@@ -1,0 +1,4 @@
+
+module OnrampKit.__Swift {
+  exclude header "OnrampKit-Swift.h"
+}

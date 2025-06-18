@@ -27,6 +27,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E417365C2DEEFC18004EEFA9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		096A9EB6BA393BE73F7D1D62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		118ECCFD4E08AB8968A52876 /* Pods-OnrampKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnrampKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -45,6 +58,7 @@
 		686B671BAE8DD7581B51F045 /* Pods-OnrampKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnrampKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB95699C9A86BF6307054A76 /* Pods-OnrampKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnrampKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CE64337EC78D1074599AD02B /* Pods-OnrampKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnrampKit_Example.release.xcconfig"; path = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E417365F2DEEFD9C004EEFA9 /* OnrampKit_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OnrampKit_Example.entitlements; sourceTree = "<group>"; };
 		F99B1A1BAA1AED008488CD0C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FA8E14BB64C8B98DA4B7C462 /* Pods_OnrampKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnrampKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +86,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				E417365F2DEEFD9C004EEFA9 /* OnrampKit_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for OnrampKit */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -171,6 +186,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				62997A3BF19B29EC3A453332 /* [CP] Embed Pods Frameworks */,
+				E417365C2DEEFC18004EEFA9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,10 +288,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OnrampKit/OnrampKit.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampKit/UdentifyCommons.framework/UdentifyCommons",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampKit/UdentifyNFC.framework/UdentifyNFC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnrampKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UdentifyCommons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UdentifyNFC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -482,6 +502,7 @@
 			baseConfigurationReference = 118ECCFD4E08AB8968A52876 /* Pods-OnrampKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OnrampKit_Example.entitlements;
 				DEVELOPMENT_TEAM = 98B976E3G5;
 				INFOPLIST_FILE = OnrampKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -499,6 +520,7 @@
 			baseConfigurationReference = CE64337EC78D1074599AD02B /* Pods-OnrampKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OnrampKit_Example.entitlements;
 				DEVELOPMENT_TEAM = 98B976E3G5;
 				INFOPLIST_FILE = OnrampKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

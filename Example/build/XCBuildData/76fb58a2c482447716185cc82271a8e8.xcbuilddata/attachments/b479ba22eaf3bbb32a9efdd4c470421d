@@ -1,0 +1,5 @@
+
+module OnrampKit.Swift {
+  header "OnrampKit-Swift.h"
+  requires objc
+}

@@ -131,7 +131,7 @@ public class Onramp {
     ) {
         let webVC = setUpOnrampUIViewController()
         let url = getCustomKycUrlForSdkToShow(
-            payload: payload, signature: signature, customerId: customerId, apiKey: apiKey, lang: lang
+            appId: appId, payload: payload, signature: signature, customerId: customerId, apiKey: apiKey, lang: lang
         )
         webVC.url = url
         webVC.from = "initiateKyc"
@@ -316,8 +316,8 @@ public class Onramp {
         return url
     }
     
-    public static func getCustomKycUrlForSdkToShow(payload: String, signature: String, customerId: String, apiKey: String, lang: String? = nil) -> String {
-        var url =  "\(Constants.APP_DOMAIN)\(Constants.INITIATE_KYC_PATH)?mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)&payload=\(payload)&signature=\(signature)&customerId=\(customerId)&apiKey=\(apiKey)"
+    public static func getCustomKycUrlForSdkToShow(appId: Int, payload: String, signature: String, customerId: String, apiKey: String, lang: String? = nil) -> String {
+        var url =  "\(Constants.APP_DOMAIN)\(Constants.INITIATE_KYC_PATH)?mode=overlay&origin=\(Constants.MERCHANT_ORIGIN_ID)&appId=\(appId)&payload=\(payload)&signature=\(signature)&customerId=\(customerId)&apiKey=\(apiKey)"
        
         // handle optional parameters
         if let lang = lang {

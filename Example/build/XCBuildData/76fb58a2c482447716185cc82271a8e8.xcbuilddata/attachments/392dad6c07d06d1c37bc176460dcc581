@@ -1,0 +1,23 @@
+{
+  "version": 0,
+  "use-external-names": false,
+  "case-sensitive": false,
+  "roots": [{
+    "type": "directory",
+    "name": "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Release-iphoneos/OnrampKit/OnrampKit.framework/Modules",
+    "contents": [{
+      "type": "file",
+      "name": "module.modulemap",
+      "external-contents": "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    "type": "directory",
+    "name": "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Release-iphoneos/OnrampKit/OnrampKit.framework/Headers",
+    "contents": [{
+      "type": "file",
+      "name": "OnrampKit-Swift.h",
+      "external-contents": "/Users/prashantdixit/buyhatke/OnrampKit/Example/build/Pods.build/Release-iphoneos/OnrampKit.build/unextended-interface-header.h",
+    }]
+  }]
+}

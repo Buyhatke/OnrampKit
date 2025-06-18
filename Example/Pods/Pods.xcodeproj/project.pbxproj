@@ -7,43 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F08E8F81A9689DF9E633ED54837B0A9 /* OnrampKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FF4160EAB0D732E2B062AD682E776C /* OnrampKit-dummy.m */; };
-		25C82ED84CA40A82DB2F84BCB27A2AFC /* Pods-OnrampKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B12443D7AC95F144B062BCE8B831EF29 /* Pods-OnrampKit_Example-dummy.m */; };
-		263BDFEADDB712553826C6869FA9B545 /* OnrampKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */; };
-		3025632CCD36072F04D254545176840D /* OnrampUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C120C82AB8E1C2E4F4ED4B2831305A /* OnrampUIViewController.swift */; };
-		3B0D586AEEEE899D29A8E393EFFE8C7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3D851E67B3FAFBBC1E7DE70162F6D78E /* OnrampUIViewController+WKScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1AA8AAFC1D1CE2B87F735F0B35B7E /* OnrampUIViewController+WKScriptMessageHandler.swift */; };
-		412B665D04ECB71421393E24C0CE6775 /* OnrampKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE332A170494C1EACB7DBEA67DD155 /* OnrampKit.swift */; };
-		648F6EFF6824270D9AE2258AAFD1B5A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		668A12055DD61671100D74DFB8154EB8 /* OnrampStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B348ED5B564DA739FE1B4749C54664 /* OnrampStoryboard.storyboard */; };
-		6A22F603CAC2573075943D5B309CA893 /* Pods-OnrampKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B96BC475334ACFDAB28C0CC6E52F6 /* Pods-OnrampKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74D8FF1B0E4EBDA3CCB388B220DC62DA /* OnrampUIViewController+WKNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E71F23290A88FE58928945F7A53A6DC /* OnrampUIViewController+WKNavigationDelegate.swift */; };
-		7B48B8120B9950A00B0C72146D5D3C25 /* OnrampEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945B422FBD86713A1447621330F40A5 /* OnrampEventResponse.swift */; };
-		9A94F2B3EFA813D10CB01983C458645E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83912EFB43086AF56A2C97226DCD52AC /* Constants.swift */; };
-		A05F05D8099F44580308CD8712346FA0 /* Pods-OnrampKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A4DB81352313E12B1FD4FD14E43A04 /* Pods-OnrampKit_Tests-dummy.m */; };
-		AE5C02BA60BFF42122955A7B35F289F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BA1A81A43AD951BC995F94AD83AE3864 /* OnrampKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEC2EB9F894B8AFC5EF4E7B31139ACB /* OnrampKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0973D59C90DF24D083E87BCC00C3610 /* Pods-OnrampKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 192BAAAF2BDCF4FC9686DA957CA3D4E3 /* Pods-OnrampKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4A4214E2B68F48500A3FDA6 /* OnrampUIViewController+WKUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A4214D2B68F48500A3FDA6 /* OnrampUIViewController+WKUIDelegate.swift */; };
-		E4B17E9B2AC430EA00FDAAE1 /* UIColor + HexConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B17E9A2AC430EA00FDAAE1 /* UIColor + HexConversion.swift */; };
+		00EBA11C1CD286CDF0BFB8CE1EA3E84F /* OnrampEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6829AF0070BCFFB5E7A1651E2C4B227 /* OnrampEventResponse.swift */; };
+		136EBEC008844C3432192A51203868F3 /* OnrampUIViewController+WKNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E4E8D22A6A8BB0BD39D405FFD3B1E /* OnrampUIViewController+WKNavigationDelegate.swift */; };
+		35519D49438FB87663A8D07DFEA3E4B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		517AE0484A80FCAF7F4DBEFE294D9304 /* OnrampUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B0ABAE263F914DB8970E92131D8EF6 /* OnrampUIViewController.swift */; };
+		5A17783B4533E5534B0F5A611FB1E361 /* OnrampKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0D1124B3A0A7F2D2D280B7C3EF8BF /* OnrampKit.swift */; };
+		6CCE7122BEE05CB1C8F1B35EDA2EB7AC /* Pods-OnrampKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 192BAAAF2BDCF4FC9686DA957CA3D4E3 /* Pods-OnrampKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		796C83C9281A247893B3F72242BA4F66 /* Pods-OnrampKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B12443D7AC95F144B062BCE8B831EF29 /* Pods-OnrampKit_Example-dummy.m */; };
+		7A1FF38BE5EBED27662A7CAA65D0BBA6 /* OnrampKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 042F6D795D7E5B30BB4FB5A5DCFF286E /* OnrampKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F93DFE4C46E203A22160BD6DA39D8E0 /* UIColor + HexConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060A48847774FCF8E80F634027A8BF52 /* UIColor + HexConversion.swift */; };
+		8EEB95166A60B4235FF39E7723C3AE7A /* Pods-OnrampKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A4DB81352313E12B1FD4FD14E43A04 /* Pods-OnrampKit_Tests-dummy.m */; };
+		A8339FA4D546EE1441F5EC160F403B49 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100655983D6B1ADED40F805895792580 /* Constants.swift */; };
+		A8F4AA44B2DA5DF3759302F31C40AD86 /* Pods-OnrampKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B96BC475334ACFDAB28C0CC6E52F6 /* Pods-OnrampKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7D4B3217F792C1041AB1D7791B833E8 /* OnrampUIViewController+WKScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060543C5EA8BE7BA386D969F798CE6 /* OnrampUIViewController+WKScriptMessageHandler.swift */; };
+		C0FE1D52787A7D2875061E005C1CD5D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		C83903B005EC1C4B85CEBA2ED3ED804F /* Passport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A85073312EC14CB84497F5AB65CA97D /* Passport.swift */; };
+		D8DABB747F80FE6482876CB4342B98F7 /* OnrampKit-OnrampKit in Resources */ = {isa = PBXBuildFile; fileRef = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */; };
+		E46C65DB3CD40ABFFACA53FA5178147A /* OnrampStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423CA230D45F8D5DC80C6588167737EB /* OnrampStoryboard.storyboard */; };
+		E793CD8311FCD02FAB5AF1AA1896329B /* OnrampUIViewController+WKUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10C0A93768344C0F644CB8999CBB03 /* OnrampUIViewController+WKUIDelegate.swift */; };
+		F365B244C0298DB620F355C73084B4E2 /* OnrampKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E52789F0260275F77D1D853DA0419EDD /* OnrampKit-dummy.m */; };
+		F40274753CE257DD4954EA26324FFDC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		F6FE5B666B925E1D4ABCC658E9E082A9 /* OnrampUIViewController+PermissionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B0ACBBDAA13E20FB071E5E980F9BC /* OnrampUIViewController+PermissionHandler.swift */; };
+		F7EDBC8F576EEE83888E116AB5214CF1 /* NFCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C95404B464E6F731E525E5878563 /* NFCUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0184C8317CA0D641527E61ECD01865EB /* PBXContainerItemProxy */ = {
+		2E755D254338201933EB86F609EA16B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 69028F77E9532E751674D788087B2AC9;
 			remoteInfo = "Pods-OnrampKit_Example";
 		};
-		C13A66AC1B1C0022E79D7C557AE31084 /* PBXContainerItemProxy */ = {
+		86C387E2418F697A7D9718D8370C91BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E9817503F0959C58681BFD4FD47CC66D;
 			remoteInfo = OnrampKit;
 		};
-		DC649021D8D6913AD8BE43575C3E0832 /* PBXContainerItemProxy */ = {
+		87140F86610B43AE3168DB4D1C155456 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -53,94 +56,165 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00C120C82AB8E1C2E4F4ED4B2831305A /* OnrampUIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnrampUIViewController.swift; sourceTree = "<group>"; };
 		03CE3C0A14FB38F2BE4AA07CA6749C26 /* Pods-OnrampKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnrampKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		042F6D795D7E5B30BB4FB5A5DCFF286E /* OnrampKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnrampKit-umbrella.h"; sourceTree = "<group>"; };
+		060A48847774FCF8E80F634027A8BF52 /* UIColor + HexConversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor + HexConversion.swift"; sourceTree = "<group>"; };
 		0FCA428B03AA080EA80CB17A56BB8470 /* Pods-OnrampKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1037EFD00D388E19CEBA80BA684D5A57 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		100655983D6B1ADED40F805895792580 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11A4DB81352313E12B1FD4FD14E43A04 /* Pods-OnrampKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OnrampKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		15187CFF7EB167D56F8813DC5C8F4FA8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		192BAAAF2BDCF4FC9686DA957CA3D4E3 /* Pods-OnrampKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OnrampKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		19C871E09C365A7DD5A48004DAEA46A8 /* ResourceBundle-OnrampKit-OnrampKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OnrampKit-OnrampKit-Info.plist"; sourceTree = "<group>"; };
-		1E71F23290A88FE58928945F7A53A6DC /* OnrampUIViewController+WKNavigationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKNavigationDelegate.swift"; sourceTree = "<group>"; };
-		20E98EE4B1D1A4BE9A253E41DAF4FD2C /* OnrampKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnrampKit-prefix.pch"; sourceTree = "<group>"; };
+		1BD436B1F13EF5ADBA3AC04E9BDACE89 /* ResourceBundle-OnrampKit-OnrampKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OnrampKit-OnrampKit-Info.plist"; sourceTree = "<group>"; };
+		2F10C0A93768344C0F644CB8999CBB03 /* OnrampUIViewController+WKUIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKUIDelegate.swift"; sourceTree = "<group>"; };
+		2FA1D02C0D911EB34F13651333E31D0D /* OnrampKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampKit.debug.xcconfig; sourceTree = "<group>"; };
+		33B0ABAE263F914DB8970E92131D8EF6 /* OnrampUIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnrampUIViewController.swift; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3C70BFBEAD11FA030267309ACF078797 /* Pods-OnrampKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnrampKit_Tests.modulemap"; sourceTree = "<group>"; };
-		3DE1AA8AAFC1D1CE2B87F735F0B35B7E /* OnrampUIViewController+WKScriptMessageHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKScriptMessageHandler.swift"; sourceTree = "<group>"; };
+		3E2824B77ABA8737068FF6158D78B592 /* OnrampKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OnrampKit.modulemap; sourceTree = "<group>"; };
+		3EB0D1124B3A0A7F2D2D280B7C3EF8BF /* OnrampKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnrampKit.swift; path = Classes/OnrampKit.swift; sourceTree = "<group>"; };
 		3F8BE3194AA9842754196FDFA7A07F31 /* Pods-OnrampKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnrampKit_Example.modulemap"; sourceTree = "<group>"; };
-		4043ACDD77C77410E0964FCF5188F1C8 /* OnrampKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = OnrampKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		41DB5A8B5A0654EB983A80F066C7894B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		423CA230D45F8D5DC80C6588167737EB /* OnrampStoryboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = OnrampStoryboard.storyboard; path = Classes/OnrampStoryboard.storyboard; sourceTree = "<group>"; };
+		479EE59E3E292CC1DA359C25CAE5BA3D /* UdentifyCommons.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UdentifyCommons.xcframework; path = Frameworks/UdentifyCommons.xcframework; sourceTree = "<group>"; };
 		47DBE01ABDB17961FA4BCED3C940728E /* Pods-OnrampKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnrampKit_Example-Info.plist"; sourceTree = "<group>"; };
-		4AB0D59D7E9A20558E885FBCFC6296EC /* OnrampKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OnrampKit-Info.plist"; sourceTree = "<group>"; };
 		4C8F0B1618399F2A6261DC4ACEE0BB21 /* Pods-OnrampKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5648CEDC7A6861CF951541F51040DCED /* Pods-OnrampKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OnrampKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5DCDA50FB4CA29CB7A5AEC3C7C593F80 /* Pods-OnrampKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnrampKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5DEC2EB9F894B8AFC5EF4E7B31139ACB /* OnrampKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnrampKit-umbrella.h"; sourceTree = "<group>"; };
 		714633E1B8CDEFFA46A0885AA6408B29 /* Pods-OnrampKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		74CE332A170494C1EACB7DBEA67DD155 /* OnrampKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnrampKit.swift; path = Classes/OnrampKit.swift; sourceTree = "<group>"; };
 		763B96BC475334ACFDAB28C0CC6E52F6 /* Pods-OnrampKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OnrampKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		79B348ED5B564DA739FE1B4749C54664 /* OnrampStoryboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = OnrampStoryboard.storyboard; path = Classes/OnrampStoryboard.storyboard; sourceTree = "<group>"; };
 		7BF574503C30E9751C9E04E5DBDDD774 /* Pods-OnrampKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnrampKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		812ADE06501B0C64C9F655FF5ECB196F /* OnrampKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampKit.debug.xcconfig; sourceTree = "<group>"; };
-		83912EFB43086AF56A2C97226DCD52AC /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		89FF4160EAB0D732E2B062AD682E776C /* OnrampKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OnrampKit-dummy.m"; sourceTree = "<group>"; };
-		96A6289F4CB402494284E1448066A9DB /* OnrampKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnrampKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A85DDDC3AEAAF9B3BDB80937E6B2B09E /* OnrampKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OnrampKit.modulemap; sourceTree = "<group>"; };
-		A945B422FBD86713A1447621330F40A5 /* OnrampEventResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnrampEventResponse.swift; sourceTree = "<group>"; };
-		AE5A0C1D58AB636C1B7D7023B8B9E062 /* OnrampKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampKit.release.xcconfig; sourceTree = "<group>"; };
+		7DD4C95404B464E6F731E525E5878563 /* NFCUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NFCUtils.swift; sourceTree = "<group>"; };
+		822A250B2B51D86CC47610762F103857 /* OnrampKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OnrampKit-Info.plist"; sourceTree = "<group>"; };
+		8A85073312EC14CB84497F5AB65CA97D /* Passport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Passport.swift; sourceTree = "<group>"; };
+		8D060543C5EA8BE7BA386D969F798CE6 /* OnrampUIViewController+WKScriptMessageHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKScriptMessageHandler.swift"; sourceTree = "<group>"; };
+		96A6289F4CB402494284E1448066A9DB /* OnrampKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OnrampKit; path = OnrampKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		988B0ACBBDAA13E20FB071E5E980F9BC /* OnrampUIViewController+PermissionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+PermissionHandler.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA06098730EB743EE7CA0FD23C85B3AD /* OnrampKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OnrampKit-xcframeworks.sh"; sourceTree = "<group>"; };
 		B12443D7AC95F144B062BCE8B831EF29 /* Pods-OnrampKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OnrampKit_Example-dummy.m"; sourceTree = "<group>"; };
-		B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnrampKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "OnrampKit-OnrampKit"; path = OnrampKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5973876B1D3952DF3118830EB4106F9 /* Pods-OnrampKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OnrampKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnrampKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4A4214D2B68F48500A3FDA6 /* OnrampUIViewController+WKUIDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKUIDelegate.swift"; sourceTree = "<group>"; };
-		E4B17E9A2AC430EA00FDAAE1 /* UIColor + HexConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + HexConversion.swift"; sourceTree = "<group>"; };
-		E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnrampKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D301D90F79C33E50FD87FAABCEA17494 /* OnrampKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnrampKit-prefix.pch"; sourceTree = "<group>"; };
+		D6829AF0070BCFFB5E7A1651E2C4B227 /* OnrampEventResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnrampEventResponse.swift; sourceTree = "<group>"; };
+		E221BE0FE202D201DCE6835096B94012 /* Pods-OnrampKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OnrampKit_Example"; path = Pods_OnrampKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52789F0260275F77D1D853DA0419EDD /* OnrampKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OnrampKit-dummy.m"; sourceTree = "<group>"; };
+		E57F5538A5AAFA88EDD88D96715EDC1F /* Pods-OnrampKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OnrampKit_Tests"; path = Pods_OnrampKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA1B66BBA9B5A96D2E8FBBC6B9DCADC /* UdentifyNFC.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UdentifyNFC.xcframework; path = Frameworks/UdentifyNFC.xcframework; sourceTree = "<group>"; };
 		F007C3BB907C5AD942C95B3F54FE805B /* Pods-OnrampKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F1AADB9C31CFAAC576D2454CE6649DD8 /* OnrampKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OnrampKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F38E4E8D22A6A8BB0BD39D405FFD3B1E /* OnrampUIViewController+WKNavigationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKNavigationDelegate.swift"; sourceTree = "<group>"; };
+		F805720C8205695D81B8C522466EB3F6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F9CD0F3F304574EC3ED104262AF0D6D3 /* OnrampKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampKit.release.xcconfig; sourceTree = "<group>"; };
 		FE9775276C3A0A60E6282658D462ABB1 /* Pods-OnrampKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OnrampKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		32C6F8F19CCC2DA549ADDC3F3084673A /* Frameworks */ = {
+		0175CE16F24E16B8C2D07CF528B0501A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5C02BA60BFF42122955A7B35F289F2 /* Foundation.framework in Frameworks */,
+				C0FE1D52787A7D2875061E005C1CD5D3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD4136065228C8CC63E0A19A440D1583 /* Frameworks */ = {
+		1BEBF13FA569303740BFF172CC51233C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0D586AEEEE899D29A8E393EFFE8C7F /* Foundation.framework in Frameworks */,
+				35519D49438FB87663A8D07DFEA3E4B9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC37CD556B68418DE6F6020919B9ED43 /* Frameworks */ = {
+		A3054D51124C7FC93ECD4C4C5981BBD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F13435EB7DA6153D40CCBF858AAC7897 /* Frameworks */ = {
+		DA260658D6818A7E1A2E6250D6B09A7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				648F6EFF6824270D9AE2258AAFD1B5A4 /* Foundation.framework in Frameworks */,
+				F40274753CE257DD4954EA26324FFDC9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4304EAFBE5E41E7A71CCE1C317276D5E /* Pod */ = {
+		00068B384B31E29C799038F45250B040 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1037EFD00D388E19CEBA80BA684D5A57 /* LICENSE */,
-				4043ACDD77C77410E0964FCF5188F1C8 /* OnrampKit.podspec */,
-				41DB5A8B5A0654EB983A80F066C7894B /* README.md */,
+				3E2824B77ABA8737068FF6158D78B592 /* OnrampKit.modulemap */,
+				E52789F0260275F77D1D853DA0419EDD /* OnrampKit-dummy.m */,
+				822A250B2B51D86CC47610762F103857 /* OnrampKit-Info.plist */,
+				D301D90F79C33E50FD87FAABCEA17494 /* OnrampKit-prefix.pch */,
+				042F6D795D7E5B30BB4FB5A5DCFF286E /* OnrampKit-umbrella.h */,
+				AA06098730EB743EE7CA0FD23C85B3AD /* OnrampKit-xcframeworks.sh */,
+				2FA1D02C0D911EB34F13651333E31D0D /* OnrampKit.debug.xcconfig */,
+				F9CD0F3F304574EC3ED104262AF0D6D3 /* OnrampKit.release.xcconfig */,
+				1BD436B1F13EF5ADBA3AC04E9BDACE89 /* ResourceBundle-OnrampKit-OnrampKit-Info.plist */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/OnrampKit";
+			sourceTree = "<group>";
+		};
+		017031F660B5B0F0F21BE26D823835D7 /* OnrampKit */ = {
+			isa = PBXGroup;
+			children = (
+				3EB0D1124B3A0A7F2D2D280B7C3EF8BF /* OnrampKit.swift */,
+				423CA230D45F8D5DC80C6588167737EB /* OnrampStoryboard.storyboard */,
+				9F5DC392749CB03F8DF3851D820B2CFC /* Frameworks */,
+				10B2E4F7635BC9DB9FB89056D79F6060 /* models */,
+				43651B924C3CE53953C9DF8EA0687341 /* OnrampUIViewController */,
+				9A9DCDAB0DC49B482DB9C813BB2F968B /* Pod */,
+				00068B384B31E29C799038F45250B040 /* Support Files */,
+				28DF9130BF8057DFCCE8CE30EC6855DD /* utils */,
+			);
+			name = OnrampKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		10B2E4F7635BC9DB9FB89056D79F6060 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D6829AF0070BCFFB5E7A1651E2C4B227 /* OnrampEventResponse.swift */,
+				8A85073312EC14CB84497F5AB65CA97D /* Passport.swift */,
+			);
+			name = models;
+			path = Classes/models;
+			sourceTree = "<group>";
+		};
+		28DF9130BF8057DFCCE8CE30EC6855DD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				100655983D6B1ADED40F805895792580 /* Constants.swift */,
+				7DD4C95404B464E6F731E525E5878563 /* NFCUtils.swift */,
+				060A48847774FCF8E80F634027A8BF52 /* UIColor + HexConversion.swift */,
+			);
+			name = utils;
+			path = Classes/utils;
+			sourceTree = "<group>";
+		};
+		3C6016BB485963896C92161FAE91AA48 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				017031F660B5B0F0F21BE26D823835D7 /* OnrampKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		43651B924C3CE53953C9DF8EA0687341 /* OnrampUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				33B0ABAE263F914DB8970E92131D8EF6 /* OnrampUIViewController.swift */,
+				988B0ACBBDAA13E20FB071E5E980F9BC /* OnrampUIViewController+PermissionHandler.swift */,
+				F38E4E8D22A6A8BB0BD39D405FFD3B1E /* OnrampUIViewController+WKNavigationDelegate.swift */,
+				8D060543C5EA8BE7BA386D969F798CE6 /* OnrampUIViewController+WKScriptMessageHandler.swift */,
+				2F10C0A93768344C0F644CB8999CBB03 /* OnrampUIViewController+WKUIDelegate.swift */,
+			);
+			name = OnrampUIViewController;
+			path = Classes/OnrampUIViewController;
 			sourceTree = "<group>";
 		};
 		500A48EAE8442EBDA025DD135BD05D42 /* Pods-OnrampKit_Tests */ = {
@@ -159,31 +233,6 @@
 			path = "Target Support Files/Pods-OnrampKit_Tests";
 			sourceTree = "<group>";
 		};
-		53F8EC1ABC2573F44C716F28679EF1FF /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F4E0D7571A2F183F1C2A9BDB590AB98C /* OnrampKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		823A55A3F2A882A3A153A1984A2C0BC0 /* models */ = {
-			isa = PBXGroup;
-			children = (
-				A945B422FBD86713A1447621330F40A5 /* OnrampEventResponse.swift */,
-			);
-			name = models;
-			path = Classes/models;
-			sourceTree = "<group>";
-		};
 		9821EF2DEE44173A1463528F42A2BAFA /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,60 +242,41 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A35DE6DB7CD04C30E56C63EC764393E0 /* OnrampUIViewController */ = {
+		9A9DCDAB0DC49B482DB9C813BB2F968B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				00C120C82AB8E1C2E4F4ED4B2831305A /* OnrampUIViewController.swift */,
-				1E71F23290A88FE58928945F7A53A6DC /* OnrampUIViewController+WKNavigationDelegate.swift */,
-				3DE1AA8AAFC1D1CE2B87F735F0B35B7E /* OnrampUIViewController+WKScriptMessageHandler.swift */,
-				E4A4214D2B68F48500A3FDA6 /* OnrampUIViewController+WKUIDelegate.swift */,
+				F805720C8205695D81B8C522466EB3F6 /* LICENSE */,
+				F1AADB9C31CFAAC576D2454CE6649DD8 /* OnrampKit.podspec */,
+				15187CFF7EB167D56F8813DC5C8F4FA8 /* README.md */,
 			);
-			name = OnrampUIViewController;
-			path = Classes/OnrampUIViewController;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		BCE788EC3986914D0E97A93CF3BEAB49 /* utils */ = {
+		9F5DC392749CB03F8DF3851D820B2CFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				83912EFB43086AF56A2C97226DCD52AC /* Constants.swift */,
-				E4B17E9A2AC430EA00FDAAE1 /* UIColor + HexConversion.swift */,
+				479EE59E3E292CC1DA359C25CAE5BA3D /* UdentifyCommons.xcframework */,
+				ECA1B66BBA9B5A96D2E8FBBC6B9DCADC /* UdentifyNFC.xcframework */,
 			);
-			name = utils;
-			path = Classes/utils;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BD94773D1C745831E4A83A1F8E2B062A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96A6289F4CB402494284E1448066A9DB /* OnrampKit.framework */,
-				B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */,
-				E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */,
-				E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */,
+				96A6289F4CB402494284E1448066A9DB /* OnrampKit */,
+				B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */,
+				E221BE0FE202D201DCE6835096B94012 /* Pods-OnrampKit_Example */,
+				E57F5538A5AAFA88EDD88D96715EDC1F /* Pods-OnrampKit_Tests */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CD7706E1599716F1596AC467092DE100 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A85DDDC3AEAAF9B3BDB80937E6B2B09E /* OnrampKit.modulemap */,
-				89FF4160EAB0D732E2B062AD682E776C /* OnrampKit-dummy.m */,
-				4AB0D59D7E9A20558E885FBCFC6296EC /* OnrampKit-Info.plist */,
-				20E98EE4B1D1A4BE9A253E41DAF4FD2C /* OnrampKit-prefix.pch */,
-				5DEC2EB9F894B8AFC5EF4E7B31139ACB /* OnrampKit-umbrella.h */,
-				812ADE06501B0C64C9F655FF5ECB196F /* OnrampKit.debug.xcconfig */,
-				AE5A0C1D58AB636C1B7D7023B8B9E062 /* OnrampKit.release.xcconfig */,
-				19C871E09C365A7DD5A48004DAEA46A8 /* ResourceBundle-OnrampKit-OnrampKit-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/OnrampKit";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				53F8EC1ABC2573F44C716F28679EF1FF /* Development Pods */,
+				3C6016BB485963896C92161FAE91AA48 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				BD94773D1C745831E4A83A1F8E2B062A /* Products */,
 				9821EF2DEE44173A1463528F42A2BAFA /* Targets Support Files */,
@@ -256,7 +286,7 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -278,45 +308,38 @@
 			path = "Target Support Files/Pods-OnrampKit_Example";
 			sourceTree = "<group>";
 		};
-		F4E0D7571A2F183F1C2A9BDB590AB98C /* OnrampKit */ = {
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				74CE332A170494C1EACB7DBEA67DD155 /* OnrampKit.swift */,
-				79B348ED5B564DA739FE1B4749C54664 /* OnrampStoryboard.storyboard */,
-				823A55A3F2A882A3A153A1984A2C0BC0 /* models */,
-				A35DE6DB7CD04C30E56C63EC764393E0 /* OnrampUIViewController */,
-				4304EAFBE5E41E7A71CCE1C317276D5E /* Pod */,
-				CD7706E1599716F1596AC467092DE100 /* Support Files */,
-				BCE788EC3986914D0E97A93CF3BEAB49 /* utils */,
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
 			);
-			name = OnrampKit;
-			path = ../..;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		70C5A12F73D037E7D1D3CF8756D974C3 /* Headers */ = {
+		387AD2E00B241D182DE64242DE83C4CA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0973D59C90DF24D083E87BCC00C3610 /* Pods-OnrampKit_Example-umbrella.h in Headers */,
+				A8F4AA44B2DA5DF3759302F31C40AD86 /* Pods-OnrampKit_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82D48D847868484214B2C9C0BE16E617 /* Headers */ = {
+		503CDDA62C50C3213B08EAEE5BB70474 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A22F603CAC2573075943D5B309CA893 /* Pods-OnrampKit_Tests-umbrella.h in Headers */,
+				7A1FF38BE5EBED27662A7CAA65D0BBA6 /* OnrampKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A11A4C6440CD767A9DCEA3E065DBC480 /* Headers */ = {
+		BBD08C3DAB1FDBF5F2CDE155924CC94D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA1A81A43AD951BC995F94AD83AE3864 /* OnrampKit-umbrella.h in Headers */,
+				6CCE7122BEE05CB1C8F1B35EDA2EB7AC /* Pods-OnrampKit_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,30 +348,30 @@
 /* Begin PBXNativeTarget section */
 		548683B147149D8EA36B6C27D9E418CA /* Pods-OnrampKit_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97D598E13895A482326B223A01796D11 /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Tests" */;
+			buildConfigurationList = 4DE5CAAA3CD513252FB58E34D56E1655 /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Tests" */;
 			buildPhases = (
-				82D48D847868484214B2C9C0BE16E617 /* Headers */,
-				98F04ED38F649BB6F1ECBE584E6D7E0E /* Sources */,
-				F13435EB7DA6153D40CCBF858AAC7897 /* Frameworks */,
-				992BD1ACB9348D704100EA6311CEB088 /* Resources */,
+				387AD2E00B241D182DE64242DE83C4CA /* Headers */,
+				E72E11A1F8CFAC601264A6D82ECDD14B /* Sources */,
+				0175CE16F24E16B8C2D07CF528B0501A /* Frameworks */,
+				BD00A5297126CCE751E1D5B6E5F1F03A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C67482AC8D805ADE30B00C98973D133D /* PBXTargetDependency */,
+				B382FE28903964D619A409051A2A3696 /* PBXTargetDependency */,
 			);
 			name = "Pods-OnrampKit_Tests";
 			productName = Pods_OnrampKit_Tests;
-			productReference = E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */;
+			productReference = E57F5538A5AAFA88EDD88D96715EDC1F /* Pods-OnrampKit_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		5F1E6C86B247E0B240AF8A1AA766143A /* OnrampKit-OnrampKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E87A699A2F9D4804CF63174FC4F82C28 /* Build configuration list for PBXNativeTarget "OnrampKit-OnrampKit" */;
+			buildConfigurationList = 87A190533E8B3FFDBA2A78ED6828AD5C /* Build configuration list for PBXNativeTarget "OnrampKit-OnrampKit" */;
 			buildPhases = (
-				B3DC999D72C72C07ED62A5FF83C8EADC /* Sources */,
-				DC37CD556B68418DE6F6020919B9ED43 /* Frameworks */,
-				CD9EB49B7B42EFFF77E99A43649B81F8 /* Resources */,
+				C6CAFE6727715A52FFF3D7305A961B0D /* Sources */,
+				A3054D51124C7FC93ECD4C4C5981BBD5 /* Frameworks */,
+				013959624452D1D11282C6BE90AAB63E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -356,45 +379,46 @@
 			);
 			name = "OnrampKit-OnrampKit";
 			productName = OnrampKit;
-			productReference = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */;
+			productReference = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */;
 			productType = "com.apple.product-type.bundle";
 		};
 		69028F77E9532E751674D788087B2AC9 /* Pods-OnrampKit_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B4A14305EC36CFD0258D9A5C4608EC2 /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Example" */;
+			buildConfigurationList = 72C8E801028C2BF22A70868128BFCA6F /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Example" */;
 			buildPhases = (
-				70C5A12F73D037E7D1D3CF8756D974C3 /* Headers */,
-				EFD106F98015BD09E9DCB7FB6CDB0DBF /* Sources */,
-				32C6F8F19CCC2DA549ADDC3F3084673A /* Frameworks */,
-				0B7EFE6695A79DE25AFEA188378E2705 /* Resources */,
+				BBD08C3DAB1FDBF5F2CDE155924CC94D /* Headers */,
+				5CC2E608129FCB47683C6EC94381B9D4 /* Sources */,
+				1BEBF13FA569303740BFF172CC51233C /* Frameworks */,
+				BDA91C8AD198E7066B8D2A859B776A61 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				72E1167E88E08535EF3BBB700A3AD384 /* PBXTargetDependency */,
+				EE3111136E1F9A50C4253720C3CB0872 /* PBXTargetDependency */,
 			);
 			name = "Pods-OnrampKit_Example";
 			productName = Pods_OnrampKit_Example;
-			productReference = E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */;
+			productReference = E221BE0FE202D201DCE6835096B94012 /* Pods-OnrampKit_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		E9817503F0959C58681BFD4FD47CC66D /* OnrampKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BF56E6111DE7ED35E1C4741A821A53A /* Build configuration list for PBXNativeTarget "OnrampKit" */;
+			buildConfigurationList = 27FB33AC97E287ACD4FB7CB88116A351 /* Build configuration list for PBXNativeTarget "OnrampKit" */;
 			buildPhases = (
-				A11A4C6440CD767A9DCEA3E065DBC480 /* Headers */,
-				3460AE821657EB8E2266DFA525156151 /* Sources */,
-				BD4136065228C8CC63E0A19A440D1583 /* Frameworks */,
-				50E7CA8CA8C2817BA94C037F3E04CC2D /* Resources */,
+				503CDDA62C50C3213B08EAEE5BB70474 /* Headers */,
+				BE40004E35BF81B09725FB990E6550DC /* [CP] Copy XCFrameworks */,
+				FD3703639EB8A307403A2271F092D2E8 /* Sources */,
+				DA260658D6818A7E1A2E6250D6B09A7A /* Frameworks */,
+				6E45E9CDAE19AB4A8612FBC38B735B40 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3C5B9AD2D3A54AF8A5F9B322B7ADE82E /* PBXTargetDependency */,
+				E31421F0CCF3863EB25831E21B39557B /* PBXTargetDependency */,
 			);
 			name = OnrampKit;
 			productName = OnrampKit;
-			productReference = 96A6289F4CB402494284E1448066A9DB /* OnrampKit.framework */;
+			productReference = 96A6289F4CB402494284E1448066A9DB /* OnrampKit */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -403,16 +427,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
-				TargetAttributes = {
-					5F1E6C86B247E0B240AF8A1AA766143A = {
-						DevelopmentTeam = AW2WMZCXT6;
-					};
-					E9817503F0959C58681BFD4FD47CC66D = {
-						LastSwiftMigration = "";
-					};
-				};
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -423,6 +439,8 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = BD94773D1C745831E4A83A1F8E2B062A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,246 +454,140 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0B7EFE6695A79DE25AFEA188378E2705 /* Resources */ = {
+		013959624452D1D11282C6BE90AAB63E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46C65DB3CD40ABFFACA53FA5178147A /* OnrampStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E45E9CDAE19AB4A8612FBC38B735B40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DABB747F80FE6482876CB4342B98F7 /* OnrampKit-OnrampKit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD00A5297126CCE751E1D5B6E5F1F03A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50E7CA8CA8C2817BA94C037F3E04CC2D /* Resources */ = {
+		BDA91C8AD198E7066B8D2A859B776A61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				263BDFEADDB712553826C6869FA9B545 /* OnrampKit.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		992BD1ACB9348D704100EA6311CEB088 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD9EB49B7B42EFFF77E99A43649B81F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				668A12055DD61671100D74DFB8154EB8 /* OnrampStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BE40004E35BF81B09725FB990E6550DC /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/OnrampKit/OnrampKit-xcframeworks.sh",
+				"${PODS_ROOT}/../../Frameworks/UdentifyCommons.xcframework",
+				"${PODS_ROOT}/../../Frameworks/UdentifyNFC.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampKit/UdentifyCommons.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampKit/UdentifyNFC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/OnrampKit/OnrampKit-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		3460AE821657EB8E2266DFA525156151 /* Sources */ = {
+		5CC2E608129FCB47683C6EC94381B9D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A94F2B3EFA813D10CB01983C458645E /* Constants.swift in Sources */,
-				7B48B8120B9950A00B0C72146D5D3C25 /* OnrampEventResponse.swift in Sources */,
-				412B665D04ECB71421393E24C0CE6775 /* OnrampKit.swift in Sources */,
-				E4B17E9B2AC430EA00FDAAE1 /* UIColor + HexConversion.swift in Sources */,
-				1F08E8F81A9689DF9E633ED54837B0A9 /* OnrampKit-dummy.m in Sources */,
-				E4A4214E2B68F48500A3FDA6 /* OnrampUIViewController+WKUIDelegate.swift in Sources */,
-				3025632CCD36072F04D254545176840D /* OnrampUIViewController.swift in Sources */,
-				74D8FF1B0E4EBDA3CCB388B220DC62DA /* OnrampUIViewController+WKNavigationDelegate.swift in Sources */,
-				3D851E67B3FAFBBC1E7DE70162F6D78E /* OnrampUIViewController+WKScriptMessageHandler.swift in Sources */,
+				796C83C9281A247893B3F72242BA4F66 /* Pods-OnrampKit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98F04ED38F649BB6F1ECBE584E6D7E0E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A05F05D8099F44580308CD8712346FA0 /* Pods-OnrampKit_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3DC999D72C72C07ED62A5FF83C8EADC /* Sources */ = {
+		C6CAFE6727715A52FFF3D7305A961B0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFD106F98015BD09E9DCB7FB6CDB0DBF /* Sources */ = {
+		E72E11A1F8CFAC601264A6D82ECDD14B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25C82ED84CA40A82DB2F84BCB27A2AFC /* Pods-OnrampKit_Example-dummy.m in Sources */,
+				8EEB95166A60B4235FF39E7723C3AE7A /* Pods-OnrampKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3703639EB8A307403A2271F092D2E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8339FA4D546EE1441F5EC160F403B49 /* Constants.swift in Sources */,
+				F7EDBC8F576EEE83888E116AB5214CF1 /* NFCUtils.swift in Sources */,
+				00EBA11C1CD286CDF0BFB8CE1EA3E84F /* OnrampEventResponse.swift in Sources */,
+				5A17783B4533E5534B0F5A611FB1E361 /* OnrampKit.swift in Sources */,
+				F365B244C0298DB620F355C73084B4E2 /* OnrampKit-dummy.m in Sources */,
+				517AE0484A80FCAF7F4DBEFE294D9304 /* OnrampUIViewController.swift in Sources */,
+				F6FE5B666B925E1D4ABCC658E9E082A9 /* OnrampUIViewController+PermissionHandler.swift in Sources */,
+				136EBEC008844C3432192A51203868F3 /* OnrampUIViewController+WKNavigationDelegate.swift in Sources */,
+				B7D4B3217F792C1041AB1D7791B833E8 /* OnrampUIViewController+WKScriptMessageHandler.swift in Sources */,
+				E793CD8311FCD02FAB5AF1AA1896329B /* OnrampUIViewController+WKUIDelegate.swift in Sources */,
+				C83903B005EC1C4B85CEBA2ED3ED804F /* Passport.swift in Sources */,
+				7F93DFE4C46E203A22160BD6DA39D8E0 /* UIColor + HexConversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3C5B9AD2D3A54AF8A5F9B322B7ADE82E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "OnrampKit-OnrampKit";
-			target = 5F1E6C86B247E0B240AF8A1AA766143A /* OnrampKit-OnrampKit */;
-			targetProxy = DC649021D8D6913AD8BE43575C3E0832 /* PBXContainerItemProxy */;
-		};
-		72E1167E88E08535EF3BBB700A3AD384 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OnrampKit;
-			target = E9817503F0959C58681BFD4FD47CC66D /* OnrampKit */;
-			targetProxy = C13A66AC1B1C0022E79D7C557AE31084 /* PBXContainerItemProxy */;
-		};
-		C67482AC8D805ADE30B00C98973D133D /* PBXTargetDependency */ = {
+		B382FE28903964D619A409051A2A3696 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-OnrampKit_Example";
 			target = 69028F77E9532E751674D788087B2AC9 /* Pods-OnrampKit_Example */;
-			targetProxy = 0184C8317CA0D641527E61ECD01865EB /* PBXContainerItemProxy */;
+			targetProxy = 2E755D254338201933EB86F609EA16B8 /* PBXContainerItemProxy */;
+		};
+		E31421F0CCF3863EB25831E21B39557B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OnrampKit-OnrampKit";
+			target = 5F1E6C86B247E0B240AF8A1AA766143A /* OnrampKit-OnrampKit */;
+			targetProxy = 87140F86610B43AE3168DB4D1C155456 /* PBXContainerItemProxy */;
+		};
+		EE3111136E1F9A50C4253720C3CB0872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OnrampKit;
+			target = E9817503F0959C58681BFD4FD47CC66D /* OnrampKit */;
+			targetProxy = 86C387E2418F697A7D9718D8370C91BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		19BFB7A7482BF3C67B8133BE25F06BFD /* Release */ = {
+		231710C19FD62AB2FE960FCF896985F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F007C3BB907C5AD942C95B3F54FE805B /* Pods-OnrampKit_Tests.release.xcconfig */;
+			baseConfigurationReference = 2FA1D02C0D911EB34F13651333E31D0D /* OnrampKit.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2B033C030A1245AA0245ABFB22C47BBA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 714633E1B8CDEFFA46A0885AA6408B29 /* Pods-OnrampKit_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2F1459CC9D61A5BD17E3E259F09085FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 812ADE06501B0C64C9F655FF5ECB196F /* OnrampKit.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OnrampKit/OnrampKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OnrampKit/OnrampKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OnrampKit/OnrampKit.modulemap";
-				PRODUCT_MODULE_NAME = OnrampKit;
-				PRODUCT_NAME = OnrampKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4B893A908A711D7EAC74029401EE1E19 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE5A0C1D58AB636C1B7D7023B8B9E062 /* OnrampKit.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OnrampKit/OnrampKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OnrampKit/OnrampKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OnrampKit/OnrampKit.modulemap";
-				PRODUCT_MODULE_NAME = OnrampKit;
-				PRODUCT_NAME = OnrampKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		88252A0F85DF6DFF9CB51B9F74F4EC4A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 812ADE06501B0C64C9F655FF5ECB196F /* OnrampKit.debug.xcconfig */;
-			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OnrampKit";
-				DEVELOPMENT_TEAM = AW2WMZCXT6;
+				DEVELOPMENT_TEAM = 98B976E3G5;
 				IBSC_MODULE = OnrampKit;
 				INFOPLIST_FILE = "Target Support Files/OnrampKit/ResourceBundle-OnrampKit-OnrampKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = OnrampKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -684,7 +596,7 @@
 			};
 			name = Debug;
 		};
-		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -737,8 +649,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -751,7 +662,73 @@
 			};
 			name = Debug;
 		};
-		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+		58ED778BF9DB2F28B5B0D34AF92187F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA1D02C0D911EB34F13651333E31D0D /* OnrampKit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OnrampKit/OnrampKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OnrampKit/OnrampKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OnrampKit/OnrampKit.modulemap";
+				PRODUCT_MODULE_NAME = OnrampKit;
+				PRODUCT_NAME = OnrampKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C96B6BFD7DC30DB1593EF889748572B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C8F0B1618399F2A6261DC4ACEE0BB21 /* Pods-OnrampKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -801,19 +778,142 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		9F17D5A2D7F60AC36B2DD30386D736AE /* Debug */ = {
+		684ECD79F9FE24A383B086B553FF82C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9CD0F3F304574EC3ED104262AF0D6D3 /* OnrampKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OnrampKit";
+				DEVELOPMENT_TEAM = 98B976E3G5;
+				IBSC_MODULE = OnrampKit;
+				INFOPLIST_FILE = "Target Support Files/OnrampKit/ResourceBundle-OnrampKit-OnrampKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = OnrampKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6F02EA58D1F267A257D50AE8D7B7BB53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F007C3BB907C5AD942C95B3F54FE805B /* Pods-OnrampKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A710AC58811515FF4A8BA69A90064A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714633E1B8CDEFFA46A0885AA6408B29 /* Pods-OnrampKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D859D4E6A6103EDDEA79643023E40BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9CD0F3F304574EC3ED104262AF0D6D3 /* OnrampKit.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OnrampKit/OnrampKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OnrampKit/OnrampKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OnrampKit/OnrampKit.modulemap";
+				PRODUCT_MODULE_NAME = OnrampKit;
+				PRODUCT_NAME = OnrampKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2F1EDF4435D2C67FA8528D0A2005550 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0FCA428B03AA080EA80CB17A56BB8470 /* Pods-OnrampKit_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -847,64 +947,14 @@
 			};
 			name = Debug;
 		};
-		E1436D53107A905022D7C3FA051D30E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C8F0B1618399F2A6261DC4ACEE0BB21 /* Pods-OnrampKit_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FBDC501D2017CF1A0F9CC2B3AA135A64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE5A0C1D58AB636C1B7D7023B8B9E062 /* OnrampKit.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OnrampKit";
-				IBSC_MODULE = OnrampKit;
-				INFOPLIST_FILE = "Target Support Files/OnrampKit/ResourceBundle-OnrampKit-OnrampKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				PRODUCT_NAME = OnrampKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3BF56E6111DE7ED35E1C4741A821A53A /* Build configuration list for PBXNativeTarget "OnrampKit" */ = {
+		27FB33AC97E287ACD4FB7CB88116A351 /* Build configuration list for PBXNativeTarget "OnrampKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F1459CC9D61A5BD17E3E259F09085FF /* Debug */,
-				4B893A908A711D7EAC74029401EE1E19 /* Release */,
+				58ED778BF9DB2F28B5B0D34AF92187F8 /* Debug */,
+				D859D4E6A6103EDDEA79643023E40BA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -912,35 +962,35 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
-				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B4A14305EC36CFD0258D9A5C4608EC2 /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Example" */ = {
+		4DE5CAAA3CD513252FB58E34D56E1655 /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1436D53107A905022D7C3FA051D30E5 /* Debug */,
-				2B033C030A1245AA0245ABFB22C47BBA /* Release */,
+				E2F1EDF4435D2C67FA8528D0A2005550 /* Debug */,
+				6F02EA58D1F267A257D50AE8D7B7BB53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97D598E13895A482326B223A01796D11 /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Tests" */ = {
+		72C8E801028C2BF22A70868128BFCA6F /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F17D5A2D7F60AC36B2DD30386D736AE /* Debug */,
-				19BFB7A7482BF3C67B8133BE25F06BFD /* Release */,
+				5C96B6BFD7DC30DB1593EF889748572B /* Debug */,
+				8A710AC58811515FF4A8BA69A90064A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E87A699A2F9D4804CF63174FC4F82C28 /* Build configuration list for PBXNativeTarget "OnrampKit-OnrampKit" */ = {
+		87A190533E8B3FFDBA2A78ED6828AD5C /* Build configuration list for PBXNativeTarget "OnrampKit-OnrampKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88252A0F85DF6DFF9CB51B9F74F4EC4A /* Debug */,
-				FBDC501D2017CF1A0F9CC2B3AA135A64 /* Release */,
+				231710C19FD62AB2FE960FCF896985F2 /* Debug */,
+				684ECD79F9FE24A383B086B553FF82C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

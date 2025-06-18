@@ -1,0 +1,8 @@
+Target dependency graph (4 targets)
+Target 'Pods-OnrampKit_Tests' in project 'Pods'
+➜ Explicit dependency on target 'Pods-OnrampKit_Example' in project 'Pods'
+Target 'Pods-OnrampKit_Example' in project 'Pods'
+➜ Explicit dependency on target 'OnrampKit' in project 'Pods'
+Target 'OnrampKit' in project 'Pods'
+➜ Explicit dependency on target 'OnrampKit-OnrampKit' in project 'Pods'
+Target 'OnrampKit-OnrampKit' in project 'Pods' (no dependencies)
