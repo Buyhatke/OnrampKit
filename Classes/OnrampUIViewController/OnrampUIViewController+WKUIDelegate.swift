@@ -25,42 +25,60 @@ extension OnrampUIViewController: WKUIDelegate {
     @available(iOS 15.0, *)
       public func webView(_ webView: WKWebView, requestMediaCapturePermissionFor origin: WKSecurityOrigin, initiatedByFrame frame: WKFrameInfo, type: WKMediaCaptureType, decisionHandler: @escaping (WKPermissionDecision) -> Void) {
             
-            switch type {
-            case .camera:
-                if #available(iOS 16.0, *) {
-                    requestCameraPermission { granted in
-                        DispatchQueue.main.async {
-                            decisionHandler(granted ? .grant : .deny)
-                        }
+        switch type {
+        case .camera:
+            if #available(iOS 16.0, *) {
+                requestCameraPermission { granted in
+                    DispatchQueue.main.async {
+                        decisionHandler(granted ? .grant : .deny)
                     }
-                } else {
-                    // Fallback on earlier versions
                 }
-                
-            case .microphone:
-                if #available(iOS 16.0, *) {
-                    requestMicrophonePermission { granted in
-                        DispatchQueue.main.async {
-                            decisionHandler(granted ? .grant : .deny)
-                        }
-                    }
-                } else {
-                    // Fallback on earlier versions
-                }
-                
-            case .cameraAndMicrophone:
-                if #available(iOS 16.0, *) {
-                    requestCameraAndMicrophonePermission { granted in
-                        DispatchQueue.main.async {
-                            decisionHandler(granted ? .grant : .deny)
-                        }
-                    }
-                } else {
-                    // Fallback on earlier versions
-                }
-                
-            @unknown default:
-                decisionHandler(.deny)
+            } else {
+                // Fallback on earlier versions
             }
+            
+        case .microphone:
+            if #available(iOS 16.0, *) {
+                requestMicrophonePermission { granted in
+                    DispatchQueue.main.async {
+                        decisionHandler(granted ? .grant : .deny)
+                    }
+                }
+            } else {
+                // Fallback on earlier versions
+            }
+            
+        case .cameraAndMicrophone:
+            if #available(iOS 16.0, *) {
+                requestCameraAndMicrophonePermission { granted in
+                    DispatchQueue.main.async {
+                        decisionHandler(granted ? .grant : .deny)
+                    }
+                }
+            } else {
+                // Fallback on earlier versions
+            }
+            
+        @unknown default:
+            decisionHandler(.deny)
         }
+    }
+    
+    @available(iOS 14.0, *)
+    public func webView(_ webView: WKWebView, runOpenPanelWith parameters: Any, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping ([URL]?) -> Void) {
+        
+        let documentPicker = UIDocumentPickerViewController(forOpeningContentTypes: [
+            .pdf,
+            .image,
+            .movie,
+            .data
+        ])
+        
+        documentPicker.delegate = self
+        documentPicker.allowsMultipleSelection = false
+        
+        self.fileUploadCompletionHandler = completionHandler
+        
+        present(documentPicker, animated: true)
+    }
 }

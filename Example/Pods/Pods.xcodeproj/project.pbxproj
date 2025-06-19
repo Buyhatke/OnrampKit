@@ -22,7 +22,8 @@
 		B7D4B3217F792C1041AB1D7791B833E8 /* OnrampUIViewController+WKScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060543C5EA8BE7BA386D969F798CE6 /* OnrampUIViewController+WKScriptMessageHandler.swift */; };
 		C0FE1D52787A7D2875061E005C1CD5D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		C83903B005EC1C4B85CEBA2ED3ED804F /* Passport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A85073312EC14CB84497F5AB65CA97D /* Passport.swift */; };
-		D8DABB747F80FE6482876CB4342B98F7 /* OnrampKit-OnrampKit in Resources */ = {isa = PBXBuildFile; fileRef = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */; };
+		D8DABB747F80FE6482876CB4342B98F7 /* OnrampKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */; };
+		E42B337F2E02E36C00359D40 /* OnrampUIViewController+UIDocumentPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B337E2E02E36C00359D40 /* OnrampUIViewController+UIDocumentPickerDelegate.swift */; };
 		E46C65DB3CD40ABFFACA53FA5178147A /* OnrampStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423CA230D45F8D5DC80C6588167737EB /* OnrampStoryboard.storyboard */; };
 		E793CD8311FCD02FAB5AF1AA1896329B /* OnrampUIViewController+WKUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10C0A93768344C0F644CB8999CBB03 /* OnrampUIViewController+WKUIDelegate.swift */; };
 		F365B244C0298DB620F355C73084B4E2 /* OnrampKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E52789F0260275F77D1D853DA0419EDD /* OnrampKit-dummy.m */; };
@@ -62,7 +63,7 @@
 		0FCA428B03AA080EA80CB17A56BB8470 /* Pods-OnrampKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		100655983D6B1ADED40F805895792580 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11A4DB81352313E12B1FD4FD14E43A04 /* Pods-OnrampKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OnrampKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		15187CFF7EB167D56F8813DC5C8F4FA8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		15187CFF7EB167D56F8813DC5C8F4FA8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		192BAAAF2BDCF4FC9686DA957CA3D4E3 /* Pods-OnrampKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OnrampKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		1BD436B1F13EF5ADBA3AC04E9BDACE89 /* ResourceBundle-OnrampKit-OnrampKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OnrampKit-OnrampKit-Info.plist"; sourceTree = "<group>"; };
 		2F10C0A93768344C0F644CB8999CBB03 /* OnrampUIViewController+WKUIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKUIDelegate.swift"; sourceTree = "<group>"; };
@@ -74,7 +75,7 @@
 		3EB0D1124B3A0A7F2D2D280B7C3EF8BF /* OnrampKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnrampKit.swift; path = Classes/OnrampKit.swift; sourceTree = "<group>"; };
 		3F8BE3194AA9842754196FDFA7A07F31 /* Pods-OnrampKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnrampKit_Example.modulemap"; sourceTree = "<group>"; };
 		423CA230D45F8D5DC80C6588167737EB /* OnrampStoryboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = OnrampStoryboard.storyboard; path = Classes/OnrampStoryboard.storyboard; sourceTree = "<group>"; };
-		479EE59E3E292CC1DA359C25CAE5BA3D /* UdentifyCommons.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UdentifyCommons.xcframework; path = Frameworks/UdentifyCommons.xcframework; sourceTree = "<group>"; };
+		479EE59E3E292CC1DA359C25CAE5BA3D /* UdentifyCommons.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = UdentifyCommons.xcframework; path = Frameworks/UdentifyCommons.xcframework; sourceTree = "<group>"; };
 		47DBE01ABDB17961FA4BCED3C940728E /* Pods-OnrampKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnrampKit_Example-Info.plist"; sourceTree = "<group>"; };
 		4C8F0B1618399F2A6261DC4ACEE0BB21 /* Pods-OnrampKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5648CEDC7A6861CF951541F51040DCED /* Pods-OnrampKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OnrampKit_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -86,23 +87,24 @@
 		822A250B2B51D86CC47610762F103857 /* OnrampKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OnrampKit-Info.plist"; sourceTree = "<group>"; };
 		8A85073312EC14CB84497F5AB65CA97D /* Passport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Passport.swift; sourceTree = "<group>"; };
 		8D060543C5EA8BE7BA386D969F798CE6 /* OnrampUIViewController+WKScriptMessageHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKScriptMessageHandler.swift"; sourceTree = "<group>"; };
-		96A6289F4CB402494284E1448066A9DB /* OnrampKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OnrampKit; path = OnrampKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A6289F4CB402494284E1448066A9DB /* OnrampKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnrampKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		988B0ACBBDAA13E20FB071E5E980F9BC /* OnrampUIViewController+PermissionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+PermissionHandler.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA06098730EB743EE7CA0FD23C85B3AD /* OnrampKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OnrampKit-xcframeworks.sh"; sourceTree = "<group>"; };
 		B12443D7AC95F144B062BCE8B831EF29 /* Pods-OnrampKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OnrampKit_Example-dummy.m"; sourceTree = "<group>"; };
-		B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "OnrampKit-OnrampKit"; path = OnrampKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnrampKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5973876B1D3952DF3118830EB4106F9 /* Pods-OnrampKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OnrampKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D301D90F79C33E50FD87FAABCEA17494 /* OnrampKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnrampKit-prefix.pch"; sourceTree = "<group>"; };
 		D6829AF0070BCFFB5E7A1651E2C4B227 /* OnrampEventResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnrampEventResponse.swift; sourceTree = "<group>"; };
-		E221BE0FE202D201DCE6835096B94012 /* Pods-OnrampKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OnrampKit_Example"; path = Pods_OnrampKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnrampKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42B337E2E02E36C00359D40 /* OnrampUIViewController+UIDocumentPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+UIDocumentPickerDelegate.swift"; sourceTree = "<group>"; };
 		E52789F0260275F77D1D853DA0419EDD /* OnrampKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OnrampKit-dummy.m"; sourceTree = "<group>"; };
-		E57F5538A5AAFA88EDD88D96715EDC1F /* Pods-OnrampKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OnrampKit_Tests"; path = Pods_OnrampKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECA1B66BBA9B5A96D2E8FBBC6B9DCADC /* UdentifyNFC.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UdentifyNFC.xcframework; path = Frameworks/UdentifyNFC.xcframework; sourceTree = "<group>"; };
+		E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnrampKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA1B66BBA9B5A96D2E8FBBC6B9DCADC /* UdentifyNFC.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = UdentifyNFC.xcframework; path = Frameworks/UdentifyNFC.xcframework; sourceTree = "<group>"; };
 		F007C3BB907C5AD942C95B3F54FE805B /* Pods-OnrampKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F1AADB9C31CFAAC576D2454CE6649DD8 /* OnrampKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OnrampKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F1AADB9C31CFAAC576D2454CE6649DD8 /* OnrampKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = OnrampKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F38E4E8D22A6A8BB0BD39D405FFD3B1E /* OnrampUIViewController+WKNavigationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKNavigationDelegate.swift"; sourceTree = "<group>"; };
-		F805720C8205695D81B8C522466EB3F6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F805720C8205695D81B8C522466EB3F6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F9CD0F3F304574EC3ED104262AF0D6D3 /* OnrampKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampKit.release.xcconfig; sourceTree = "<group>"; };
 		FE9775276C3A0A60E6282658D462ABB1 /* Pods-OnrampKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OnrampKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,6 +214,7 @@
 				F38E4E8D22A6A8BB0BD39D405FFD3B1E /* OnrampUIViewController+WKNavigationDelegate.swift */,
 				8D060543C5EA8BE7BA386D969F798CE6 /* OnrampUIViewController+WKScriptMessageHandler.swift */,
 				2F10C0A93768344C0F644CB8999CBB03 /* OnrampUIViewController+WKUIDelegate.swift */,
+				E42B337E2E02E36C00359D40 /* OnrampUIViewController+UIDocumentPickerDelegate.swift */,
 			);
 			name = OnrampUIViewController;
 			path = Classes/OnrampUIViewController;
@@ -264,10 +267,10 @@
 		BD94773D1C745831E4A83A1F8E2B062A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96A6289F4CB402494284E1448066A9DB /* OnrampKit */,
-				B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */,
-				E221BE0FE202D201DCE6835096B94012 /* Pods-OnrampKit_Example */,
-				E57F5538A5AAFA88EDD88D96715EDC1F /* Pods-OnrampKit_Tests */,
+				96A6289F4CB402494284E1448066A9DB /* OnrampKit.framework */,
+				B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */,
+				E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */,
+				E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -362,7 +365,7 @@
 			);
 			name = "Pods-OnrampKit_Tests";
 			productName = Pods_OnrampKit_Tests;
-			productReference = E57F5538A5AAFA88EDD88D96715EDC1F /* Pods-OnrampKit_Tests */;
+			productReference = E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5F1E6C86B247E0B240AF8A1AA766143A /* OnrampKit-OnrampKit */ = {
@@ -379,7 +382,7 @@
 			);
 			name = "OnrampKit-OnrampKit";
 			productName = OnrampKit;
-			productReference = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */;
+			productReference = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		69028F77E9532E751674D788087B2AC9 /* Pods-OnrampKit_Example */ = {
@@ -398,7 +401,7 @@
 			);
 			name = "Pods-OnrampKit_Example";
 			productName = Pods_OnrampKit_Example;
-			productReference = E221BE0FE202D201DCE6835096B94012 /* Pods-OnrampKit_Example */;
+			productReference = E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E9817503F0959C58681BFD4FD47CC66D /* OnrampKit */ = {
@@ -418,7 +421,7 @@
 			);
 			name = OnrampKit;
 			productName = OnrampKit;
-			productReference = 96A6289F4CB402494284E1448066A9DB /* OnrampKit */;
+			productReference = 96A6289F4CB402494284E1448066A9DB /* OnrampKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -429,6 +432,12 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					5F1E6C86B247E0B240AF8A1AA766143A = {
+						DevelopmentTeam = 98B976E3G5;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -439,8 +448,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = BD94773D1C745831E4A83A1F8E2B062A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -466,7 +473,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8DABB747F80FE6482876CB4342B98F7 /* OnrampKit-OnrampKit in Resources */,
+				D8DABB747F80FE6482876CB4342B98F7 /* OnrampKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +550,7 @@
 				5A17783B4533E5534B0F5A611FB1E361 /* OnrampKit.swift in Sources */,
 				F365B244C0298DB620F355C73084B4E2 /* OnrampKit-dummy.m in Sources */,
 				517AE0484A80FCAF7F4DBEFE294D9304 /* OnrampUIViewController.swift in Sources */,
+				E42B337F2E02E36C00359D40 /* OnrampUIViewController+UIDocumentPickerDelegate.swift in Sources */,
 				F6FE5B666B925E1D4ABCC658E9E082A9 /* OnrampUIViewController+PermissionHandler.swift in Sources */,
 				136EBEC008844C3432192A51203868F3 /* OnrampUIViewController+WKNavigationDelegate.swift in Sources */,
 				B7D4B3217F792C1041AB1D7791B833E8 /* OnrampUIViewController+WKScriptMessageHandler.swift in Sources */,
@@ -783,8 +791,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

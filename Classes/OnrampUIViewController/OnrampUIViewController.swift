@@ -20,6 +20,7 @@ public class OnrampUIViewController: UIViewController {
     public var webView: WKWebView!
     public var loadingSpinner: UIActivityIndicatorView!
     public weak var delegate: OnrampKitDelegate?
+    public var fileUploadCompletionHandler: (([URL]?) -> Void)?
     public var url: String?
     public var from: String?
     public var appId: Int = 0
