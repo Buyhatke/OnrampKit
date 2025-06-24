@@ -75,13 +75,8 @@ extension OnrampUIViewController: WKScriptMessageHandler {
 
                 switch action {
                 case "startNfc":
-                    if NFCUtils.isNfcSupported() {
-                        print("NFC Supported")
-                        DispatchQueue.main.async {
-                            self.handleFetchNfcData(payload: payload)
-                        }
-                    } else {
-                        self.sendEventsToWeb(type: Constants.TYPE_NFC_RESPONSE, status: Constants.ERROR, message: Constants.EVENT_NFC_NOT_SUPPORTED)
+                    DispatchQueue.main.async {
+                        self.handleFetchNfcData(payload: payload)
                     }
                 default:
                     print("Unhandled action: \(action)")
