@@ -115,7 +115,7 @@ extension OnrampUIViewController: WKScriptMessageHandler {
         print("Expiry Date: \(expDate)")
 
         DispatchQueue.main.async {
-            let nfcReader = NFCReader(
+            self.nfcReader = NFCReader(
                 documentNumber: docNo,
                 dateOfBirth: birthDate,
                 expiryDate: expDate,
@@ -125,28 +125,42 @@ extension OnrampUIViewController: WKScriptMessageHandler {
                 isPassiveAuthenticationEnabled: false
             )
             
-            nfcReader.read() { passport, error, progress in
+            self.nfcReader?.read() {[weak self]  passport, error, progress in
+                guard let self = self else { return }
+                
                 if let passport = passport {
                     DispatchQueue.main.async {
-                        let encodablePassport = EncodablePassport(passport: passport)
-                        let encoder = JSONEncoder()
-                        encoder.outputFormatting = .prettyPrinted
-
-                        if let jsonData = try? encoder.encode(encodablePassport),
-                           let jsonString = String(data: jsonData, encoding: .utf8) {
-
-                            self.sendEventsToWeb(
-                                type: Constants.TYPE_NFC_RESPONSE,
-                                status: Constants.SUCCESS,
-                                message: jsonString
-                            )
-                        } else {
+                        do {
+                            print("Successfully fetched NFC data: \(passport)")
+                            let encodablePassport = EncodablePassport(passport: passport)
+                            let encoder = JSONEncoder()
+                            encoder.outputFormatting = .prettyPrinted
+                            
+                            let jsonData = try encoder.encode(encodablePassport)
+                            
+                            if let jsonString = String(data: jsonData, encoding: .utf8) {
+                                self.sendEventsToWeb(
+                                    type: Constants.TYPE_NFC_RESPONSE,
+                                    status: Constants.SUCCESS,
+                                    message: jsonString
+                                )
+                            } else {
+                                self.sendEventsToWeb(
+                                    type: Constants.TYPE_NFC_RESPONSE,
+                                    status: Constants.ERROR,
+                                    message: "ENCODING_ERROR"
+                                )
+                            }
+                        } catch {
+                            print("JSON encoding error: \(error)")
                             self.sendEventsToWeb(
                                 type: Constants.TYPE_NFC_RESPONSE,
                                 status: Constants.ERROR,
-                                message: "Failed to encode NFC Response"
+                                message: "JSON encoding failed: \(error.localizedDescription)"
                             )
                         }
+                        
+                        self.nfcReader = nil
                     }
                 } else if let progress = progress {
                     print("*********** \(progress)% ***********")
@@ -154,6 +168,9 @@ extension OnrampUIViewController: WKScriptMessageHandler {
                 } else if let error = error {
                     print("Passport reading failed: \(error)")
                     self.sendEventsToWeb(type: Constants.TYPE_NFC_RESPONSE, status: Constants.ERROR, message: error.localizedDescription)
+                    DispatchQueue.main.async {
+                        self.nfcReader = nil
+                    }
                 }
             }
         }

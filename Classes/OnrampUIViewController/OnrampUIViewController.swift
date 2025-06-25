@@ -9,6 +9,7 @@ import UIKit
 import WebKit
 import AVFoundation
 import CoreLocation
+import UdentifyNFC
 
 public protocol OnrampKitDelegate: AnyObject {
     func onDataChanged(_ data: OnrampEventResponse)
@@ -24,6 +25,7 @@ public class OnrampUIViewController: UIViewController {
     public var url: String?
     public var from: String?
     public var appId: Int = 0
+    public var nfcReader: NFCReader?
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
