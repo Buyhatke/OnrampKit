@@ -1,0 +1,16 @@
+{
+  "nfc_reading_directive": "Pasaportunuzu iPhone'unuza yakın tutun.",
+  "nfc_reading_message": "Pasaport verileri okunuyor...",
+  "nfc_reading_progress_message": "Pasaport verileri okunuyor",
+  "nfc_reading_authentication_message": "Çip ile doğrulama yapılıyor...",
+  "nfc_error_multiple_tags_message": "Birden fazla etiket bulundu. Lütfen yalnızca 1 etiket sunun.",
+  "nfc_error_tag_invalid_message": "Etiket okunamadı.",
+  "nfc_error_connection_failed_message": "NFC bağlantısı başarısız oldu.",
+  "nfc_error_reading_failed_message": "eID/ePassport okunurken sorun oluştu. Tekrar deneyin.",
+  "nfc_error_bac_failed_message": "BAC başarısız oldu.",
+  "nfc_session_cancelled_by_customer": "NFC oturumu zaman aşımına uğradı!",
+  "nfc_error_tag_not_found_message": "Hiçbir NFC etiketi algılanamadı.",
+  "Transaction Id not found": "İşlem kimliği bulunamadı",
+  "Please fill all the fields": "Lütfen tüm alanları doldurun",
+  "ENCODING_ERROR": "Kodlama hatası"
+}
