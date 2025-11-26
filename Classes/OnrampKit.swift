@@ -55,7 +55,8 @@ public class Onramp {
                         receiveNetwork: String? = nil,
                         redirectUrl: String? = nil,
                         defaultCoinCode: String? = nil,
-                        defaultSellCoinCode: String? = nil) {
+                        defaultSellCoinCode: String? = nil,
+                        isRestricted: Bool? = true) {
                             
 
         let webVC = setUpOnrampUIViewController()
@@ -84,7 +85,8 @@ public class Onramp {
             receiveNetwork: receiveNetwork,
             redirectUrl: redirectUrl,
             defaultCoinCode: defaultCoinCode,
-            defaultSellCoinCode: defaultSellCoinCode
+            defaultSellCoinCode: defaultSellCoinCode,
+            isRestricted: isRestricted
         )
         webVC.from = "startSdk"
         webVC.appId = appId
@@ -166,7 +168,8 @@ public class Onramp {
         receiveNetwork: String? = nil,
         redirectUrl: String? = nil,
         defaultCoinCode: String? = nil,
-        defaultSellCoinCode: String? = nil
+        defaultSellCoinCode: String? = nil,
+        isRestricted: Bool? = true
     ) -> String {
         var url = "\(Constants.APP_DOMAIN)\(Constants.PATH)"
         
@@ -282,6 +285,9 @@ public class Onramp {
         }
         if let redirectUrl = redirectUrl {
             url += "&redirectUrl=\(redirectUrl)"
+        }
+        if let isRestricted = isRestricted {
+            url += "&isRestricted=\(isRestricted)"
         }
         
         let screenHeight = UIScreen.main.bounds.height
