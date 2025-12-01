@@ -228,12 +228,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 98B976E3G5;
+						DevelopmentTeam = 46FRSG7SRP;
 						LastSwiftMigration = "";
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = AW2WMZCXT6;
+						DevelopmentTeam = 46FRSG7SRP;
 						LastSwiftMigration = "";
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -503,12 +503,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OnrampKit_Example.entitlements;
-				DEVELOPMENT_TEAM = 98B976E3G5;
+				DEVELOPMENT_TEAM = 46FRSG7SRP;
 				INFOPLIST_FILE = OnrampKit/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC in order to scan documents";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access for video calls and photo capture";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location access to provide location-based services";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location access to provide location-based services";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access for voice calls and audio recording";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = onrampkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -523,6 +532,15 @@
 				CODE_SIGN_ENTITLEMENTS = OnrampKit_Example.entitlements;
 				DEVELOPMENT_TEAM = 98B976E3G5;
 				INFOPLIST_FILE = OnrampKit/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC in order to scan documents";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access for video calls and photo capture";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location access to provide location-based services";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs location access to provide location-based services";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access for voice calls and audio recording";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -537,7 +555,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 686B671BAE8DD7581B51F045 /* Pods-OnrampKit_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = AW2WMZCXT6;
+				DEVELOPMENT_TEAM = 46FRSG7SRP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -549,7 +567,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = onrampkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;

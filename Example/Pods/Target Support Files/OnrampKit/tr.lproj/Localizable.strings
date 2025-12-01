@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by aayushmaan rana on 24/11/25.
+  
+*/
+"nfc_reading_directive" = "NFC özellikli pasaportu iPhone'unuza yaklaştırın.";
+"nfc_reading_message" = "Pasaport verileri okunuyor...";
+"nfc_reading_progress_message" = "Pasaport verileri okunuyor";
+"nfc_reading_authentication_message" = "Çip ile doğrulama yapılıyor...";
+"nfc_error_multiple_tags_message" = "Birden fazla etiket algılandı. Lütfen yalnızca bir etiket gösterin.";
+"nfc_error_tag_invalid_message" = "Etiket okunamadı.";
+"nfc_error_connection_failed_message" = "NFC bağlantısı başarısız oldu.";
+"nfc_error_reading_failed_message" = "eID/ePasaport okunurken bir sorun oluştu. Lütfen tekrar deneyin.";
+"nfc_error_bac_failed_message" = "BAC işlemi başarısız oldu.";
+"nfc_session_cancelled_by_customer" = "NFC oturumu zaman aşımına uğradı!";
+"nfc_error_tag_not_found_message" = "Herhangi bir NFC etiketi algılanamadı.";
