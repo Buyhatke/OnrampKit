@@ -13,16 +13,32 @@ import UdentifyNFC
 extension OnrampUIViewController: WKScriptMessageHandler {
     
     func showCancelTransactionAlert() {
-        let alertController = UIAlertController(title: "Close Widget?", message: "Are you sure you want to leave & close the widget?", preferredStyle: .alert)
+        let alertController = UIAlertController(
+            title: "Close Widget?",
+            message: "Are you sure you want to leave & close the widget?",
+            preferredStyle: .alert
+        )
         
         let cancelAction = UIAlertAction(title: "Dismiss", style: .cancel) { _ in
             alertController.dismiss(animated: true, completion: nil)
-            self.delegate?.onDataChanged(OnrampEventResponse(type: "ONRAMP_WIDGET_CLOSE_REQUEST_CANCELLED", data: EventData(msg: "Close widget request cancelled by the user.", fiatAmount: nil, cryptoAmount: nil, coinRate: nil, paymentMethod: nil), isOnramp: true))
+            self.delegate?.onDataChanged(
+                OnrampEventResponse(
+                    type: "ONRAMP_WIDGET_CLOSE_REQUEST_CANCELLED",
+                    data: EventData(msg: "Close widget request cancelled by the user.", fiatAmount: nil, cryptoAmount: nil, coinRate: nil, paymentMethod: nil),
+                    isOnramp: true
+                )
+            )
         }
         
         let okAction = UIAlertAction(title: "Yes, Close", style: .destructive) { _ in
             self.dismiss(animated: true)
-            self.delegate?.onDataChanged(OnrampEventResponse(type: "ONRAMP_WIDGET_CLOSE_REQUEST_CONFIRMED", data: EventData(msg: "Widget closed", fiatAmount: nil, cryptoAmount: nil, coinRate: nil, paymentMethod: nil), isOnramp: true))
+            self.delegate?.onDataChanged(
+                OnrampEventResponse(
+                    type: "ONRAMP_WIDGET_CLOSE_REQUEST_CONFIRMED",
+                    data: EventData(msg: "Widget closed", fiatAmount: nil, cryptoAmount: nil, coinRate: nil, paymentMethod: nil),
+                    isOnramp: true
+                )
+            )
         }
         
         alertController.addAction(cancelAction)
@@ -38,14 +54,17 @@ extension OnrampUIViewController: WKScriptMessageHandler {
         if let jsonString = message.body as? String,
            let jsonData = jsonString.data(using: .utf8) {
             if let decodedResponse = try? JSONDecoder().decode(OnrampEventResponse.self, from: jsonData) {
+                
                 if decodedResponse.type == "ONRAMP_WIDGET_CLOSE_REQUEST" {
                     if Constants.hideCloseSDKModelAppIdList.contains(appId) {
                         Onramp.stopOnrampSDK(self)
-                        self.delegate?.onDataChanged(OnrampEventResponse(
-                            type: "ONRAMP_WIDGET_CLOSE_REQUEST_CONFIRMED",
-                            data: EventData(msg: "Widget closed", fiatAmount: nil, cryptoAmount: nil, coinRate: nil, paymentMethod: nil),
-                            isOnramp: true
-                        ))
+                        self.delegate?.onDataChanged(
+                            OnrampEventResponse(
+                                type: "ONRAMP_WIDGET_CLOSE_REQUEST_CONFIRMED",
+                                data: EventData(msg: "Widget closed", fiatAmount: nil, cryptoAmount: nil, coinRate: nil, paymentMethod: nil),
+                                isOnramp: true
+                            )
+                        )
                     } else {
                         showCancelTransactionAlert()
                     }
@@ -115,62 +134,87 @@ extension OnrampUIViewController: WKScriptMessageHandler {
         print("Expiry Date: \(expDate)")
 
         DispatchQueue.main.async {
-            self.nfcReader = NFCReader(
-                documentNumber: docNo,
-                dateOfBirth: birthDate,
-                expiryDate: expDate,
-                transactionID: txnId,
-                serverURL: Constants.UDENTIFY_SERVER_URL,
-                isActiveAuthenticationEnabled: true,
-                isPassiveAuthenticationEnabled: false
-            )
+
+            // ⭐ REQUIRED FOR UDENTIFY LOCALIZATION ⭐
+            // Load Udentify remote language pack BEFORE NFCReader starts
+            let systemLang = UdentifySettingsProvider.mapSystemLanguageToEnum() ?? .EN
+
+            UdentifySettingsProvider.instantiateServerBasedLocalization(
+                for: systemLang,
+                serverUrl: Constants.UDENTIFY_SERVER_URL,
+                transactionId: txnId
+            ) { error in
+                // even if error occurs, fallback localization works automatically
+
+                // Now start NFC reader which will show fully localized UI
+                self.startNfcReader(
+                    docNo: docNo,
+                    birthDate: birthDate,
+                    expDate: expDate,
+                    txnId: txnId
+                )
+            }
+        }
+    }
+
+    // split for clarity. No logic changed.
+    private func startNfcReader(docNo: String, birthDate: String, expDate: String, txnId: String) {
+        self.nfcReader = NFCReader(
+            documentNumber: docNo,
+            dateOfBirth: birthDate,
+            expiryDate: expDate,
+            transactionID: txnId,
+            serverURL: Constants.UDENTIFY_SERVER_URL,
+            isActiveAuthenticationEnabled: true,
+            isPassiveAuthenticationEnabled: false
+        )
+        
+        self.nfcReader?.read() {[weak self] passport, error, progress in
+            guard let self = self else { return }
             
-            self.nfcReader?.read() {[weak self]  passport, error, progress in
-                guard let self = self else { return }
-                
-                if let passport = passport {
-                    DispatchQueue.main.async {
-                        do {
-                            print("Successfully fetched NFC data: \(passport)")
-                            let encodablePassport = EncodablePassport(passport: passport)
-                            let encoder = JSONEncoder()
-                            encoder.outputFormatting = .prettyPrinted
-                            
-                            let jsonData = try encoder.encode(encodablePassport)
-                            
-                            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                                self.sendEventsToWeb(
-                                    type: Constants.TYPE_NFC_RESPONSE,
-                                    status: Constants.SUCCESS,
-                                    message: jsonString
-                                )
-                            } else {
-                                self.sendEventsToWeb(
-                                    type: Constants.TYPE_NFC_RESPONSE,
-                                    status: Constants.ERROR,
-                                    message: "ENCODING_ERROR"
-                                )
-                            }
-                        } catch {
-                            print("JSON encoding error: \(error)")
+            if let passport = passport {
+                DispatchQueue.main.async {
+                    do {
+                        let encodablePassport = EncodablePassport(passport: passport)
+                        let encoder = JSONEncoder()
+                        encoder.outputFormatting = .prettyPrinted
+                        
+                        let jsonData = try encoder.encode(encodablePassport)
+                        
+                        if let jsonString = String(data: jsonData, encoding: .utf8) {
+                            self.sendEventsToWeb(
+                                type: Constants.TYPE_NFC_RESPONSE,
+                                status: Constants.SUCCESS,
+                                message: jsonString
+                            )
+                        } else {
                             self.sendEventsToWeb(
                                 type: Constants.TYPE_NFC_RESPONSE,
                                 status: Constants.ERROR,
-                                message: "JSON encoding failed: \(error.localizedDescription)"
+                                message: "ENCODING_ERROR"
                             )
                         }
-                        
-                        self.nfcReader = nil
+                    } catch {
+                        self.sendEventsToWeb(
+                            type: Constants.TYPE_NFC_RESPONSE,
+                            status: Constants.ERROR,
+                            message: "JSON encoding failed: \(error.localizedDescription)"
+                        )
                     }
-                } else if let progress = progress {
-                    print("*********** \(progress)% ***********")
-                    self.sendEventsToWeb(type: Constants.TYPE_NFC_PROGRESS, progress: String(progress))
-                } else if let error = error {
-                    print("Passport reading failed: \(error)")
-                    self.sendEventsToWeb(type: Constants.TYPE_NFC_RESPONSE, status: Constants.ERROR, message: error.localizedDescription)
-                    DispatchQueue.main.async {
-                        self.nfcReader = nil
-                    }
+                    
+                    self.nfcReader = nil
+                }
+            } else if let progress = progress {
+                self.sendEventsToWeb(type: Constants.TYPE_NFC_PROGRESS, progress: String(progress))
+                
+            } else if let error = error {
+                self.sendEventsToWeb(
+                    type: Constants.TYPE_NFC_RESPONSE,
+                    status: Constants.ERROR,
+                    message: error.localizedDescription
+                )
+                DispatchQueue.main.async {
+                    self.nfcReader = nil
                 }
             }
         }
@@ -196,11 +240,14 @@ extension OnrampUIViewController: WKScriptMessageHandler {
             return
         }
 
-        let escapedJsonString = jsonString.replacingOccurrences(of: "\\", with: "\\\\")
-                                         .replacingOccurrences(of: "\"", with: "\\\"")
-                                         .replacingOccurrences(of: "\n", with: "\\n")
-                                         .replacingOccurrences(of: "\r", with: "\\r")
+        let escapedJsonString = jsonString
+            .replacingOccurrences(of: "\\", with: "\\\\")
+            .replacingOccurrences(of: "\"", with: "\\\"")
+            .replacingOccurrences(of: "\n", with: "\\n")
+            .replacingOccurrences(of: "\r", with: "\\r")
+
         let jsCode = "window.postMessage('\(escapedJsonString)', '*'); true;"
+
         DispatchQueue.main.async { [weak self] in
             self?.webView.evaluateJavaScript(jsCode) { _, error in
                 if let error = error {
@@ -210,4 +257,3 @@ extension OnrampUIViewController: WKScriptMessageHandler {
         }
     }
 }
-
