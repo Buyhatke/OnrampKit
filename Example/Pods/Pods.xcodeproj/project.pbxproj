@@ -13,7 +13,6 @@
 		517AE0484A80FCAF7F4DBEFE294D9304 /* OnrampUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B0ABAE263F914DB8970E92131D8EF6 /* OnrampUIViewController.swift */; };
 		5A17783B4533E5534B0F5A611FB1E361 /* OnrampKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0D1124B3A0A7F2D2D280B7C3EF8BF /* OnrampKit.swift */; };
 		6CCE7122BEE05CB1C8F1B35EDA2EB7AC /* Pods-OnrampKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 192BAAAF2BDCF4FC9686DA957CA3D4E3 /* Pods-OnrampKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73FA9FCA2ED4695E00FE009C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73FA9FC82ED4695E00FE009C /* Localizable.strings */; };
 		796C83C9281A247893B3F72242BA4F66 /* Pods-OnrampKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B12443D7AC95F144B062BCE8B831EF29 /* Pods-OnrampKit_Example-dummy.m */; };
 		7A1FF38BE5EBED27662A7CAA65D0BBA6 /* OnrampKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 042F6D795D7E5B30BB4FB5A5DCFF286E /* OnrampKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F93DFE4C46E203A22160BD6DA39D8E0 /* UIColor + HexConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060A48847774FCF8E80F634027A8BF52 /* UIColor + HexConversion.swift */; };
@@ -82,8 +81,6 @@
 		5648CEDC7A6861CF951541F51040DCED /* Pods-OnrampKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OnrampKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5DCDA50FB4CA29CB7A5AEC3C7C593F80 /* Pods-OnrampKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnrampKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		714633E1B8CDEFFA46A0885AA6408B29 /* Pods-OnrampKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		73FA9FC92ED4695E00FE009C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		73FA9FCE2ED47AB500FE009C /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		763B96BC475334ACFDAB28C0CC6E52F6 /* Pods-OnrampKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OnrampKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7BF574503C30E9751C9E04E5DBDDD774 /* Pods-OnrampKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnrampKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7DD4C95404B464E6F731E525E5878563 /* NFCUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NFCUtils.swift; sourceTree = "<group>"; };
@@ -159,7 +156,6 @@
 				2FA1D02C0D911EB34F13651333E31D0D /* OnrampKit.debug.xcconfig */,
 				F9CD0F3F304574EC3ED104262AF0D6D3 /* OnrampKit.release.xcconfig */,
 				1BD436B1F13EF5ADBA3AC04E9BDACE89 /* ResourceBundle-OnrampKit-OnrampKit-Info.plist */,
-				73FA9FC82ED4695E00FE009C /* Localizable.strings */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/OnrampKit";
@@ -479,7 +475,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8DABB747F80FE6482876CB4342B98F7 /* OnrampKit.bundle in Resources */,
-				73FA9FCA2ED4695E00FE009C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,18 +583,6 @@
 			targetProxy = 86C387E2418F697A7D9718D8370C91BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		73FA9FC82ED4695E00FE009C /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				73FA9FC92ED4695E00FE009C /* en */,
-				73FA9FCE2ED47AB500FE009C /* tr */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		231710C19FD62AB2FE960FCF896985F2 /* Debug */ = {

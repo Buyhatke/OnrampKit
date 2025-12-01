@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/**/*.swift'
   
    s.resource_bundles = {
-     'OnrampKit' => ['Classes/**/*.storyboard','SupportFiles/**/*']
+     'OnrampKit' => ['Classes/**/*.storyboard']
    }
   
   s.vendored_frameworks = 'Frameworks/UdentifyCommons.xcframework', 'Frameworks/UdentifyNFC.xcframework'
