@@ -6,8 +6,45 @@
 //
 
 import WebKit
-import UdentifyCommons
-import UdentifyNFC
+
+// NFC Callback Implementation
+@available(iOS 13.0, *)
+class NfcCallbackImpl: NfcCallback {
+    weak var viewController: OnrampUIViewController?
+
+    init(viewController: OnrampUIViewController) {
+        self.viewController = viewController
+    }
+
+    func onSuccess(cardData: String) {
+        DispatchQueue.main.async {
+            self.viewController?.sendEventsToWeb(
+                type: Constants.TYPE_NFC_RESPONSE,
+                status: Constants.SUCCESS,
+                message: cardData
+            )
+        }
+    }
+
+    func onError(error: String) {
+        DispatchQueue.main.async {
+            self.viewController?.sendEventsToWeb(
+                type: Constants.TYPE_NFC_RESPONSE,
+                status: Constants.ERROR,
+                message: error
+            )
+        }
+    }
+
+    func onProgress(progress: String) {
+        DispatchQueue.main.async {
+            self.viewController?.sendEventsToWeb(
+                type: Constants.TYPE_NFC_PROGRESS,
+                progress: progress
+            )
+        }
+    }
+}
 
 @available(iOS 13.0, *)
 extension OnrampUIViewController: WKScriptMessageHandler {
@@ -49,6 +86,15 @@ extension OnrampUIViewController: WKScriptMessageHandler {
 
     public func userContentController(_ userContentController: WKUserContentController,
                                       didReceive message: WKScriptMessage) {
+        // Handle console logging
+        if message.name == "consoleLog",
+           let body = message.body as? [String: Any],
+           let level = body["level"] as? String,
+           let msg = body["message"] as? String {
+            print("OnrampSDK Console [\(level)]: \(msg)")
+            return
+        }
+
         guard message.name == "iosNativeEvent" else { return }
         
         if let jsonString = message.body as? String,
@@ -113,6 +159,12 @@ extension OnrampUIViewController: WKScriptMessageHandler {
         let dob = payload["dob"] as? String
         let expiryDate = payload["expiryDate"] as? String
 
+        // Check if NFC module is enabled
+        guard NfcManager.isNfcEnabled() else {
+            sendEventsToWeb(type: Constants.TYPE_NFC_RESPONSE, status: Constants.ERROR, message: Constants.EVENT_NFC_NOT_SUPPORTED)
+            return
+        }
+
         guard let txnId = transactionId, !txnId.isEmpty else {
             sendEventsToWeb(type: Constants.TYPE_NFC_RESPONSE, status: Constants.ERROR, message: "Transaction Id not found")
             return
@@ -133,91 +185,24 @@ extension OnrampUIViewController: WKScriptMessageHandler {
         print("DOB: \(birthDate)")
         print("Expiry Date: \(expDate)")
 
-        DispatchQueue.main.async {
-
-            // ⭐ REQUIRED FOR UDENTIFY LOCALIZATION ⭐
-            // Load Udentify remote language pack BEFORE NFCReader starts
-            let systemLang = UdentifySettingsProvider.mapSystemLanguageToEnum() ?? .EN
-
-            UdentifySettingsProvider.instantiateServerBasedLocalization(
-                for: systemLang,
-                serverUrl: Constants.UDENTIFY_SERVER_URL,
-                transactionId: txnId
-            ) { error in
-                // even if error occurs, fallback localization works automatically
-
-                // Now start NFC reader which will show fully localized UI
-                self.startNfcReader(
-                    docNo: docNo,
-                    birthDate: birthDate,
-                    expDate: expDate,
-                    txnId: txnId
-                )
-            }
+        // Get NFC handler
+        guard let nfcHandler = NfcManager.getHandler() else {
+            sendEventsToWeb(type: Constants.TYPE_NFC_RESPONSE, status: Constants.ERROR, message: Constants.EVENT_NFC_NOT_SUPPORTED)
+            return
         }
-    }
 
-    // split for clarity. No logic changed.
-    private func startNfcReader(docNo: String, birthDate: String, expDate: String, txnId: String) {
-        self.nfcReader = NFCReader(
-            documentNumber: docNo,
+        // Use the NFC handler
+        nfcHandler.readNfc(
+            viewController: self,
+            docNo: docNo,
             dateOfBirth: birthDate,
-            expiryDate: expDate,
-            transactionID: txnId,
-            serverURL: Constants.UDENTIFY_SERVER_URL,
+            expireDate: expDate,
+            serverUrl: Constants.UDENTIFY_SERVER_URL,
+            transactionId: txnId,
             isActiveAuthenticationEnabled: true,
-            isPassiveAuthenticationEnabled: false
+            isPassiveAuthenticationEnabled: false,
+            callback: NfcCallbackImpl(viewController: self)
         )
-        
-        self.nfcReader?.read() {[weak self] passport, error, progress in
-            guard let self = self else { return }
-            
-            if let passport = passport {
-                DispatchQueue.main.async {
-                    do {
-                        let encodablePassport = EncodablePassport(passport: passport)
-                        let encoder = JSONEncoder()
-                        encoder.outputFormatting = .prettyPrinted
-                        
-                        let jsonData = try encoder.encode(encodablePassport)
-                        
-                        if let jsonString = String(data: jsonData, encoding: .utf8) {
-                            self.sendEventsToWeb(
-                                type: Constants.TYPE_NFC_RESPONSE,
-                                status: Constants.SUCCESS,
-                                message: jsonString
-                            )
-                        } else {
-                            self.sendEventsToWeb(
-                                type: Constants.TYPE_NFC_RESPONSE,
-                                status: Constants.ERROR,
-                                message: "ENCODING_ERROR"
-                            )
-                        }
-                    } catch {
-                        self.sendEventsToWeb(
-                            type: Constants.TYPE_NFC_RESPONSE,
-                            status: Constants.ERROR,
-                            message: "JSON encoding failed: \(error.localizedDescription)"
-                        )
-                    }
-                    
-                    self.nfcReader = nil
-                }
-            } else if let progress = progress {
-                self.sendEventsToWeb(type: Constants.TYPE_NFC_PROGRESS, progress: String(progress))
-                
-            } else if let error = error {
-                self.sendEventsToWeb(
-                    type: Constants.TYPE_NFC_RESPONSE,
-                    status: Constants.ERROR,
-                    message: error.localizedDescription
-                )
-                DispatchQueue.main.async {
-                    self.nfcReader = nil
-                }
-            }
-        }
     }
 
     

@@ -1,5 +1,5 @@
 PODS:
-  - OnrampKit (0.3.7)
+  - OnrampKit (0.3.11)
 
 DEPENDENCIES:
   - OnrampKit (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  OnrampKit: 494046e66d043fa217c3e76a00505a23e784ca20
+  OnrampKit: a9e2148a30ecfeecfd17b202d1712db3a5c24a93
 
-PODFILE CHECKSUM: 323ade95b5fc8d8689e468978e401dfd80046c40
+PODFILE CHECKSUM: 2e4376c07c5b75c379feae765d8417da3c44840e
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.16.2

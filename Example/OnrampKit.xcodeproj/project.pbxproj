@@ -288,14 +288,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OnrampKit/OnrampKit.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampKit/UdentifyCommons.framework/UdentifyCommons",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampKit/UdentifyNFC.framework/UdentifyNFC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnrampKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UdentifyCommons.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UdentifyNFC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
