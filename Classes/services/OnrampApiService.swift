@@ -8,7 +8,7 @@
 import Foundation
 
 class OnrampApiService {
-    static var baseUrl = "http://127.0.0.1:3020/sdk-apis"
+    static var baseUrl = "https://api.onramp.money/sdk-apis"
 
     private static func setBaseUrl(_ url: String) {
         baseUrl = url.trimmingCharacters(in: CharacterSet(charactersIn: "/"))
