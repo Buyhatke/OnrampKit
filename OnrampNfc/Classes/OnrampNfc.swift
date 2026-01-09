@@ -8,15 +8,16 @@
 import Foundation
 import OnrampKit
 
+@available(iOS 13.0, *)
 public class OnrampNfc {
-    private static var isInitialized = false
+    private static var _isInitialized = false
 
     /// Initialize NFC functionality
     /// Call this in AppDelegate.didFinishLaunchingWithOptions or before using the SDK
-    @objc public static func initialize() {
-        if !isInitialized {
+    @objc public static func setup() {
+        if !_isInitialized {
             NfcManager.registerHandler(OnrampNfcHandler())
-            isInitialized = true
+            _isInitialized = true
             print("OnrampNfc: NFC module initialized")
         }
     }
@@ -24,12 +25,12 @@ public class OnrampNfc {
     /// Disable NFC functionality
     @objc public static func disable() {
         NfcManager.unregisterHandler()
-        isInitialized = false
+        _isInitialized = false
         print("OnrampNfc: NFC module disabled")
     }
 
     /// Check if NFC is initialized
     @objc public static func isInitialized() -> Bool {
-        return isInitialized
+        return _isInitialized
     }
 }

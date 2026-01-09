@@ -1,16 +1,22 @@
 PODS:
-  - OnrampKit (0.3.11)
+  - OnrampKit (1.0.0)
+  - OnrampNfc (1.0.0):
+    - OnrampKit (>= 1.0.0)
 
 DEPENDENCIES:
   - OnrampKit (from `../`)
+  - OnrampNfc (from `../`)
 
 EXTERNAL SOURCES:
   OnrampKit:
     :path: "../"
+  OnrampNfc:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  OnrampKit: a9e2148a30ecfeecfd17b202d1712db3a5c24a93
+  OnrampKit: db685155d328f1249be072d2964e9159212bf77a
+  OnrampNfc: b3b992ddaf9bfb1d3726efffa1de2b2295bb3e53
 
-PODFILE CHECKSUM: 2e4376c07c5b75c379feae765d8417da3c44840e
+PODFILE CHECKSUM: 36695a4fbb967e37671befbd528f0236d5ab28ee
 
 COCOAPODS: 1.16.2

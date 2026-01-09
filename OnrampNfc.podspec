@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OnrampNfc'
-  s.version          = '0.3.11'
+  s.version          = '1.0.0'
   s.summary          = 'Optional NFC support module for OnrampKit'
 
   s.description      = "This module provides optional NFC functionality for OnrampKit. Include this dependency only if your app needs NFC passport reading capabilities."
@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'OnrampNfc/Classes/**/*.swift'
 
-  # Dependency on core OnrampKit
-  s.dependency 'OnrampKit', '~> 0.3.11'
+  # Dependency on core OnrampKit (works with any version >= 1.0.0)
+  s.dependency 'OnrampKit', '>= 1.0.0'
 
   # NFC-specific dependencies
   s.vendored_frameworks = 'Frameworks/UdentifyCommons.xcframework', 'Frameworks/UdentifyNFC.xcframework'

@@ -4,6 +4,7 @@ platform :ios, '12.0'
 
 target 'OnrampKit_Example' do
   pod 'OnrampKit', :path => '../'
+  pod 'OnrampNfc', :path => '../'
 
   target 'OnrampKit_Tests' do
     inherit! :search_paths

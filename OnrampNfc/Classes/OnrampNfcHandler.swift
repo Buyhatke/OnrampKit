@@ -10,6 +10,7 @@ import OnrampKit
 import UdentifyCommons
 import UdentifyNFC
 
+@available(iOS 13.0, *)
 class OnrampNfcHandler: NfcHandler {
     private var nfcReader: NFCReader?
 

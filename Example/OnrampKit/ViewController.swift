@@ -99,11 +99,9 @@ class ViewController: UIViewController, OnrampKitDelegate {
                     self,
                     self,
                     params: [
-                        "appId": 1,
-                        "flowType": 1,
-                        "coinCode": "sol",
-                        "network": "spl",
-                        "coinAmount": 6
+                        "appId": 360602,
+                        "fiatType":2,
+                        "isRestricted":false,
                     ]
                 )
             }
@@ -129,7 +127,12 @@ class ViewController: UIViewController, OnrampKitDelegate {
                     self,
                     self,
                     params: [
-                        :
+                        "appId":360602,
+                        "sandbox": true,
+                        "payload" : "eyJib2R5Ijp7ImN1c3RvbWVySWQiOiJhZjFwYzJCaGg3XzQ5MDEifSwidGltZXN0YW1wIjoiMTc2Nzk0NjI1NTkxNyJ9",
+                        "signature" : "616cd88ff5366b2344b91e6d5484d5c261e2039b02993e1dd5dcd0a09adadc51444a4aa9348dc4c2c1740c41474c002f5b73b799501c02e4540be7e73e4d685b",
+                        "customerId" : "af1pc2Bhh7_4901",
+                        "apiKey" : "IzCsDU4TwXskSMdJEGBvkp8fB5fFgJ"
                     ]
                 )
             }
