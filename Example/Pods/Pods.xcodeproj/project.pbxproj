@@ -7,105 +7,140 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00EBA11C1CD286CDF0BFB8CE1EA3E84F /* OnrampEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6829AF0070BCFFB5E7A1651E2C4B227 /* OnrampEventResponse.swift */; };
-		136EBEC008844C3432192A51203868F3 /* OnrampUIViewController+WKNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E4E8D22A6A8BB0BD39D405FFD3B1E /* OnrampUIViewController+WKNavigationDelegate.swift */; };
-		35519D49438FB87663A8D07DFEA3E4B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		517AE0484A80FCAF7F4DBEFE294D9304 /* OnrampUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B0ABAE263F914DB8970E92131D8EF6 /* OnrampUIViewController.swift */; };
-		5A17783B4533E5534B0F5A611FB1E361 /* OnrampKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0D1124B3A0A7F2D2D280B7C3EF8BF /* OnrampKit.swift */; };
-		6CCE7122BEE05CB1C8F1B35EDA2EB7AC /* Pods-OnrampKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 192BAAAF2BDCF4FC9686DA957CA3D4E3 /* Pods-OnrampKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		796C83C9281A247893B3F72242BA4F66 /* Pods-OnrampKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B12443D7AC95F144B062BCE8B831EF29 /* Pods-OnrampKit_Example-dummy.m */; };
-		7A1FF38BE5EBED27662A7CAA65D0BBA6 /* OnrampKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 042F6D795D7E5B30BB4FB5A5DCFF286E /* OnrampKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F93DFE4C46E203A22160BD6DA39D8E0 /* UIColor + HexConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060A48847774FCF8E80F634027A8BF52 /* UIColor + HexConversion.swift */; };
+		01870708CB705F80E6C2289C4ECEC8C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		0447DD7C04FED7F135FF4E9CAD567744 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD5C13D7BA92EEF90AC74DBD64BD16 /* Constants.swift */; };
+		1CB079908F97C29AD3A5F0DBD2D5F604 /* OnrampUIViewController+WKScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7212D497743CD81C515884D9915D6258 /* OnrampUIViewController+WKScriptMessageHandler.swift */; };
+		23BFB623E72B11DE799F17285B02D1EE /* OnrampNfc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7FA0EE2DD661932F11B4CAD9CFE13EC /* OnrampNfc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C0B70665EDB859D0A2D56F083C1EEBA /* OnrampUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164366F0DABE0A0DAA89654148FBC91 /* OnrampUIViewController.swift */; };
+		4259B19B8F057FB7288AF7694C052758 /* OnrampEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC863E9C52AC912FE8D3D3FA5A52558E /* OnrampEventResponse.swift */; };
+		45DFFB19110ABAB6434E0ED5CF3CDA64 /* OnrampUIViewController+WKUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72530986774CE7D1D5F56B55F88380A /* OnrampUIViewController+WKUIDelegate.swift */; };
+		460D6A1120556D322B86F37C172120DD /* OnrampNfc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBECFBDEC523635C31A8B7707D453DE /* OnrampNfc.swift */; };
+		4EEDBC310A46F19007548087431BD94C /* OnrampKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B49ECF59BCE1541BD93DF2E4CC197 /* OnrampKit-dummy.m */; };
+		596C6B5C8538CE31D64244F8D72133D8 /* NFCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA2DD30D5FA32038BEE1C2A648FFB1 /* NFCUtils.swift */; };
+		681EE98BE00986740489FD72C0639EC4 /* OnrampApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8770A18404009AF54DA738FB48FC20C8 /* OnrampApiService.swift */; };
+		6FAE6CF24F8C8C9F2DFD5403DE5398F1 /* NfcManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DD88288264028F2FCC2946141CCDE /* NfcManager.swift */; };
+		8175C77FC94BD7089D1F577825DDF255 /* NfcHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B456F5FCBC3144DC826EDAB7E7ADAC0 /* NfcHandler.swift */; };
+		822948FA7C2BF81AE34467A45CE76655 /* OnrampUIViewController+WKNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB12552C2EA0BEDA03FB631C72F3C4F5 /* OnrampUIViewController+WKNavigationDelegate.swift */; };
+		8529E1A810FCDF6A5A874469A0D6546A /* OnrampNfcHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A291FE33113135617F69D1A0AA529C33 /* OnrampNfcHandler.swift */; };
+		85351D0FA3230EFDFB916516A4F036CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		885E3420E4D8B4D2FA13A91CBA4F9AD0 /* OnrampKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F594E6BC6D28EBB37D3E4ED9C52E8FE2 /* OnrampKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		894FB4617D33A4ED246F87BB981223C3 /* OnrampNfc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA83A188C9A16E0E583B7B0DE0259D1 /* OnrampNfc-dummy.m */; };
 		8EEB95166A60B4235FF39E7723C3AE7A /* Pods-OnrampKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A4DB81352313E12B1FD4FD14E43A04 /* Pods-OnrampKit_Tests-dummy.m */; };
-		A8339FA4D546EE1441F5EC160F403B49 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100655983D6B1ADED40F805895792580 /* Constants.swift */; };
+		93893BF23CD52AB1693D5723EB647318 /* OnrampKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4061EEB483EBC46E067D23009CE68258 /* OnrampKit.swift */; };
+		998766A721143ABB192314CFF1623E2A /* UIColor + HexConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9CF3E1152C47E3DFA6231061C26B6A /* UIColor + HexConversion.swift */; };
+		9F8C66F2EE834AD9E3392BE3E886ED87 /* OnrampUIViewController+UIDocumentPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F042A46D88D470CCAB67DABDA05EC860 /* OnrampUIViewController+UIDocumentPickerDelegate.swift */; };
 		A8F4AA44B2DA5DF3759302F31C40AD86 /* Pods-OnrampKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 763B96BC475334ACFDAB28C0CC6E52F6 /* Pods-OnrampKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7D4B3217F792C1041AB1D7791B833E8 /* OnrampUIViewController+WKScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060543C5EA8BE7BA386D969F798CE6 /* OnrampUIViewController+WKScriptMessageHandler.swift */; };
+		B27607E296B1C012647611284BCCD1AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		B94FC3E0BD4A5B9B316FB5CABD37169D /* OnrampStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EBF1C243D057447CC51FEBCD1D0EBD /* OnrampStoryboard.storyboard */; };
 		C0FE1D52787A7D2875061E005C1CD5D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		C83903B005EC1C4B85CEBA2ED3ED804F /* Passport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A85073312EC14CB84497F5AB65CA97D /* Passport.swift */; };
-		D8DABB747F80FE6482876CB4342B98F7 /* OnrampKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */; };
-		E42B337F2E02E36C00359D40 /* OnrampUIViewController+UIDocumentPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B337E2E02E36C00359D40 /* OnrampUIViewController+UIDocumentPickerDelegate.swift */; };
-		E46C65DB3CD40ABFFACA53FA5178147A /* OnrampStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423CA230D45F8D5DC80C6588167737EB /* OnrampStoryboard.storyboard */; };
-		E793CD8311FCD02FAB5AF1AA1896329B /* OnrampUIViewController+WKUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10C0A93768344C0F644CB8999CBB03 /* OnrampUIViewController+WKUIDelegate.swift */; };
-		F365B244C0298DB620F355C73084B4E2 /* OnrampKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E52789F0260275F77D1D853DA0419EDD /* OnrampKit-dummy.m */; };
-		F40274753CE257DD4954EA26324FFDC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		F6FE5B666B925E1D4ABCC658E9E082A9 /* OnrampUIViewController+PermissionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B0ACBBDAA13E20FB071E5E980F9BC /* OnrampUIViewController+PermissionHandler.swift */; };
-		F7EDBC8F576EEE83888E116AB5214CF1 /* NFCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C95404B464E6F731E525E5878563 /* NFCUtils.swift */; };
+		CAB8C398955C6D97AFF4F5EBB2BF5625 /* OnrampKit-OnrampKit in Resources */ = {isa = PBXBuildFile; fileRef = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */; };
+		DADE3C81354E7D7DB60D2EE0940F5070 /* EncodablePassport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB78166DCD589475086214A278407B75 /* EncodablePassport.swift */; };
+		E1786D847A4F7B10C68B09C1554CE37B /* Pods-OnrampKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B12443D7AC95F144B062BCE8B831EF29 /* Pods-OnrampKit_Example-dummy.m */; };
+		FC27407C7C91C71485234298D3E13FE7 /* Pods-OnrampKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 192BAAAF2BDCF4FC9686DA957CA3D4E3 /* Pods-OnrampKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFAB695832282CA50ED1D559D1838DC4 /* OnrampUIViewController+PermissionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3AEFF36C19ABBDEAEF124BA1E3A32 /* OnrampUIViewController+PermissionHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E755D254338201933EB86F609EA16B8 /* PBXContainerItemProxy */ = {
+		535FD739879FCE47E526E603D8410A6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 69028F77E9532E751674D788087B2AC9;
 			remoteInfo = "Pods-OnrampKit_Example";
 		};
-		86C387E2418F697A7D9718D8370C91BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9817503F0959C58681BFD4FD47CC66D;
-			remoteInfo = OnrampKit;
-		};
-		87140F86610B43AE3168DB4D1C155456 /* PBXContainerItemProxy */ = {
+		60F34F5AB14DD42252D2A992C325F44E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5F1E6C86B247E0B240AF8A1AA766143A;
 			remoteInfo = "OnrampKit-OnrampKit";
 		};
+		7EB1FFEBEC0D5F003BA7E3B091708EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E428B8BBCB2BB1AE0FA3B9ED843AFF;
+			remoteInfo = OnrampNfc;
+		};
+		DC3D25C7DE013FBBDD82EACB70C55750 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9817503F0959C58681BFD4FD47CC66D;
+			remoteInfo = OnrampKit;
+		};
+		FC9EDDC17AFA055D9CE8B9CE40F83C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9817503F0959C58681BFD4FD47CC66D;
+			remoteInfo = OnrampKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02BB58FB5725A4D436A34A391A9A205C /* OnrampKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OnrampKit.modulemap; sourceTree = "<group>"; };
 		03CE3C0A14FB38F2BE4AA07CA6749C26 /* Pods-OnrampKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnrampKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		042F6D795D7E5B30BB4FB5A5DCFF286E /* OnrampKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnrampKit-umbrella.h"; sourceTree = "<group>"; };
-		060A48847774FCF8E80F634027A8BF52 /* UIColor + HexConversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor + HexConversion.swift"; sourceTree = "<group>"; };
+		0C6C2DCAC56A998215C59A2E65E62592 /* OnrampNfc-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OnrampNfc-xcframeworks.sh"; sourceTree = "<group>"; };
+		0D41C462E53812664DC2460A139DFCE7 /* OnrampNfc.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OnrampNfc.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0E2D80497F564C5751E2AD206EB2FD37 /* OnrampNfc */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OnrampNfc; path = OnrampNfc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCA428B03AA080EA80CB17A56BB8470 /* Pods-OnrampKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		100655983D6B1ADED40F805895792580 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11A4DB81352313E12B1FD4FD14E43A04 /* Pods-OnrampKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OnrampKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		15187CFF7EB167D56F8813DC5C8F4FA8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		183B49ECF59BCE1541BD93DF2E4CC197 /* OnrampKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OnrampKit-dummy.m"; sourceTree = "<group>"; };
+		18A7E45F2FF55C19793CE3530AE708C3 /* OnrampNfc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampNfc.release.xcconfig; sourceTree = "<group>"; };
 		192BAAAF2BDCF4FC9686DA957CA3D4E3 /* Pods-OnrampKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OnrampKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		1BD436B1F13EF5ADBA3AC04E9BDACE89 /* ResourceBundle-OnrampKit-OnrampKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OnrampKit-OnrampKit-Info.plist"; sourceTree = "<group>"; };
-		2F10C0A93768344C0F644CB8999CBB03 /* OnrampUIViewController+WKUIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKUIDelegate.swift"; sourceTree = "<group>"; };
-		2FA1D02C0D911EB34F13651333E31D0D /* OnrampKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampKit.debug.xcconfig; sourceTree = "<group>"; };
-		33B0ABAE263F914DB8970E92131D8EF6 /* OnrampUIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnrampUIViewController.swift; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3C70BFBEAD11FA030267309ACF078797 /* Pods-OnrampKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnrampKit_Tests.modulemap"; sourceTree = "<group>"; };
-		3E2824B77ABA8737068FF6158D78B592 /* OnrampKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OnrampKit.modulemap; sourceTree = "<group>"; };
-		3EB0D1124B3A0A7F2D2D280B7C3EF8BF /* OnrampKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnrampKit.swift; path = Classes/OnrampKit.swift; sourceTree = "<group>"; };
 		3F8BE3194AA9842754196FDFA7A07F31 /* Pods-OnrampKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnrampKit_Example.modulemap"; sourceTree = "<group>"; };
-		423CA230D45F8D5DC80C6588167737EB /* OnrampStoryboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = OnrampStoryboard.storyboard; path = Classes/OnrampStoryboard.storyboard; sourceTree = "<group>"; };
-		479EE59E3E292CC1DA359C25CAE5BA3D /* UdentifyCommons.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = UdentifyCommons.xcframework; path = Frameworks/UdentifyCommons.xcframework; sourceTree = "<group>"; };
+		4061EEB483EBC46E067D23009CE68258 /* OnrampKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnrampKit.swift; path = Classes/OnrampKit.swift; sourceTree = "<group>"; };
+		4164366F0DABE0A0DAA89654148FBC91 /* OnrampUIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnrampUIViewController.swift; sourceTree = "<group>"; };
+		42F3AEFF36C19ABBDEAEF124BA1E3A32 /* OnrampUIViewController+PermissionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+PermissionHandler.swift"; sourceTree = "<group>"; };
+		446927FDD3576FC4894B065F589461FF /* OnrampNfc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OnrampNfc.modulemap; sourceTree = "<group>"; };
 		47DBE01ABDB17961FA4BCED3C940728E /* Pods-OnrampKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnrampKit_Example-Info.plist"; sourceTree = "<group>"; };
+		48324BC7AE1113C0FD3A555249DAE982 /* OnrampKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampKit.debug.xcconfig; sourceTree = "<group>"; };
 		4C8F0B1618399F2A6261DC4ACEE0BB21 /* Pods-OnrampKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5648CEDC7A6861CF951541F51040DCED /* Pods-OnrampKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OnrampKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		56F10381B05B74FE21D764F81F1F4DAA /* OnrampKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnrampKit-prefix.pch"; sourceTree = "<group>"; };
+		5DA83A188C9A16E0E583B7B0DE0259D1 /* OnrampNfc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OnrampNfc-dummy.m"; sourceTree = "<group>"; };
 		5DCDA50FB4CA29CB7A5AEC3C7C593F80 /* Pods-OnrampKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnrampKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		714633E1B8CDEFFA46A0885AA6408B29 /* Pods-OnrampKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7212D497743CD81C515884D9915D6258 /* OnrampUIViewController+WKScriptMessageHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKScriptMessageHandler.swift"; sourceTree = "<group>"; };
 		763B96BC475334ACFDAB28C0CC6E52F6 /* Pods-OnrampKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OnrampKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7BF574503C30E9751C9E04E5DBDDD774 /* Pods-OnrampKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnrampKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7DD4C95404B464E6F731E525E5878563 /* NFCUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NFCUtils.swift; sourceTree = "<group>"; };
-		822A250B2B51D86CC47610762F103857 /* OnrampKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OnrampKit-Info.plist"; sourceTree = "<group>"; };
-		8A85073312EC14CB84497F5AB65CA97D /* Passport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Passport.swift; sourceTree = "<group>"; };
-		8D060543C5EA8BE7BA386D969F798CE6 /* OnrampUIViewController+WKScriptMessageHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKScriptMessageHandler.swift"; sourceTree = "<group>"; };
-		96A6289F4CB402494284E1448066A9DB /* OnrampKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnrampKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		988B0ACBBDAA13E20FB071E5E980F9BC /* OnrampUIViewController+PermissionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+PermissionHandler.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA06098730EB743EE7CA0FD23C85B3AD /* OnrampKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OnrampKit-xcframeworks.sh"; sourceTree = "<group>"; };
+		8027B7C4D92FE89C9275E4E9289BF753 /* OnrampNfc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OnrampNfc-Info.plist"; sourceTree = "<group>"; };
+		819370EF7DB1403C260950A641D657AF /* OnrampNfc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampNfc.debug.xcconfig; sourceTree = "<group>"; };
+		8770A18404009AF54DA738FB48FC20C8 /* OnrampApiService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnrampApiService.swift; sourceTree = "<group>"; };
+		8B456F5FCBC3144DC826EDAB7E7ADAC0 /* NfcHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NfcHandler.swift; sourceTree = "<group>"; };
+		8FA96666099F5A9DE368B213CEA8C999 /* OnrampKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampKit.release.xcconfig; sourceTree = "<group>"; };
+		95520E0956F519F279455D29F117BF7D /* ResourceBundle-OnrampKit-OnrampKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OnrampKit-OnrampKit-Info.plist"; sourceTree = "<group>"; };
+		96A6289F4CB402494284E1448066A9DB /* OnrampKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OnrampKit; path = OnrampKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E9CF3E1152C47E3DFA6231061C26B6A /* UIColor + HexConversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor + HexConversion.swift"; sourceTree = "<group>"; };
+		A291FE33113135617F69D1A0AA529C33 /* OnrampNfcHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnrampNfcHandler.swift; path = OnrampNfc/Classes/OnrampNfcHandler.swift; sourceTree = "<group>"; };
+		AC863E9C52AC912FE8D3D3FA5A52558E /* OnrampEventResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnrampEventResponse.swift; sourceTree = "<group>"; };
+		B062EB5A3D4CE548A8AC74D63CA9F5FA /* UdentifyNFC.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UdentifyNFC.xcframework; path = Frameworks/UdentifyNFC.xcframework; sourceTree = "<group>"; };
 		B12443D7AC95F144B062BCE8B831EF29 /* Pods-OnrampKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OnrampKit_Example-dummy.m"; sourceTree = "<group>"; };
-		B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnrampKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "OnrampKit-OnrampKit"; path = OnrampKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59D6B1577B00098CA32EEF04D5BBD45 /* OnrampKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OnrampKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C5973876B1D3952DF3118830EB4106F9 /* Pods-OnrampKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OnrampKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D301D90F79C33E50FD87FAABCEA17494 /* OnrampKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnrampKit-prefix.pch"; sourceTree = "<group>"; };
-		D6829AF0070BCFFB5E7A1651E2C4B227 /* OnrampEventResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnrampEventResponse.swift; sourceTree = "<group>"; };
-		E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnrampKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E42B337E2E02E36C00359D40 /* OnrampUIViewController+UIDocumentPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+UIDocumentPickerDelegate.swift"; sourceTree = "<group>"; };
-		E52789F0260275F77D1D853DA0419EDD /* OnrampKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OnrampKit-dummy.m"; sourceTree = "<group>"; };
-		E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnrampKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECA1B66BBA9B5A96D2E8FBBC6B9DCADC /* UdentifyNFC.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = UdentifyNFC.xcframework; path = Frameworks/UdentifyNFC.xcframework; sourceTree = "<group>"; };
+		C72530986774CE7D1D5F56B55F88380A /* OnrampUIViewController+WKUIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKUIDelegate.swift"; sourceTree = "<group>"; };
+		CB12552C2EA0BEDA03FB631C72F3C4F5 /* OnrampUIViewController+WKNavigationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKNavigationDelegate.swift"; sourceTree = "<group>"; };
+		CFBECFBDEC523635C31A8B7707D453DE /* OnrampNfc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnrampNfc.swift; path = OnrampNfc/Classes/OnrampNfc.swift; sourceTree = "<group>"; };
+		D0FD9747AF8720ED6E38CCAF0C30A555 /* OnrampKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OnrampKit-Info.plist"; sourceTree = "<group>"; };
+		DB78166DCD589475086214A278407B75 /* EncodablePassport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EncodablePassport.swift; path = OnrampNfc/Classes/EncodablePassport.swift; sourceTree = "<group>"; };
+		DE5DD88288264028F2FCC2946141CCDE /* NfcManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NfcManager.swift; sourceTree = "<group>"; };
+		E221BE0FE202D201DCE6835096B94012 /* Pods-OnrampKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OnrampKit_Example"; path = Pods_OnrampKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F518A8F8DC226B64C68656462752BF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E57F5538A5AAFA88EDD88D96715EDC1F /* Pods-OnrampKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OnrampKit_Tests"; path = Pods_OnrampKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FA0EE2DD661932F11B4CAD9CFE13EC /* OnrampNfc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnrampNfc-umbrella.h"; sourceTree = "<group>"; };
+		E997B06221B5DA1B3A9AECEEF4812D36 /* OnrampNfc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnrampNfc-prefix.pch"; sourceTree = "<group>"; };
+		E9BD5C13D7BA92EEF90AC74DBD64BD16 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ECCA2DD30D5FA32038BEE1C2A648FFB1 /* NFCUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NFCUtils.swift; sourceTree = "<group>"; };
 		F007C3BB907C5AD942C95B3F54FE805B /* Pods-OnrampKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnrampKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F1AADB9C31CFAAC576D2454CE6649DD8 /* OnrampKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = OnrampKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F38E4E8D22A6A8BB0BD39D405FFD3B1E /* OnrampUIViewController+WKNavigationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+WKNavigationDelegate.swift"; sourceTree = "<group>"; };
-		F805720C8205695D81B8C522466EB3F6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F9CD0F3F304574EC3ED104262AF0D6D3 /* OnrampKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnrampKit.release.xcconfig; sourceTree = "<group>"; };
+		F042A46D88D470CCAB67DABDA05EC860 /* OnrampUIViewController+UIDocumentPickerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "OnrampUIViewController+UIDocumentPickerDelegate.swift"; sourceTree = "<group>"; };
+		F4EBF1C243D057447CC51FEBCD1D0EBD /* OnrampStoryboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = OnrampStoryboard.storyboard; path = Classes/OnrampStoryboard.storyboard; sourceTree = "<group>"; };
+		F594E6BC6D28EBB37D3E4ED9C52E8FE2 /* OnrampKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnrampKit-umbrella.h"; sourceTree = "<group>"; };
+		FC63AE7FB3660B9C65A7A15376F332FB /* UdentifyCommons.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UdentifyCommons.xcframework; path = Frameworks/UdentifyCommons.xcframework; sourceTree = "<group>"; };
 		FE9775276C3A0A60E6282658D462ABB1 /* Pods-OnrampKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OnrampKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,106 +153,97 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BEBF13FA569303740BFF172CC51233C /* Frameworks */ = {
+		04FDC1422EBA773B539240DA3DC0C80F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35519D49438FB87663A8D07DFEA3E4B9 /* Foundation.framework in Frameworks */,
+				B27607E296B1C012647611284BCCD1AB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3054D51124C7FC93ECD4C4C5981BBD5 /* Frameworks */ = {
+		AB4AD13365737B8A29561771640DED44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85351D0FA3230EFDFB916516A4F036CA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA260658D6818A7E1A2E6250D6B09A7A /* Frameworks */ = {
+		C228DD765EB3A0127DF94438FE8B5A25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F40274753CE257DD4954EA26324FFDC9 /* Foundation.framework in Frameworks */,
+				01870708CB705F80E6C2289C4ECEC8C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAEA2AA1DEF31658619184CCFCE4BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00068B384B31E29C799038F45250B040 /* Support Files */ = {
+		13B6695ABB0644D7748A68B6D2E59056 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3E2824B77ABA8737068FF6158D78B592 /* OnrampKit.modulemap */,
-				E52789F0260275F77D1D853DA0419EDD /* OnrampKit-dummy.m */,
-				822A250B2B51D86CC47610762F103857 /* OnrampKit-Info.plist */,
-				D301D90F79C33E50FD87FAABCEA17494 /* OnrampKit-prefix.pch */,
-				042F6D795D7E5B30BB4FB5A5DCFF286E /* OnrampKit-umbrella.h */,
-				AA06098730EB743EE7CA0FD23C85B3AD /* OnrampKit-xcframeworks.sh */,
-				2FA1D02C0D911EB34F13651333E31D0D /* OnrampKit.debug.xcconfig */,
-				F9CD0F3F304574EC3ED104262AF0D6D3 /* OnrampKit.release.xcconfig */,
-				1BD436B1F13EF5ADBA3AC04E9BDACE89 /* ResourceBundle-OnrampKit-OnrampKit-Info.plist */,
+				446927FDD3576FC4894B065F589461FF /* OnrampNfc.modulemap */,
+				5DA83A188C9A16E0E583B7B0DE0259D1 /* OnrampNfc-dummy.m */,
+				8027B7C4D92FE89C9275E4E9289BF753 /* OnrampNfc-Info.plist */,
+				E997B06221B5DA1B3A9AECEEF4812D36 /* OnrampNfc-prefix.pch */,
+				E7FA0EE2DD661932F11B4CAD9CFE13EC /* OnrampNfc-umbrella.h */,
+				0C6C2DCAC56A998215C59A2E65E62592 /* OnrampNfc-xcframeworks.sh */,
+				819370EF7DB1403C260950A641D657AF /* OnrampNfc.debug.xcconfig */,
+				18A7E45F2FF55C19793CE3530AE708C3 /* OnrampNfc.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/OnrampKit";
+			path = "Example/Pods/Target Support Files/OnrampNfc";
 			sourceTree = "<group>";
 		};
-		017031F660B5B0F0F21BE26D823835D7 /* OnrampKit */ = {
+		2CF03CE19D2B9F3B3D2E127ED0624860 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
-				3EB0D1124B3A0A7F2D2D280B7C3EF8BF /* OnrampKit.swift */,
-				423CA230D45F8D5DC80C6588167737EB /* OnrampStoryboard.storyboard */,
-				9F5DC392749CB03F8DF3851D820B2CFC /* Frameworks */,
-				10B2E4F7635BC9DB9FB89056D79F6060 /* models */,
-				43651B924C3CE53953C9DF8EA0687341 /* OnrampUIViewController */,
-				9A9DCDAB0DC49B482DB9C813BB2F968B /* Pod */,
-				00068B384B31E29C799038F45250B040 /* Support Files */,
-				28DF9130BF8057DFCCE8CE30EC6855DD /* utils */,
+				8B456F5FCBC3144DC826EDAB7E7ADAC0 /* NfcHandler.swift */,
+			);
+			name = protocols;
+			path = Classes/protocols;
+			sourceTree = "<group>";
+		};
+		2F74F336CDB533A6FC4B8C39157D11F9 /* OnrampKit */ = {
+			isa = PBXGroup;
+			children = (
+				4061EEB483EBC46E067D23009CE68258 /* OnrampKit.swift */,
+				F4EBF1C243D057447CC51FEBCD1D0EBD /* OnrampStoryboard.storyboard */,
+				B193E5CDDC914B75703DB8E3C1E56454 /* managers */,
+				8DC5B4BC8A88725A688095F850C8E954 /* models */,
+				AD3F2C8BE656D77B4763EEB3401CD041 /* OnrampUIViewController */,
+				94C994E6CF13FAA124159BE050D5C4CA /* Pod */,
+				2CF03CE19D2B9F3B3D2E127ED0624860 /* protocols */,
+				66BC43CC37D5F2FED415999F92F1D4C3 /* services */,
+				32C08C426F3DAFEEF3F52F6A35679495 /* Support Files */,
+				DFE7E4C225B7D1AB6F174B943F3DEB3A /* utils */,
 			);
 			name = OnrampKit;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		10B2E4F7635BC9DB9FB89056D79F6060 /* models */ = {
+		32C08C426F3DAFEEF3F52F6A35679495 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D6829AF0070BCFFB5E7A1651E2C4B227 /* OnrampEventResponse.swift */,
-				8A85073312EC14CB84497F5AB65CA97D /* Passport.swift */,
+				02BB58FB5725A4D436A34A391A9A205C /* OnrampKit.modulemap */,
+				183B49ECF59BCE1541BD93DF2E4CC197 /* OnrampKit-dummy.m */,
+				D0FD9747AF8720ED6E38CCAF0C30A555 /* OnrampKit-Info.plist */,
+				56F10381B05B74FE21D764F81F1F4DAA /* OnrampKit-prefix.pch */,
+				F594E6BC6D28EBB37D3E4ED9C52E8FE2 /* OnrampKit-umbrella.h */,
+				48324BC7AE1113C0FD3A555249DAE982 /* OnrampKit.debug.xcconfig */,
+				8FA96666099F5A9DE368B213CEA8C999 /* OnrampKit.release.xcconfig */,
+				95520E0956F519F279455D29F117BF7D /* ResourceBundle-OnrampKit-OnrampKit-Info.plist */,
 			);
-			name = models;
-			path = Classes/models;
-			sourceTree = "<group>";
-		};
-		28DF9130BF8057DFCCE8CE30EC6855DD /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				100655983D6B1ADED40F805895792580 /* Constants.swift */,
-				7DD4C95404B464E6F731E525E5878563 /* NFCUtils.swift */,
-				060A48847774FCF8E80F634027A8BF52 /* UIColor + HexConversion.swift */,
-			);
-			name = utils;
-			path = Classes/utils;
-			sourceTree = "<group>";
-		};
-		3C6016BB485963896C92161FAE91AA48 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				017031F660B5B0F0F21BE26D823835D7 /* OnrampKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		43651B924C3CE53953C9DF8EA0687341 /* OnrampUIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				33B0ABAE263F914DB8970E92131D8EF6 /* OnrampUIViewController.swift */,
-				988B0ACBBDAA13E20FB071E5E980F9BC /* OnrampUIViewController+PermissionHandler.swift */,
-				F38E4E8D22A6A8BB0BD39D405FFD3B1E /* OnrampUIViewController+WKNavigationDelegate.swift */,
-				8D060543C5EA8BE7BA386D969F798CE6 /* OnrampUIViewController+WKScriptMessageHandler.swift */,
-				2F10C0A93768344C0F644CB8999CBB03 /* OnrampUIViewController+WKUIDelegate.swift */,
-				E42B337E2E02E36C00359D40 /* OnrampUIViewController+UIDocumentPickerDelegate.swift */,
-			);
-			name = OnrampUIViewController;
-			path = Classes/OnrampUIViewController;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/OnrampKit";
 			sourceTree = "<group>";
 		};
 		500A48EAE8442EBDA025DD135BD05D42 /* Pods-OnrampKit_Tests */ = {
@@ -236,6 +262,33 @@
 			path = "Target Support Files/Pods-OnrampKit_Tests";
 			sourceTree = "<group>";
 		};
+		66BC43CC37D5F2FED415999F92F1D4C3 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				8770A18404009AF54DA738FB48FC20C8 /* OnrampApiService.swift */,
+			);
+			name = services;
+			path = Classes/services;
+			sourceTree = "<group>";
+		};
+		8DC5B4BC8A88725A688095F850C8E954 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				AC863E9C52AC912FE8D3D3FA5A52558E /* OnrampEventResponse.swift */,
+			);
+			name = models;
+			path = Classes/models;
+			sourceTree = "<group>";
+		};
+		94C994E6CF13FAA124159BE050D5C4CA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E3F518A8F8DC226B64C68656462752BF /* LICENSE */,
+				B59D6B1577B00098CA32EEF04D5BBD45 /* OnrampKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		9821EF2DEE44173A1463528F42A2BAFA /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,43 +298,53 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9A9DCDAB0DC49B482DB9C813BB2F968B /* Pod */ = {
+		AD3F2C8BE656D77B4763EEB3401CD041 /* OnrampUIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F805720C8205695D81B8C522466EB3F6 /* LICENSE */,
-				F1AADB9C31CFAAC576D2454CE6649DD8 /* OnrampKit.podspec */,
-				15187CFF7EB167D56F8813DC5C8F4FA8 /* README.md */,
+				4164366F0DABE0A0DAA89654148FBC91 /* OnrampUIViewController.swift */,
+				42F3AEFF36C19ABBDEAEF124BA1E3A32 /* OnrampUIViewController+PermissionHandler.swift */,
+				F042A46D88D470CCAB67DABDA05EC860 /* OnrampUIViewController+UIDocumentPickerDelegate.swift */,
+				CB12552C2EA0BEDA03FB631C72F3C4F5 /* OnrampUIViewController+WKNavigationDelegate.swift */,
+				7212D497743CD81C515884D9915D6258 /* OnrampUIViewController+WKScriptMessageHandler.swift */,
+				C72530986774CE7D1D5F56B55F88380A /* OnrampUIViewController+WKUIDelegate.swift */,
+			);
+			name = OnrampUIViewController;
+			path = Classes/OnrampUIViewController;
+			sourceTree = "<group>";
+		};
+		B193E5CDDC914B75703DB8E3C1E56454 /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				DE5DD88288264028F2FCC2946141CCDE /* NfcManager.swift */,
+			);
+			name = managers;
+			path = Classes/managers;
+			sourceTree = "<group>";
+		};
+		C43B4FAF1F5F30F729B174369E7912FF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0D41C462E53812664DC2460A139DFCE7 /* OnrampNfc.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		9F5DC392749CB03F8DF3851D820B2CFC /* Frameworks */ = {
+		C7B46B8C33DA8C19759E307EB1677248 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				479EE59E3E292CC1DA359C25CAE5BA3D /* UdentifyCommons.xcframework */,
-				ECA1B66BBA9B5A96D2E8FBBC6B9DCADC /* UdentifyNFC.xcframework */,
+				2F74F336CDB533A6FC4B8C39157D11F9 /* OnrampKit */,
+				FC2D2E14DF384C76B77B8ECE0227C166 /* OnrampNfc */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD94773D1C745831E4A83A1F8E2B062A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				96A6289F4CB402494284E1448066A9DB /* OnrampKit.framework */,
-				B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */,
-				E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */,
-				E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */,
-			);
-			name = Products;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				3C6016BB485963896C92161FAE91AA48 /* Development Pods */,
+				C7B46B8C33DA8C19759E307EB1677248 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				BD94773D1C745831E4A83A1F8E2B062A /* Products */,
+				E69AD3E3F1E0E0814109182F22D87CA8 /* Products */,
 				9821EF2DEE44173A1463528F42A2BAFA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -290,6 +353,15 @@
 			isa = PBXGroup;
 			children = (
 				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6715D6513471D5A70B1951B10EAB053 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC63AE7FB3660B9C65A7A15376F332FB /* UdentifyCommons.xcframework */,
+				B062EB5A3D4CE548A8AC74D63CA9F5FA /* UdentifyNFC.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,12 +383,49 @@
 			path = "Target Support Files/Pods-OnrampKit_Example";
 			sourceTree = "<group>";
 		};
+		DFE7E4C225B7D1AB6F174B943F3DEB3A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				E9BD5C13D7BA92EEF90AC74DBD64BD16 /* Constants.swift */,
+				ECCA2DD30D5FA32038BEE1C2A648FFB1 /* NFCUtils.swift */,
+				9E9CF3E1152C47E3DFA6231061C26B6A /* UIColor + HexConversion.swift */,
+			);
+			name = utils;
+			path = Classes/utils;
+			sourceTree = "<group>";
+		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		E69AD3E3F1E0E0814109182F22D87CA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96A6289F4CB402494284E1448066A9DB /* OnrampKit */,
+				B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */,
+				0E2D80497F564C5751E2AD206EB2FD37 /* OnrampNfc */,
+				E221BE0FE202D201DCE6835096B94012 /* Pods-OnrampKit_Example */,
+				E57F5538A5AAFA88EDD88D96715EDC1F /* Pods-OnrampKit_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC2D2E14DF384C76B77B8ECE0227C166 /* OnrampNfc */ = {
+			isa = PBXGroup;
+			children = (
+				DB78166DCD589475086214A278407B75 /* EncodablePassport.swift */,
+				CFBECFBDEC523635C31A8B7707D453DE /* OnrampNfc.swift */,
+				A291FE33113135617F69D1A0AA529C33 /* OnrampNfcHandler.swift */,
+				D6715D6513471D5A70B1951B10EAB053 /* Frameworks */,
+				C43B4FAF1F5F30F729B174369E7912FF /* Pod */,
+				13B6695ABB0644D7748A68B6D2E59056 /* Support Files */,
+			);
+			name = OnrampNfc;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,25 +439,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		503CDDA62C50C3213B08EAEE5BB70474 /* Headers */ = {
+		B323925D9A6153337F1494EB6FE8EEF4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A1FF38BE5EBED27662A7CAA65D0BBA6 /* OnrampKit-umbrella.h in Headers */,
+				885E3420E4D8B4D2FA13A91CBA4F9AD0 /* OnrampKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBD08C3DAB1FDBF5F2CDE155924CC94D /* Headers */ = {
+		B5999DC0B61EC7B2225441E721D765EB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CCE7122BEE05CB1C8F1B35EDA2EB7AC /* Pods-OnrampKit_Example-umbrella.h in Headers */,
+				23BFB623E72B11DE799F17285B02D1EE /* OnrampNfc-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24126CC5BBB83FAC42BF53898FA0304 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC27407C7C91C71485234298D3E13FE7 /* Pods-OnrampKit_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		22E428B8BBCB2BB1AE0FA3B9ED843AFF /* OnrampNfc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9321D01E354C9DCE32E4760E80945E4F /* Build configuration list for PBXNativeTarget "OnrampNfc" */;
+			buildPhases = (
+				B5999DC0B61EC7B2225441E721D765EB /* Headers */,
+				21C4B597A78413FAB6137718E9BE321A /* [CP] Copy XCFrameworks */,
+				488EE680E220087542236A6C7DBED94F /* Sources */,
+				AB4AD13365737B8A29561771640DED44 /* Frameworks */,
+				8B51BA856B46693A5AEE38857ABD4690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26291CB0C73815618944532155EBE796 /* PBXTargetDependency */,
+			);
+			name = OnrampNfc;
+			productName = OnrampNfc;
+			productReference = 0E2D80497F564C5751E2AD206EB2FD37 /* OnrampNfc */;
+			productType = "com.apple.product-type.framework";
+		};
 		548683B147149D8EA36B6C27D9E418CA /* Pods-OnrampKit_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DE5CAAA3CD513252FB58E34D56E1655 /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Tests" */;
@@ -361,20 +498,20 @@
 			buildRules = (
 			);
 			dependencies = (
-				B382FE28903964D619A409051A2A3696 /* PBXTargetDependency */,
+				55E3E6797F0D9A4818F4E99F754E5784 /* PBXTargetDependency */,
 			);
 			name = "Pods-OnrampKit_Tests";
 			productName = Pods_OnrampKit_Tests;
-			productReference = E57F5538A5AAFA88EDD88D96715EDC1F /* Pods_OnrampKit_Tests.framework */;
+			productReference = E57F5538A5AAFA88EDD88D96715EDC1F /* Pods-OnrampKit_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		5F1E6C86B247E0B240AF8A1AA766143A /* OnrampKit-OnrampKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87A190533E8B3FFDBA2A78ED6828AD5C /* Build configuration list for PBXNativeTarget "OnrampKit-OnrampKit" */;
+			buildConfigurationList = DDCC8ADD526B9CB953A687982FEF6CCB /* Build configuration list for PBXNativeTarget "OnrampKit-OnrampKit" */;
 			buildPhases = (
-				C6CAFE6727715A52FFF3D7305A961B0D /* Sources */,
-				A3054D51124C7FC93ECD4C4C5981BBD5 /* Frameworks */,
-				013959624452D1D11282C6BE90AAB63E /* Resources */,
+				310137C8E523B6C577AC105F4CE9F99B /* Sources */,
+				EBAEA2AA1DEF31658619184CCFCE4BB6 /* Frameworks */,
+				9423B52BC4D9797161A4A8C05E2823CB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -382,46 +519,46 @@
 			);
 			name = "OnrampKit-OnrampKit";
 			productName = OnrampKit;
-			productReference = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit.bundle */;
+			productReference = B162416F8CBF879F039B5C26A5EC7844 /* OnrampKit-OnrampKit */;
 			productType = "com.apple.product-type.bundle";
 		};
 		69028F77E9532E751674D788087B2AC9 /* Pods-OnrampKit_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72C8E801028C2BF22A70868128BFCA6F /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Example" */;
+			buildConfigurationList = 0FF188EDC2353EAFCCBCEA9585F53C86 /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Example" */;
 			buildPhases = (
-				BBD08C3DAB1FDBF5F2CDE155924CC94D /* Headers */,
-				5CC2E608129FCB47683C6EC94381B9D4 /* Sources */,
-				1BEBF13FA569303740BFF172CC51233C /* Frameworks */,
-				BDA91C8AD198E7066B8D2A859B776A61 /* Resources */,
+				E24126CC5BBB83FAC42BF53898FA0304 /* Headers */,
+				521034962470AB7A4B3B97995DDA9D84 /* Sources */,
+				C228DD765EB3A0127DF94438FE8B5A25 /* Frameworks */,
+				C6E372399C263D6A49272C4A5FFA90A0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EE3111136E1F9A50C4253720C3CB0872 /* PBXTargetDependency */,
+				93C6393FF8323E8E7662F174FFDF3167 /* PBXTargetDependency */,
+				BF942AF8C66039D2C150231AE205D186 /* PBXTargetDependency */,
 			);
 			name = "Pods-OnrampKit_Example";
 			productName = Pods_OnrampKit_Example;
-			productReference = E221BE0FE202D201DCE6835096B94012 /* Pods_OnrampKit_Example.framework */;
+			productReference = E221BE0FE202D201DCE6835096B94012 /* Pods-OnrampKit_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		E9817503F0959C58681BFD4FD47CC66D /* OnrampKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27FB33AC97E287ACD4FB7CB88116A351 /* Build configuration list for PBXNativeTarget "OnrampKit" */;
+			buildConfigurationList = F0062BA26E2D2374117B9CA12643C0F1 /* Build configuration list for PBXNativeTarget "OnrampKit" */;
 			buildPhases = (
-				503CDDA62C50C3213B08EAEE5BB70474 /* Headers */,
-				BE40004E35BF81B09725FB990E6550DC /* [CP] Copy XCFrameworks */,
-				FD3703639EB8A307403A2271F092D2E8 /* Sources */,
-				DA260658D6818A7E1A2E6250D6B09A7A /* Frameworks */,
-				6E45E9CDAE19AB4A8612FBC38B735B40 /* Resources */,
+				B323925D9A6153337F1494EB6FE8EEF4 /* Headers */,
+				2381994D70CE87682C292292CB09F605 /* Sources */,
+				04FDC1422EBA773B539240DA3DC0C80F /* Frameworks */,
+				F913FB60E129A872E243FD85ABA3B26D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E31421F0CCF3863EB25831E21B39557B /* PBXTargetDependency */,
+				30164C0013F5B20E48D2B11DE0031763 /* PBXTargetDependency */,
 			);
 			name = OnrampKit;
 			productName = OnrampKit;
-			productReference = 96A6289F4CB402494284E1448066A9DB /* OnrampKit.framework */;
+			productReference = 96A6289F4CB402494284E1448066A9DB /* OnrampKit */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -432,12 +569,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
-				TargetAttributes = {
-					5F1E6C86B247E0B240AF8A1AA766143A = {
-						DevelopmentTeam = 98B976E3G5;
-						ProvisioningStyle = Automatic;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -446,15 +577,17 @@
 			knownRegions = (
 				Base,
 				en,
-				tr,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BD94773D1C745831E4A83A1F8E2B062A /* Products */;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E69AD3E3F1E0E0814109182F22D87CA8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E9817503F0959C58681BFD4FD47CC66D /* OnrampKit */,
 				5F1E6C86B247E0B240AF8A1AA766143A /* OnrampKit-OnrampKit */,
+				22E428B8BBCB2BB1AE0FA3B9ED843AFF /* OnrampNfc */,
 				69028F77E9532E751674D788087B2AC9 /* Pods-OnrampKit_Example */,
 				548683B147149D8EA36B6C27D9E418CA /* Pods-OnrampKit_Tests */,
 			);
@@ -462,19 +595,18 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		013959624452D1D11282C6BE90AAB63E /* Resources */ = {
+		8B51BA856B46693A5AEE38857ABD4690 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E46C65DB3CD40ABFFACA53FA5178147A /* OnrampStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E45E9CDAE19AB4A8612FBC38B735B40 /* Resources */ = {
+		9423B52BC4D9797161A4A8C05E2823CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8DABB747F80FE6482876CB4342B98F7 /* OnrampKit.bundle in Resources */,
+				B94FC3E0BD4A5B9B316FB5CABD37169D /* OnrampStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,51 +617,92 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDA91C8AD198E7066B8D2A859B776A61 /* Resources */ = {
+		C6E372399C263D6A49272C4A5FFA90A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F913FB60E129A872E243FD85ABA3B26D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB8C398955C6D97AFF4F5EBB2BF5625 /* OnrampKit-OnrampKit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BE40004E35BF81B09725FB990E6550DC /* [CP] Copy XCFrameworks */ = {
+		21C4B597A78413FAB6137718E9BE321A /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/OnrampKit/OnrampKit-xcframeworks.sh",
+				"${PODS_ROOT}/Target Support Files/OnrampNfc/OnrampNfc-xcframeworks.sh",
 				"${PODS_ROOT}/../../Frameworks/UdentifyCommons.xcframework",
 				"${PODS_ROOT}/../../Frameworks/UdentifyNFC.xcframework",
 			);
 			name = "[CP] Copy XCFrameworks";
 			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampKit/UdentifyCommons.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampKit/UdentifyNFC.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampNfc/UdentifyCommons.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampNfc/UdentifyNFC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/OnrampKit/OnrampKit-xcframeworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/OnrampNfc/OnrampNfc-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5CC2E608129FCB47683C6EC94381B9D4 /* Sources */ = {
+		2381994D70CE87682C292292CB09F605 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				796C83C9281A247893B3F72242BA4F66 /* Pods-OnrampKit_Example-dummy.m in Sources */,
+				0447DD7C04FED7F135FF4E9CAD567744 /* Constants.swift in Sources */,
+				8175C77FC94BD7089D1F577825DDF255 /* NfcHandler.swift in Sources */,
+				6FAE6CF24F8C8C9F2DFD5403DE5398F1 /* NfcManager.swift in Sources */,
+				596C6B5C8538CE31D64244F8D72133D8 /* NFCUtils.swift in Sources */,
+				681EE98BE00986740489FD72C0639EC4 /* OnrampApiService.swift in Sources */,
+				4259B19B8F057FB7288AF7694C052758 /* OnrampEventResponse.swift in Sources */,
+				93893BF23CD52AB1693D5723EB647318 /* OnrampKit.swift in Sources */,
+				4EEDBC310A46F19007548087431BD94C /* OnrampKit-dummy.m in Sources */,
+				3C0B70665EDB859D0A2D56F083C1EEBA /* OnrampUIViewController.swift in Sources */,
+				FFAB695832282CA50ED1D559D1838DC4 /* OnrampUIViewController+PermissionHandler.swift in Sources */,
+				9F8C66F2EE834AD9E3392BE3E886ED87 /* OnrampUIViewController+UIDocumentPickerDelegate.swift in Sources */,
+				822948FA7C2BF81AE34467A45CE76655 /* OnrampUIViewController+WKNavigationDelegate.swift in Sources */,
+				1CB079908F97C29AD3A5F0DBD2D5F604 /* OnrampUIViewController+WKScriptMessageHandler.swift in Sources */,
+				45DFFB19110ABAB6434E0ED5CF3CDA64 /* OnrampUIViewController+WKUIDelegate.swift in Sources */,
+				998766A721143ABB192314CFF1623E2A /* UIColor + HexConversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6CAFE6727715A52FFF3D7305A961B0D /* Sources */ = {
+		310137C8E523B6C577AC105F4CE9F99B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488EE680E220087542236A6C7DBED94F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADE3C81354E7D7DB60D2EE0940F5070 /* EncodablePassport.swift in Sources */,
+				460D6A1120556D322B86F37C172120DD /* OnrampNfc.swift in Sources */,
+				894FB4617D33A4ED246F87BB981223C3 /* OnrampNfc-dummy.m in Sources */,
+				8529E1A810FCDF6A5A874469A0D6546A /* OnrampNfcHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521034962470AB7A4B3B97995DDA9D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1786D847A4F7B10C68B09C1554CE37B /* Pods-OnrampKit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,59 +714,194 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD3703639EB8A307403A2271F092D2E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8339FA4D546EE1441F5EC160F403B49 /* Constants.swift in Sources */,
-				F7EDBC8F576EEE83888E116AB5214CF1 /* NFCUtils.swift in Sources */,
-				00EBA11C1CD286CDF0BFB8CE1EA3E84F /* OnrampEventResponse.swift in Sources */,
-				5A17783B4533E5534B0F5A611FB1E361 /* OnrampKit.swift in Sources */,
-				F365B244C0298DB620F355C73084B4E2 /* OnrampKit-dummy.m in Sources */,
-				517AE0484A80FCAF7F4DBEFE294D9304 /* OnrampUIViewController.swift in Sources */,
-				E42B337F2E02E36C00359D40 /* OnrampUIViewController+UIDocumentPickerDelegate.swift in Sources */,
-				F6FE5B666B925E1D4ABCC658E9E082A9 /* OnrampUIViewController+PermissionHandler.swift in Sources */,
-				136EBEC008844C3432192A51203868F3 /* OnrampUIViewController+WKNavigationDelegate.swift in Sources */,
-				B7D4B3217F792C1041AB1D7791B833E8 /* OnrampUIViewController+WKScriptMessageHandler.swift in Sources */,
-				E793CD8311FCD02FAB5AF1AA1896329B /* OnrampUIViewController+WKUIDelegate.swift in Sources */,
-				C83903B005EC1C4B85CEBA2ED3ED804F /* Passport.swift in Sources */,
-				7F93DFE4C46E203A22160BD6DA39D8E0 /* UIColor + HexConversion.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B382FE28903964D619A409051A2A3696 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-OnrampKit_Example";
-			target = 69028F77E9532E751674D788087B2AC9 /* Pods-OnrampKit_Example */;
-			targetProxy = 2E755D254338201933EB86F609EA16B8 /* PBXContainerItemProxy */;
-		};
-		E31421F0CCF3863EB25831E21B39557B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "OnrampKit-OnrampKit";
-			target = 5F1E6C86B247E0B240AF8A1AA766143A /* OnrampKit-OnrampKit */;
-			targetProxy = 87140F86610B43AE3168DB4D1C155456 /* PBXContainerItemProxy */;
-		};
-		EE3111136E1F9A50C4253720C3CB0872 /* PBXTargetDependency */ = {
+		26291CB0C73815618944532155EBE796 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OnrampKit;
 			target = E9817503F0959C58681BFD4FD47CC66D /* OnrampKit */;
-			targetProxy = 86C387E2418F697A7D9718D8370C91BF /* PBXContainerItemProxy */;
+			targetProxy = DC3D25C7DE013FBBDD82EACB70C55750 /* PBXContainerItemProxy */;
+		};
+		30164C0013F5B20E48D2B11DE0031763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OnrampKit-OnrampKit";
+			target = 5F1E6C86B247E0B240AF8A1AA766143A /* OnrampKit-OnrampKit */;
+			targetProxy = 60F34F5AB14DD42252D2A992C325F44E /* PBXContainerItemProxy */;
+		};
+		55E3E6797F0D9A4818F4E99F754E5784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-OnrampKit_Example";
+			target = 69028F77E9532E751674D788087B2AC9 /* Pods-OnrampKit_Example */;
+			targetProxy = 535FD739879FCE47E526E603D8410A6D /* PBXContainerItemProxy */;
+		};
+		93C6393FF8323E8E7662F174FFDF3167 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OnrampKit;
+			target = E9817503F0959C58681BFD4FD47CC66D /* OnrampKit */;
+			targetProxy = FC9EDDC17AFA055D9CE8B9CE40F83C11 /* PBXContainerItemProxy */;
+		};
+		BF942AF8C66039D2C150231AE205D186 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OnrampNfc;
+			target = 22E428B8BBCB2BB1AE0FA3B9ED843AFF /* OnrampNfc */;
+			targetProxy = 7EB1FFEBEC0D5F003BA7E3B091708EE7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		231710C19FD62AB2FE960FCF896985F2 /* Debug */ = {
+		01D81EF33D36A57F9ECC9C23687A434F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FA1D02C0D911EB34F13651333E31D0D /* OnrampKit.debug.xcconfig */;
+			baseConfigurationReference = 48324BC7AE1113C0FD3A555249DAE982 /* OnrampKit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/OnrampKit/OnrampKit-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/OnrampKit/OnrampKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OnrampKit/OnrampKit.modulemap";
+				PRODUCT_MODULE_NAME = OnrampKit;
+				PRODUCT_NAME = OnrampKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1011A9B974C1809855A1945795B3744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F007C3BB907C5AD942C95B3F54FE805B /* Pods-OnrampKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1AE11C613F7CA16A5F9A9D0CE3C16BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FCA428B03AA080EA80CB17A56BB8470 /* Pods-OnrampKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1D2000BC4139F0BD6CAC81B0ADA7C4DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714633E1B8CDEFFA46A0885AA6408B29 /* Pods-OnrampKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		230BC81E162E3CCBE54C259EC54C7E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA96666099F5A9DE368B213CEA8C999 /* OnrampKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OnrampKit";
-				DEVELOPMENT_TEAM = 98B976E3G5;
 				IBSC_MODULE = OnrampKit;
 				INFOPLIST_FILE = "Target Support Files/OnrampKit/ResourceBundle-OnrampKit-OnrampKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -603,7 +911,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
 		};
 		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -671,9 +979,9 @@
 			};
 			name = Debug;
 		};
-		58ED778BF9DB2F28B5B0D34AF92187F8 /* Debug */ = {
+		324DAA7DC50E705AAB28B9BA1CA6D51D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FA1D02C0D911EB34F13651333E31D0D /* OnrampKit.debug.xcconfig */;
+			baseConfigurationReference = 819370EF7DB1403C260950A641D657AF /* OnrampNfc.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -685,17 +993,21 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OnrampKit/OnrampKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OnrampKit/OnrampKit-Info.plist";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/OnrampNfc/OnrampNfc-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/OnrampNfc/OnrampNfc-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OnrampKit/OnrampKit.modulemap";
-				PRODUCT_MODULE_NAME = OnrampKit;
-				PRODUCT_NAME = OnrampKit;
+				MODULEMAP_FILE = "Target Support Files/OnrampNfc/OnrampNfc.modulemap";
+				PRODUCT_MODULE_NAME = OnrampNfc;
+				PRODUCT_NAME = OnrampNfc;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -703,11 +1015,10 @@
 			};
 			name = Debug;
 		};
-		5C96B6BFD7DC30DB1593EF889748572B /* Debug */ = {
+		639CF24F24D9E0AE12E1833A56E9BADD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C8F0B1618399F2A6261DC4ACEE0BB21 /* Pods-OnrampKit_Example.debug.xcconfig */;
+			baseConfigurationReference = 18A7E45F2FF55C19793CE3530AE708C3 /* OnrampNfc.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -718,24 +1029,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example-Info.plist";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/OnrampNfc/OnrampNfc-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/OnrampNfc/OnrampNfc-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/OnrampNfc/OnrampNfc.modulemap";
+				PRODUCT_MODULE_NAME = OnrampNfc;
+				PRODUCT_NAME = OnrampNfc;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -792,105 +1107,16 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		684ECD79F9FE24A383B086B553FF82C9 /* Release */ = {
+		79A1591EFFDC8CEE490A672AE4913991 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9CD0F3F304574EC3ED104262AF0D6D3 /* OnrampKit.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OnrampKit";
-				DEVELOPMENT_TEAM = 98B976E3G5;
-				IBSC_MODULE = OnrampKit;
-				INFOPLIST_FILE = "Target Support Files/OnrampKit/ResourceBundle-OnrampKit-OnrampKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = OnrampKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		6F02EA58D1F267A257D50AE8D7B7BB53 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F007C3BB907C5AD942C95B3F54FE805B /* Pods-OnrampKit_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8A710AC58811515FF4A8BA69A90064A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 714633E1B8CDEFFA46A0885AA6408B29 /* Pods-OnrampKit_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D859D4E6A6103EDDEA79643023E40BA8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9CD0F3F304574EC3ED104262AF0D6D3 /* OnrampKit.release.xcconfig */;
+			baseConfigurationReference = 8FA96666099F5A9DE368B213CEA8C999 /* OnrampKit.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -902,7 +1128,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/OnrampKit/OnrampKit-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/OnrampKit/OnrampKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -913,6 +1142,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -921,9 +1151,26 @@
 			};
 			name = Release;
 		};
-		E2F1EDF4435D2C67FA8528D0A2005550 /* Debug */ = {
+		863CFF41FDA54FF9E3926AF08BE36F9C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FCA428B03AA080EA80CB17A56BB8470 /* Pods-OnrampKit_Tests.debug.xcconfig */;
+			baseConfigurationReference = 48324BC7AE1113C0FD3A555249DAE982 /* OnrampKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OnrampKit";
+				IBSC_MODULE = OnrampKit;
+				INFOPLIST_FILE = "Target Support Files/OnrampKit/ResourceBundle-OnrampKit-OnrampKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = OnrampKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DCBBA6828C3037E523EB2A33850EA9DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C8F0B1618399F2A6261DC4ACEE0BB21 /* Pods-OnrampKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -936,12 +1183,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests-Info.plist";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Tests/Pods-OnrampKit_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -958,11 +1207,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27FB33AC97E287ACD4FB7CB88116A351 /* Build configuration list for PBXNativeTarget "OnrampKit" */ = {
+		0FF188EDC2353EAFCCBCEA9585F53C86 /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58ED778BF9DB2F28B5B0D34AF92187F8 /* Debug */,
-				D859D4E6A6103EDDEA79643023E40BA8 /* Release */,
+				DCBBA6828C3037E523EB2A33850EA9DB /* Debug */,
+				1D2000BC4139F0BD6CAC81B0ADA7C4DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -979,26 +1228,35 @@
 		4DE5CAAA3CD513252FB58E34D56E1655 /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2F1EDF4435D2C67FA8528D0A2005550 /* Debug */,
-				6F02EA58D1F267A257D50AE8D7B7BB53 /* Release */,
+				1AE11C613F7CA16A5F9A9D0CE3C16BCC /* Debug */,
+				1011A9B974C1809855A1945795B3744C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72C8E801028C2BF22A70868128BFCA6F /* Build configuration list for PBXNativeTarget "Pods-OnrampKit_Example" */ = {
+		9321D01E354C9DCE32E4760E80945E4F /* Build configuration list for PBXNativeTarget "OnrampNfc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C96B6BFD7DC30DB1593EF889748572B /* Debug */,
-				8A710AC58811515FF4A8BA69A90064A2 /* Release */,
+				324DAA7DC50E705AAB28B9BA1CA6D51D /* Debug */,
+				639CF24F24D9E0AE12E1833A56E9BADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87A190533E8B3FFDBA2A78ED6828AD5C /* Build configuration list for PBXNativeTarget "OnrampKit-OnrampKit" */ = {
+		DDCC8ADD526B9CB953A687982FEF6CCB /* Build configuration list for PBXNativeTarget "OnrampKit-OnrampKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				231710C19FD62AB2FE960FCF896985F2 /* Debug */,
-				684ECD79F9FE24A383B086B553FF82C9 /* Release */,
+				863CFF41FDA54FF9E3926AF08BE36F9C /* Debug */,
+				230BC81E162E3CCBE54C259EC54C7E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0062BA26E2D2374117B9CA12643C0F1 /* Build configuration list for PBXNativeTarget "OnrampKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D81EF33D36A57F9ECC9C23687A434F /* Debug */,
+				79A1591EFFDC8CEE490A672AE4913991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

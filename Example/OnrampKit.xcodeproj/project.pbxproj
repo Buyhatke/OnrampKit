@@ -288,12 +288,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OnrampKit_Example/Pods-OnrampKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OnrampKit/OnrampKit.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampKit/UdentifyCommons.framework/UdentifyCommons",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampKit/UdentifyNFC.framework/UdentifyNFC",
+				"${BUILT_PRODUCTS_DIR}/OnrampNfc/OnrampNfc.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampNfc/UdentifyCommons.framework/UdentifyCommons",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OnrampNfc/UdentifyNFC.framework/UdentifyNFC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnrampKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnrampNfc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UdentifyCommons.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UdentifyNFC.framework",
 			);
@@ -503,8 +505,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OnrampKit_Example.entitlements;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 46FRSG7SRP;
 				INFOPLIST_FILE = OnrampKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Onramp Example";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC in order to scan documents";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access for video calls and photo capture";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location access to provide location-based services";
@@ -516,6 +520,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = onrampkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,8 +535,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OnrampKit_Example.entitlements;
-				DEVELOPMENT_TEAM = 98B976E3G5;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 46FRSG7SRP;
 				INFOPLIST_FILE = OnrampKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Onramp Example";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC in order to scan documents";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access for video calls and photo capture";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location access to provide location-based services";
@@ -543,8 +550,9 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = onrampkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;

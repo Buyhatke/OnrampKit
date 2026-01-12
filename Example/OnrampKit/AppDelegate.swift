@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OnrampNfc
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Initialize NFC addon (requires iOS 13+)
+        if #available(iOS 13.0, *) {
+            OnrampNfc.setup()
+        }
         return true
     }
 
