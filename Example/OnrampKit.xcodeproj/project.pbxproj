@@ -505,8 +505,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OnrampKit_Example.entitlements;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 46FRSG7SRP;
 				INFOPLIST_FILE = OnrampKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Onramp Example";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC in order to scan documents";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access for video calls and photo capture";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location access to provide location-based services";
@@ -518,6 +520,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = onrampkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,8 +535,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OnrampKit_Example.entitlements;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 46FRSG7SRP;
 				INFOPLIST_FILE = OnrampKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Onramp Example";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC in order to scan documents";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access for video calls and photo capture";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs location access to provide location-based services";
@@ -545,6 +550,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = onrampkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -99,7 +99,9 @@ public class OnrampUIViewController: UIViewController {
         loadingSpinner.centerXAnchor.constraint(equalTo: layoutGuide.centerXAnchor, constant: 0.0).isActive = true
         loadingSpinner.centerYAnchor.constraint(equalTo: layoutGuide.centerYAnchor, constant: 0.0).isActive = true
 
-        guard let url = URL(string: url ?? "https://test.bitbns.com/onramp/main/buy/?appId=1&mode=overlay&origin=OnrampSdkIos") else {return}
+        guard let urlString = url, let url = URL(string: urlString) else {
+            return
+        }
 
         DispatchQueue.main.async {
             self.webView.load(URLRequest(url: url))
